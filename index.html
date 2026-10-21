@@ -34,28 +34,36 @@ input,select{font:inherit;padding:9px 12px;border:2px solid var(--l);max-width:1
 .big{font:800 26px ui-monospace,monospace;color:var(--n)}.fb{min-height:1.6em}small{color:var(--m)}
 .ch{background:var(--n);color:#fff;padding:22px;text-align:center}.ch .bits{justify-content:center}.ch .big{color:var(--g);font-size:56px}
 footer{background:var(--n);color:#b9c4e4;padding:28px 20px;text-align:center;font-size:14px}
+#sp{font-size:13px;color:var(--m);white-space:nowrap}
 @media(max-width:640px){.io{grid-template-columns:1fr 1fr}.t{width:40px;font-size:24px}.logo{width:100px}}
 </style></head><body><div id="pb"></div>
 <header><a class="logo" href="#top"><img src="nbs.jpeg" alt="Nouakchott Business School"></a>
-<nav><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><b id="xp">0 XP</b></header>
+<nav><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><b id="sp">0 / 7 stops</b><b id="xp">0 XP</b></header>
 <main id="top">
 <div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Unit 1</small><h1>Introduction to Information Technology</h1>
 <p>Tap the tiles. Every photo, song and message on a computer is built from 0s and 1s. Turn on 64 and 1 to make the letter A.</p>
 <div id="hb" class="bits"></div>
 <p class="ro"><span id="hd">0</span> in decimal · <span id="hs">00000000</span> in binary · character: <span id="hc">—</span></p></div></div>
 
+<section id="rm" class="sec" style="padding-bottom:0"><h2>Your Unit 1 roadmap</h2><p class="lead">Seven stops cover the whole unit. Answer 2 of 3 questions right at the end of a stop to turn it green.</p><div id="rmap" class="g"></div></section>
 <section id="s1" class="sec"><h2>Warm-up</h2><p class="lead">Five questions to see what you already know. A wrong answer is part of the game.</p>
 <tip>Hi, I’m Nuo! I’ll explain every answer as we go. Earn XP at the top right.</tip><div id="q1" class="card"></div></section>
 
 <section id="s2" class="sec"><h2>What is Information Technology?</h2>
 <p class="lead">IT is the use of computer systems and devices to access information. It means using technology to <b>organize, store, share and process</b> information.</p>
 <div class="g"><div class="card"><h3>Organize</h3><p>Sort files into folders or customers into a database.</p></div><div class="card"><h3>Store</h3><p>Keep photos on your phone or in the cloud.</p></div><div class="card"><h3>Share</h3><p>Send an email or a WhatsApp message in seconds.</p></div><div class="card"><h3>Process</h3><p>Calculate salaries or totals in Excel.</p></div></div>
+<h3>Data vs information</h3><div class="card"><p><b>Data</b> is raw facts that mean nothing on their own:</p><p><span class="pill">36</span><span class="pill">Monday</span><span class="pill">Sunny</span></p><button id="di" class="b">Turn data into information</button><p id="do"></p></div>
 <h3>What belongs to IT? Tap a word.</h3><div id="it" class="card"></div>
+<h3>Where is IT used? Tap a place.</h3><div id="us" class="card"></div>
 <tip>The IT industry grows fast because companies depend more and more on technology, and managing information is vital.</tip></section>
 
 <section id="s3" class="sec"><h2>What is a computer?</h2>
 <p class="lead">A computer is an electronic device that stores and processes data in binary, following instructions called a program. It is <b>hardware</b> (physical parts) plus <b>software</b> (instructions).</p>
 <div class="g"><div class="card"><h3>1. Input</h3><p>Takes in data and instructions.</p></div><div class="card"><h3>2. Processing</h3><p>Works with the data.</p></div><div class="card"><h3>3. Output</h3><p>Puts out information.</p></div></div>
+<div class="card" style="text-align:center"><span class="big">Computer = Hardware + Software</span></div>
+<div class="g" style="margin-top:14px"><div class="card"><h3>Hardware</h3><p>The physical parts you can touch, built from circuits and transistors.</p></div><div class="card"><h3>Software</h3><p>The instructions that tell the hardware what to do. You cannot touch them.</p></div></div>
+<tip>Think of a music box: the box is hardware, the song is software. A computer is very fast but not clever. It must be told exactly what to do, step by step.</tip>
+<h3>The five hardware parts. Tap each one.</h3><div id="hw" class="card"></div>
 <h3>Follow the data. Pick a scenario, then read the numbered boxes.</h3>
 <div id="io" class="io"><div class="bx">Input devices<small>keyboard, mouse, scanner, microphone</small></div><div class="bx">CPU<small>processes the data</small></div><div class="bx">Memory and storage<small>RAM, SSD, HDD, USB</small></div><div class="bx">Output devices<small>screen, printer, speakers</small></div></div>
 <div id="sc" class="card"></div>
@@ -63,13 +71,17 @@ footer{background:var(--n);color:#b9c4e4;padding:28px 20px;text-align:center;fon
 
 <section id="s4" class="sec"><h2>The CPU</h2>
 <p class="lead">The Central Processing Unit is the brain of the computer. It does arithmetic and logic, controls other hardware, and repeats the instruction cycle non-stop.</p>
+<div class="g"><div class="card"><h3>What is the CPU?</h3><p>The Central Processing Unit is a small chip: the brain of the computer. It runs programs, does calculations, makes decisions and controls every other part.</p></div><div class="card"><h3>What is inside it?</h3><p><b>ALU</b> calculates. <b>CU</b> directs the work. <b>Registers</b> hold the data in use right now. <b>Cache</b> keeps frequent data close.</p></div><div class="card"><h3>How does it work?</h3><p>It repeats one loop for as long as a program runs: fetch an instruction from RAM, decode it, execute it, store the result in RAM.</p></div></div>
 <h3>The instruction cycle. Press Next step.</h3><div id="cy" class="cy"></div><div id="cyd" class="card"></div>
 <button id="nx" class="b">Next step</button><button id="au" class="b">Auto-play</button>
 <h3>Inside the CPU. Tap a part.</h3><div id="cp" class="card"></div></section>
 
 <section id="s5" class="sec"><h2>Memory</h2>
 <p class="lead">Primary storage has four types. The closer to the CPU, the faster it is and the less it holds.</p>
-<div id="mm" class="card"></div>
+<div class="g"><div class="card"><h3>What is RAM?</h3><p>Random Access Memory is the short-term workspace of the computer. It holds the programs and data being used right now.</p></div><div class="card"><h3>Why is it needed?</h3><p>The CPU fetches instructions from RAM and sends results back to it. RAM is much faster than a disk.</p></div><div class="card"><h3>It is temporary</h3><p>RAM is emptied when the power goes off. Save your files to storage (SSD, HDD) to keep them.</p></div></div>
+<h3>Try it: RAM vs storage</h3><div class="card"><input id="rt" placeholder="Type a sentence: it goes into RAM"> <button id="rsv" class="b">Save to disk</button><button id="rof" class="b" style="background:var(--bad)">Power off</button><button id="ron" class="b">Power on</button>
+<div class="g" style="margin-top:12px"><div class="card"><b>RAM</b><div id="rr" class="big">…</div></div><div class="card"><b>Disk (SSD or HDD)</b><div id="rd" class="big">empty</div></div></div><small>Type, press Save, then Power off. RAM forgets, the disk remembers.</small></div>
+<h3>All four memories. Tap one.</h3><div id="mm" class="card"></div>
 <div class="lad"><div style="width:30%">Register · fastest, smallest</div><div style="width:50%">Cache</div><div style="width:72%">RAM · temporary</div><div style="width:100%;background:#56637f">Disk (SSD, HDD) · permanent, slowest, biggest</div></div>
 <h3>Game: which memory is it?</h3><div id="g2" class="card"></div></section>
 
@@ -95,7 +107,8 @@ footer{background:var(--n);color:#b9c4e4;padding:28px 20px;text-align:center;fon
 <h3>Binary to decimal</h3>
 <div class="card"><input id="bn" value="101010" maxlength="16"> <span id="bc"></span><div id="bo"></div></div>
 <details class="card"><summary><b>Hexadecimal reference table</b></summary><div id="ht"></div></details>
-<tip>Binary to octal: group bits by 3 from the right. Binary to hex: group by 4. Add zeros on the left if a group is short.</tip></section>
+<tip>Binary to octal: group bits by 3 from the right. Binary to hex: group by 4. Add zeros on the left if a group is short.</tip>
+<p>Practice: convert 37, 50, 60, 64 and your age to binary, then check with the lab. Answers for the first four: 100101, 110010, 111100, 1000000.</p></section>
 
 <section id="s9" class="sec"><h2>Games</h2>
 <h3>Binary challenge. Make the target number with the tiles.</h3>
@@ -137,7 +150,7 @@ s=>{document.querySelectorAll('.bx').forEach(b=>{b.classList.remove('on');b.remo
 srt('g1',['Input','Output','Storage'],[['Keyboard',0,'You type data in.'],['Mouse',0,'A pointing input device.'],['Scanner',0,'Turns paper into digital input.'],['Barcode reader',0,'Reads codes as input.'],['Microphone',0,'Captures sound as input.'],['Monitor',1,'Shows information to the user.'],['Printer',1,'Puts information on paper.'],['Speakers',1,'Output sound.'],['HDD',2,'Permanent storage on spinning disks.'],['SSD',2,'Fast permanent storage, no moving parts.'],['USB flash drive',2,'Portable storage.'],['DVD',2,'Optical storage disc.']]);
 const CY=[['Fetch','Get the next instruction from RAM.','The CPU reads “ADD 2 + 3” from memory.'],['Decode','The Control Unit works out what the instruction means.','It understands: add two numbers.'],['Execute','The ALU carries out the command.','The ALU calculates 2 + 3 = 5.'],['Store','The result goes back to RAM (and later to disk).','5 is written to memory. Then the cycle starts again.']];
 let ci=-1,tm;H($('#cy'),CY.map((c,i)=>`<div class="st">${i+1}. ${c[0]}</div>`).join(''));
-const stp=()=>{ci=(ci+1)%4;[...$('#cy').children].forEach((e,i)=>e.classList.toggle('on',i==ci));H($('#cyd'),`<b>${CY[ci][0]}:</b> ${CY[ci][1]}<br><i>${CY[ci][2]}</i>`)};
+const stp=()=>{ci=(ci+1)%4;[...$('#cy').children].forEach((e,i)=>e.classList.toggle('on',i==ci));H($('#cyd'),`<b>${CY[ci][0]}:</b> ${CY[ci][1]}<br><i>${CY[ci][2]}</i><br><small>Instruction register: ${ci?'ADD 2,3':'—'} · Result: ${ci>1?5:'—'}</small>`)};
 $('#nx').onclick=stp;$('#au').onclick=e=>{if(tm){clearInterval(tm);tm=0;e.target.textContent='Auto-play'}else{stp();tm=setInterval(stp,1600);e.target.textContent='Pause'}};stp();
 pick('cp',[['ALU','Arithmetic and Logic Unit: does + − × ÷ and logic (AND, OR, NOT) to process data and make decisions.','a calculator that can also decide'],['CU','Control Unit: manages the order of operations and the flow of data between parts. It coordinates the execution of instructions.','a conductor leading an orchestra'],['Registers','Tiny, very fast storage that holds the data being worked on right now, temporarily.','the pen in your hand'],['Clock speed','Measured in Hertz (Hz): how many cycles per second. Higher clock speed generally means faster processing.','the beat of a drum'],['Cores','Many modern CPUs have several cores, so they can run several tasks at the same time.','more cooks in the kitchen'],['Cache','Stores frequently used data and instructions. It is faster than RAM, so the CPU waits less.','a notebook on your desk instead of the library']],x=>`<h3>${x[0]}</h3><p>${x[1]}</p><p><i>Think of it as ${x[2]}.</i></p>`);
 pick('mm',[['RAM','Random Access Memory, the main memory. Holds the programs and data in use. The CPU fetches instructions from it and stores results in it. Temporary: it is erased when the power is off.'],['ROM','Read-Only Memory. Permanent: keeps its content without power, for example the startup instructions of the computer.'],['Cache','Small, very fast memory between the CPU and RAM. Keeps frequently used data so the CPU does not wait.'],['Register','The smallest and fastest memory, inside the CPU. Holds data being processed right now.']]);
@@ -153,7 +166,7 @@ const b=n.toString(2),g=k=>b.padStart(Math.ceil(b.length/k)*k,'0').match(new Reg
 H(o,`<table><tr><th>Division</th><th>Quotient</th><th>Remainder</th></tr>${r.join('')}</table><p>Read the remainders <b>from bottom to top</b>: <span class="big">${b}</span></p><p>Octal: ${g3.join(' | ')} → ${g3.map(y=>parseInt(y,2)).join(' ')} = <b>${n.toString(8)}</b>₈</p><p>Hexadecimal: ${g4.join(' | ')} → ${g4.map(y=>parseInt(y,2).toString(16).toUpperCase()).join(' ')} = <b>${n.toString(16).toUpperCase()}</b>₁₆</p>`)}
 function lb(){const s=$('#bn').value.trim(),o=$('#bo');if(!/^[01]{1,16}$/.test(s))return H(o,'<p>Type only 0s and 1s (up to 16 bits).</p>');
 const L=[...s],p=L.map((_,i)=>L.length-1-i);H(o,`<div style="overflow-x:auto"><table><tr><th>Bit</th>${L.map(c=>`<td>${c}</td>`).join('')}</tr><tr><th>Power</th>${p.map(x=>`<td>2<sup>${x}</sup></td>`).join('')}</tr><tr><th>Value</th>${L.map((c,i)=>`<td>${c*2**p[i]}</td>`).join('')}</tr></table></div><p>${L.map((c,i)=>c*2**p[i]).join(' + ')} = <b class="big">${parseInt(s,2)}</b></p>`)}
-$('#dn').oninput=lab;$('#bn').oninput=lb;ex('dc',[19,47,37,64,278],'#dn',lab);ex('bc',['1111','101010','1110110'],'#bn',lb);lab();lb();
+$('#dn').oninput=lab;$('#bn').oninput=lb;ex('dc',[19,47,37,50,60,64,278],'#dn',lab);ex('bc',['1111','101010','1110110'],'#bn',lb);lab();lb();
 H($('#ht'),[...Array(16)].map((_,i)=>`<span class="pill">${i} = <b>${i.toString(16).toUpperCase()}</b> = ${i.toString(2).padStart(4,'0')}</span>`).join(''));
 let win=0,tg,lock=0,rs;const nt=()=>{lock=0;tg=1+Math.floor(Math.random()*(win<3?15:win<6?63:255));$('#ct').textContent=tg;rs&&rs();$('#cm').textContent='Add up the tile values.'};
 rs=bits($('#cb'),8,d=>{$('#cv').textContent=d;if(d==tg&&!lock){lock=1;win++;add(15);$('#cm').textContent=`Yes! Wins: ${win}`;setTimeout(nt,1000)}});$('#sk').onclick=nt;nt();
@@ -171,4 +184,24 @@ quiz('q2',[
 ['Convert 101100 to octal.',['54','45','44','64'],0,'101 | 100 → 5 | 4 = 54.'],
 ['What is 11110000 in hexadecimal?',['0F','FF','F0','10'],2,'1111 = F and 0000 = 0, so F0.'],
 ['What does cache memory do?',['Stores files forever','Keeps frequently used data close to the CPU','Prints documents'],1,'Cache is faster than RAM, so the CPU waits less.']],fin);
+
+const ST=[['s2','1. What is IT?','Data, information, four jobs'],['s3','2. The computer','Hardware, software, five parts'],['s4','3. The CPU','What it is and how it works'],['s5','4. Memory','RAM, ROM, cache, registers'],['s6','5. Software','System and application'],['s7','6. Binary','Bits, bytes, ASCII'],['s8','7. Number systems','Decimal, binary, octal, hex']],done=new Set();
+const paint=()=>{H($('#rmap'),ST.map(x=>`<a class="card" href="#${x[0]}" style="text-decoration:none;color:inherit;${done.has(x[0])?'border-color:var(--ok);background:#e4fbf3':''}"><b>${done.has(x[0])?'✓ ':''}${x[1]}</b><br><small>${x[2]}</small></a>`).join(''));$('#sp').textContent=done.size+' / 7 stops'};paint();
+$('#di').onclick=()=>H($('#do'),'<b>Information:</b> Monday’s forecast is sunny, 36°C. Same facts, now they mean something.');
+pick('us',[['School','Student records, online lessons and exam results are stored and shared with IT.'],['Hospital','Patient files, appointment booking and medical scans are handled by IT systems.'],['Bank','Balances, card payments and transfers are processed in seconds by IT.'],['Shop','Stock lists, barcode scanners and card machines all rely on IT.']]);
+pick('hw',[['Input','<b>Gets data into the computer.</b><br>Restaurant: the waiter who takes your order.<br><small>Keyboard, mouse, touchpad, touch screen, scanner, barcode reader, joystick, trackball</small>'],['CPU','<b>The brain.</b> Calculates, decides and controls the other parts.<br>Restaurant: the chef who cooks the order.<br><small>A small chip with an ALU, a control unit and registers</small>'],['RAM','<b>Short-term workspace.</b> Holds what is in use now. Fast, but emptied when power goes off.<br>Restaurant: the kitchen counter.<br><small>RAM sticks in a PC or laptop</small>'],['Storage','<b>Long-term memory.</b> Keeps files, photos and programs when the computer is off. Bigger than RAM, slower.<br>Restaurant: the pantry and fridge.<br><small>HDD, SSD, USB flash drive, SD card, CD/DVD, Blu-ray, magnetic tape</small>'],['Output','<b>Shows the result</b> as words, pictures or sound.<br>Restaurant: the finished dish at your table.<br><small>Monitor, printer, speakers</small>']]);
+$('#rt').oninput=()=>$('#rr').textContent=$('#rt').value||'…';
+$('#rsv').onclick=()=>{$('#rd').textContent=$('#rt').value||'empty'};
+$('#rof').onclick=()=>{$('#rt').disabled=1;$('#rr').textContent='(erased: power is off)'};
+$('#ron').onclick=()=>{$('#rt').disabled=0;$('#rt').value='';$('#rr').textContent='… (empty)'};
+const MQ={
+s2:[["Raw facts that mean nothing on their own are called…","Data","Information","Software"],["Which is NOT one of the jobs of IT?","Growing plants","Organizing information","Storing information"],["A bank checking if your balance covers a payment is IT doing which job?","Processing","Sharing photos","Printing"]],
+s3:[["What are the three main things a computer does?","Input, processing, output","Open, close, save","Read, write, print"],["Which part of a computer can you touch?","Hardware","Software","Binary"],["In the restaurant example, the CPU is the…","Chef","Waiter","Fridge"]],
+s4:[["What is the correct order of the instruction cycle?","Fetch, decode, execute, store","Decode, fetch, store, execute","Store, fetch, execute, decode"],["Which part does the calculating (+, −, AND, OR)?","ALU","Cache","Clock"],["Which CPU feature lets it run several tasks at once?","Cores","Registers","Hertz"]],
+s5:[["Which memory is the fastest and smallest?","Register","RAM","ROM"],["Where are running programs and data held?","RAM","ROM","A CD"],["After you switch the computer off, saved files are still in…","Storage (SSD or HDD)","RAM","Cache"]],
+s6:[["Windows and Linux are…","System software","Application software","Hardware"],["Which one is application software?","WhatsApp","Linux","Windows"],["Software is…","A set of instructions for the computer","A part you can touch","A kind of cable"]],
+s7:[["How many bits are in one byte?","8","4","10"],["Computers use 0 and 1 because electronics have two states:","On and off","Hot and cold","Fast and slow"],["How many bytes are in 1 KB?","1024","1000","100"]],
+s8:[["What is binary 101 in decimal?","5","3","7"],["What is decimal 6 in binary?","110","101","011"],["To convert binary to hex, you group the bits in sets of…","4","3","8"]]};
+Object.keys(MQ).forEach(id=>{$('#'+id).insertAdjacentHTML('beforeend',`<h3>Stop challenge: 3 questions</h3><div id="m${id}" class="card"></div>`);
+quiz('m'+id,MQ[id].map(q=>{const o=sh(q.slice(1));return[q[0],o,o.indexOf(q[1]),'Re-read this stop if it was tricky.']}),p=>{if(p>=.66){done.add(id);paint()}return p>=.66?'Stop complete!':'Almost. Re-read this stop and try again.'})});
 </script></body></html>

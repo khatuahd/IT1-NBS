@@ -204,4 +204,54 @@ s7:[["How many bits are in one byte?","8","4","10"],["Computers use 0 and 1 beca
 s8:[["What is binary 101 in decimal?","5","3","7"],["What is decimal 6 in binary?","110","101","011"],["To convert binary to hex, you group the bits in sets of…","4","3","8"]]};
 Object.keys(MQ).forEach(id=>{$('#'+id).insertAdjacentHTML('beforeend',`<h3>Stop challenge: 3 questions</h3><div id="m${id}" class="card"></div>`);
 quiz('m'+id,MQ[id].map(q=>{const o=sh(q.slice(1));return[q[0],o,o.indexOf(q[1]),'Re-read this stop if it was tricky.']}),p=>{if(p>=.66){done.add(id);paint()}return p>=.66?'Stop complete!':'Almost. Re-read this stop and try again.'})});
-</script></body></html>
+</script>
+
+<!-- ===== NEW: Practice exercises section (added before Games, with its own menu link) ===== -->
+<script>
+(function(){
+const dv=n=>{let x=n,r=[];do{r.push(`${x} ÷ 2 = ${x>>1} r <b>${x%2}</b>`);x>>=1}while(x>0);return r.join('<br>')};
+const grp=(b,k)=>b.padStart(Math.ceil(b.length/k)*k,'0').match(new RegExp('.{'+k+'}','g'));
+const o8=b=>grp(b,3).map(g=>parseInt(g,2)).join(''),h16=b=>grp(b,4).map(g=>parseInt(g,2).toString(16).toUpperCase()).join('');
+const sum=b=>{const L=b.length,t=[...b].map((c,i)=>c==1?2**(L-1-i):null).filter(x=>x!==null);return t.join(' + ')+' = <b>'+parseInt(b,2)+'</b>'};
+const nz=s=>s.replace(/\s/g,'').toUpperCase().replace(/^0+(?=.)/,'');
+const p8=n=>n.toString(2).padStart(8,'0');
+const dec=n=>[`${n} → 8 bits`,p8(n),dv(n)+`<br>Read bottom to top: <b>${n.toString(2)}</b>, on 8 bits: <b>${p8(n)}</b>`,'pad'];
+const oct=b=>[`${b}₂ → octal`,o8(b),grp(b,3).join(' | ')+' → '+grp(b,3).map(g=>parseInt(g,2)).join(' ')+` = <b>${o8(b)}</b>`];
+const hex=b=>[`${b}₂ → hexadecimal`,h16(b),grp(b,4).join(' | ')+' → '+grp(b,4).map(g=>parseInt(g,2).toString(16).toUpperCase()).join(' ')+` = <b>${h16(b)}</b>`];
+const fromO=v=>{const p=[...v].map(d=>(+d).toString(2).padStart(3,'0'));return[`(${v})₈ → binary`,p.join(''),[...v].map((d,i)=>`${d} = ${p[i]}`).join(' | ')+` → <b>${p.join('').replace(/^0+/,'')}</b>`]};
+const fromH=v=>{const p=[...v].map(d=>parseInt(d,16).toString(2).padStart(4,'0'));return[`(${v})₁₆ → binary`,p.join(''),[...v].map((d,i)=>`${d} = ${p[i]}`).join(' | ')+` → <b>${p.join('').replace(/^0+/,'')}</b>`]};
+const nb=n=>{const k=n.toString(2).length;return[`Bits needed for ${n}`,''+k,`2<sup>${k-1}</sup> = ${2**(k-1)} ≤ ${n} < 2<sup>${k}</sup> = ${2**k}, so <b>${k} bits</b> (${n.toString(2)})`]};
+const X=[
+['Exercise 1 · Decimal to binary on 8 bits','Use successive division by 2, read the remainders from bottom to top, then add leading zeros to reach 8 bits.',[13,37,72,129,200].map(dec)],
+['Exercise 2 · Binary to decimal','Add the power of 2 of every bit that is a 1.',['1101','10010','101101','1100110','11111111'].map(b=>[`${b}₂ → decimal`,''+parseInt(b,2),sum(b)])],
+['Exercise 3 · Binary to octal','Group the bits by 3 from the right. Add zeros on the left if needed.',['110101','111001010','10011','101101101'].map(oct)],
+['Exercise 4 · Binary to hexadecimal','Group the bits by 4 from the right. A=10, B=11, C=12, D=13, E=14, F=15.',['10111100','1101001','111110101','10100111'].map(hex)],
+['Exercise 5 · Octal and hexadecimal to binary','Replace each octal digit by 3 bits and each hex digit by 4 bits.',[...['27','614','305'].map(fromO),...['3F','B2','7D1'].map(fromH)]],
+['Exercise 6 · Challenge','Convert 156 in three ways, then count how many bits some numbers need.',[
+ ['156 → binary',p8(156),dv(156)+`<br>Read bottom to top: <b>${p8(156)}</b>`,'pad'],
+ ['156 → octal',o8(p8(156)),`${grp(p8(156),3).join(' | ')} → <b>${o8(p8(156))}</b>`],
+ ['156 → hexadecimal',h16(p8(156)),`${grp(p8(156),4).join(' | ')} → <b>${h16(p8(156))}</b>`],
+ ...[31,64,100,300].map(nb)]]
+];
+const sec=document.createElement('section');sec.id='s11';sec.className='sec';
+sec.innerHTML=`<h2>Practice exercises</h2><p class="lead">Six exercises on number conversions. Type your answer, press Check, and open the correction if you are stuck.</p><p><a class="b" style="display:inline-block;text-decoration:none" href="number_systems_exercises_with_correction.pdf" download>Download the printable PDF with corrections</a></p><div id="exs"></div>`;
+const g=document.getElementById('s9');g.parentNode.insertBefore(sec,g);
+const nv=document.querySelector('nav a[href="#s9"]');if(nv)nv.insertAdjacentHTML('beforebegin','<a href="#s11">Exercises</a>');
+const box=sec.querySelector('#exs');
+X.forEach(([t,d,items])=>{
+ const c=document.createElement('div');c.className='card';c.innerHTML=`<h3>${t}</h3><p>${d}</p>`;
+ items.forEach(([q,a,s,m])=>{
+  const r=document.createElement('div');r.style.cssText='padding:8px 0;border-top:1px solid var(--l)';
+  r.innerHTML=`<span class="pill">${q}</span> <input size="14" autocomplete="off" placeholder="Your answer"> <button class="b" style="padding:6px 14px">Check</button> <button class="c" style="margin:0">Correction</button> <span class="fb"></span><div class="det" hidden>${s}</div>`;
+  const i=r.querySelector('input'),f=r.querySelector('.fb'),bt=r.querySelector('.b'),bc=r.querySelector('.c'),dt=r.querySelector('.det');let got=0;
+  const chk=()=>{const v=nz(i.value);if(!v){f.textContent='';return}
+   const ok=v==nz(a);
+   if(ok&&(m!='pad'||i.value.replace(/\s/g,'')==a)){f.innerHTML='<b style="color:var(--ok)">Correct!</b>';if(!got){got=1;if(typeof add=='function')add(10)}}
+   else if(ok)f.innerHTML='<b style="color:var(--bad)">Right value. Now write it on 8 bits.</b>';
+   else f.innerHTML='<b style="color:var(--bad)">Not yet.</b> Try again or open the correction.'};
+  bt.onclick=chk;i.onkeydown=e=>{if(e.key=='Enter')chk()};bc.onclick=()=>{dt.hidden=!dt.hidden};
+  c.append(r)});
+ box.append(c)});
+})();
+</script>
+</body></html>

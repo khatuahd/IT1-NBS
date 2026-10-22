@@ -98,7 +98,7 @@ footer{background:var(--n);color:#b9c4e4;padding:28px 20px;text-align:center;fon
 <h3>Bits and bytes. Each unit is 1024 times the previous one.</h3>
 <table><tr><th>Unit</th><th>Size</th><th>Power of 2</th></tr><tr><td>Bit</td><td>0 or 1</td><td>smallest unit</td></tr><tr><td>Byte (B)</td><td>8 bits</td><td>2³ bits</td></tr><tr><td>Kilobyte (KB)</td><td>1024 bytes</td><td>2¹⁰ B</td></tr><tr><td>Megabyte (MB)</td><td>1024 KB</td><td>2²⁰ B</td></tr><tr><td>Gigabyte (GB)</td><td>1024 MB</td><td>2³⁰ B</td></tr><tr><td>Terabyte (TB)</td><td>1024 GB</td><td>2⁴⁰ B</td></tr></table>
 <div class="card">Try it: <input id="uv" type="number" min="0" value="8" style="width:90px"> <select id="uu"><option>KB</option><option>MB</option><option>GB</option><option>TB</option></select> = <b id="ur"></b></div>
-<h3>Text is binary too</h3><div class="card">Type up to 8 characters: <input id="tx" value="Hi" maxlength="8" style="width:140px"><div id="to"></div><small>Each character has a code (ASCII or Unicode). A = 65 = 01000001. Images and sound are stored as binary data too.</small></div></section>
+<h3>Text is binary too</h3><div class="card">Type up to 8 characters: <input id="tx" value="Hi" maxlength="8" style="width:140px"><div id="to"></div><small>Each character has a code (ASCII or Unicode). A = 65 = 01000001. Images and sound are stored as binary data too. <a href="#s12">See the full ASCII table</a>.</small></div></section>
 
 <section id="s8" class="sec"><h2>Conversion lab</h2>
 <p class="lead">Type a number and watch the method step by step.</p>
@@ -206,7 +206,7 @@ Object.keys(MQ).forEach(id=>{$('#'+id).insertAdjacentHTML('beforeend',`<h3>Stop 
 quiz('m'+id,MQ[id].map(q=>{const o=sh(q.slice(1));return[q[0],o,o.indexOf(q[1]),'Re-read this stop if it was tricky.']}),p=>{if(p>=.66){done.add(id);paint()}return p>=.66?'Stop complete!':'Almost. Re-read this stop and try again.'})});
 </script>
 
-<!-- ===== NEW: Practice exercises section (added before Games, with its own menu link) ===== -->
+<!-- ===== Practice exercises section (added before Games, with its own menu link) ===== -->
 <script>
 (function(){
 const dv=n=>{let x=n,r=[];do{r.push(`${x} ÷ 2 = ${x>>1} r <b>${x%2}</b>`);x>>=1}while(x>0);return r.join('<br>')};
@@ -252,6 +252,82 @@ X.forEach(([t,d,items])=>{
   bt.onclick=chk;i.onkeydown=e=>{if(e.key=='Enter')chk()};bc.onclick=()=>{dt.hidden=!dt.hidden};
   c.append(r)});
  box.append(c)});
+})();
+</script>
+
+<!-- ===== NEW: ASCII section (added before Practice exercises, with its own menu link) ===== -->
+<script>
+(function(){
+const b8=n=>n.toString(2).padStart(8,'0'),hx=n=>n.toString(16).toUpperCase().padStart(2,'0');
+const rng=(a,z)=>Array.from({length:z-a+1},(_,i)=>a+i);
+const G={
+ 'Digits 0–9':rng(48,57),
+ 'Capital letters A–Z':rng(65,90),
+ 'Small letters a–z':rng(97,122),
+ 'Space and symbols':[...rng(32,47),...rng(58,64),...rng(91,96),...rng(123,126)]
+};
+const nm=n=>n==32?'space':E(String.fromCharCode(n));
+const sec=document.createElement('section');sec.id='s12';sec.className='sec';
+sec.innerHTML=`<h2>ASCII: how letters and numbers are stored</h2>
+<p class="lead">A computer only stores 0s and 1s, so every character gets a number, its <b>code</b>. <b>ASCII</b> (American Standard Code for Information Interchange) gives a code to 128 characters: letters, digits, symbols and control codes (0 to 127). It uses 7 bits, stored in one byte (8 bits).</p>
+<div class="g">
+<div class="card"><h3>Digits</h3><p>"0" to "9" have codes <b>48 to 57</b>.</p></div>
+<div class="card"><h3>Capital letters</h3><p>"A" to "Z" have codes <b>65 to 90</b>.</p></div>
+<div class="card"><h3>Small letters</h3><p>"a" to "z" have codes <b>97 to 122</b>.</p></div>
+<div class="card"><h3>Control codes</h3><p>0 to 31 are not printed. Examples: 9 = Tab, 10 = New line, 13 = Enter.</p></div></div>
+<div class="tip"><b class="mas"><i></i><i></i></b><p>The character "5" is <b>not</b> the number 5. The character "5" has the ASCII code 53 (00110101). The number 5 in binary is 00000101.</p></div>
+<h3>The ASCII table. Tap a group.</h3><div class="card"><div id="ag"></div><div id="at" style="max-height:340px;overflow:auto;margin-top:8px"></div></div>
+<h3>Character ↔ code</h3>
+<div class="card"><p>Type one character: <input id="ac" maxlength="1" value="A" style="width:70px"> <span id="ar"></span></p>
+<p>Or type a code (0 to 127): <input id="an" type="number" min="0" max="127" value="97" style="width:90px"> <span id="am"></span></p></div>
+<h3>Capital or small? Only one bit changes.</h3>
+<div class="card"><p>Type a letter: <input id="ak" maxlength="1" value="a" style="width:70px"></p><div id="ao"></div>
+<small>A small letter = capital letter + 32. In binary, the bit worth 32 (the 3rd from the left) goes from 0 to 1.</small></div>
+<h3>Decode a message</h3>
+<div class="card"><p>Convert each code to a letter using the table above, then press Reveal.</p><p class="big" id="ad" style="font-size:20px"></p><button id="ab" class="b">Reveal</button> <span id="aw" class="big"></span></div>
+<h3>ASCII quiz</h3><div id="qa" class="card"></div>
+<p><small>ASCII only covers English letters. To write Arabic, French accents and emojis, computers use <b>Unicode</b>, which keeps the same codes for 0 to 127 and adds many more characters.</small></p>`;
+const ref=document.getElementById('s11')||document.getElementById('s9');ref.parentNode.insertBefore(sec,ref);
+const nv=document.querySelector('nav a[href="#s11"]')||document.querySelector('nav a[href="#s9"]');
+if(nv)nv.insertAdjacentHTML('beforebegin','<a href="#s12">ASCII</a>');
+
+// table with group buttons
+const ag=sec.querySelector('#ag'),at=sec.querySelector('#at'),keys=Object.keys(G);
+H(ag,keys.map(k=>`<button class="c">${k}</button>`).join(''));
+const bs=[...ag.children];
+bs.forEach((b,i)=>b.onclick=()=>{bs.forEach(x=>x.classList.remove('on'));b.classList.add('on');
+ H(at,`<table><tr><th>Char</th><th>Decimal</th><th>Hex</th><th>Binary</th></tr>${G[keys[i]].map(n=>`<tr><td><b>${nm(n)}</b></td><td>${n}</td><td>${hx(n)}</td><td style="font-family:ui-monospace,monospace">${b8(n)}</td></tr>`).join('')}</table>`)});
+bs[1].click();
+
+// char <-> code
+const $a=s=>sec.querySelector(s);
+const c2n=()=>{const v=$a('#ac').value;H($a('#ar'),v?`code <b>${v.charCodeAt(0)}</b> = <b>${b8(v.charCodeAt(0))}</b>${v.charCodeAt(0)>127?' (outside standard ASCII: Unicode)':''}`:'')};
+const n2c=()=>{const n=+$a('#an').value;H($a('#am'),Number.isInteger(n)&&n>=0&&n<=127?(n<32||n==127?`control code (not printable) = <b>${b8(n)}</b>`:`character <b>${nm(n)}</b> = <b>${b8(n)}</b>`):'Enter a whole number from 0 to 127.')};
+$a('#ac').oninput=c2n;$a('#an').oninput=n2c;c2n();n2c();
+
+// case toggle
+const cs=()=>{const v=$a('#ak').value,o=$a('#ao');
+ if(!/^[A-Za-z]$/.test(v))return H(o,'<p>Type one letter from A to Z.</p>');
+ const u=v.toUpperCase().charCodeAt(0),l=u+32,f=n=>b8(n).replace(/^(.{2})(.)/,'$1<span style="color:var(--bad)">$2</span>');
+ H(o,`<table><tr><th>Letter</th><th>Code</th><th>Binary</th></tr><tr><td><b>${String.fromCharCode(u)}</b></td><td>${u}</td><td style="font-family:ui-monospace,monospace">${f(u)}</td></tr><tr><td><b>${String.fromCharCode(l)}</b></td><td>${l} = ${u} + 32</td><td style="font-family:ui-monospace,monospace">${f(l)}</td></tr></table>`)};
+$a('#ak').oninput=cs;cs();
+
+// decode message
+const W=['CAT','DATA','RAM','BYTE','CPU','BIT'];let w;
+const nextW=()=>{w=W[Math.floor(Math.random()*W.length)];H($a('#ad'),[...w].map(c=>c.charCodeAt(0)).join(' · '));$a('#aw').textContent='';$a('#ab').textContent='Reveal'};
+$a('#ab').onclick=()=>{if($a('#aw').textContent){nextW()}else{$a('#aw').textContent=w;$a('#ab').textContent='New word'}};nextW();
+
+// quiz
+quiz('qa',[
+['What is the ASCII code of the capital letter "A"?',['97','65','48'],1,'Capital letters start at 65: A = 65, B = 66, C = 67…'],
+['What is the ASCII code of the small letter "a"?',['97','65','32'],0,'A small letter = capital + 32, so 65 + 32 = 97.'],
+['What is the ASCII code of the character "0"?',['0','48','30'],1,'Digit characters start at 48. "0" = 48, "1" = 49… "9" = 57.'],
+['Which character has the code 67?',['B','C','D'],1,'A = 65, B = 66, C = 67.'],
+['01000010 is the code of which letter?',['B','A','D'],0,'01000010 = 64 + 2 = 66 = B.'],
+['How many bits does standard ASCII use for one character?',['7 (stored in 1 byte)','16','4'],0,'ASCII has 128 codes (2⁷). It is stored in one byte of 8 bits.'],
+['What is the code of "z"?',['90','122','97'],1,'a = 97, so z = 97 + 25 = 122.'],
+['The character "5" and the number 5 are…',['the same thing','different: "5" has code 53','both stored as 5 in ASCII'],1,'ASCII stores the character "5" as 53 (00110101).']
+],fin);
 })();
 </script>
 </body></html>

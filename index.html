@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IT1 · Introduction to Information Technology · NBS</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IT1 · Information Technology 1 · NBS</title>
 <style>
 :root{--n:#06174a;--g:#2fcf9b;--bg:#f4f6fb;--ink:#0f1d44;--m:#56637f;--l:#d9e0ee;--bad:#d93f55;--ok:#16a678}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
@@ -35,17 +35,48 @@ input,select{font:inherit;padding:9px 12px;border:2px solid var(--l);max-width:1
 .ch{background:var(--n);color:#fff;padding:22px;text-align:center}.ch .bits{justify-content:center}.ch .big{color:var(--g);font-size:56px}
 footer{background:var(--n);color:#b9c4e4;padding:28px 20px;text-align:center;font-size:14px}
 #sp{font-size:13px;color:var(--m);white-space:nowrap}
+[hidden]{display:none!important}
+input[type=range]{border:0;padding:0;width:100%;accent-color:var(--n)}
+.ut{display:flex;flex:none}.ut button{border:2px solid var(--n);background:#fff;color:var(--n);font:800 13px system-ui;padding:6px 10px;cursor:pointer}.ut button+button{border-left:0}.ut button.on{background:var(--n);color:#fff}
+code{font-family:ui-monospace,Consolas,monospace;background:#eef2fa;padding:1px 6px}
+.lyr small{color:#b9c4e4;display:block;margin-top:10px}
+.ap{border:0;background:#1b2f6b;color:#fff;font:700 16px system-ui;padding:12px 16px;cursor:pointer}.ap.on{background:var(--g);color:var(--n)}
+.hw2{border:2px solid #1b2f6b;color:#b9c4e4;font:700 15px system-ui;padding:10px 14px;transition:.3s}.hw2.on{background:var(--g);border-color:var(--g);color:var(--n)}
+.osb{background:#2a3f80;color:#fff;font:800 17px system-ui;padding:14px;text-align:center;border:2px solid #2a3f80;transition:.3s}.osb.on{border-color:var(--g);box-shadow:0 0 0 4px rgba(47,207,155,.35)}
+.ram{display:flex;height:36px;border:2px solid var(--n);background:#fff;margin:12px 0 6px}.ram div{height:100%;color:#fff;font:700 12px/32px system-ui;overflow:hidden;white-space:nowrap;padding:0 5px;transition:width .3s}.ram div.cp{box-shadow:inset 0 0 0 4px var(--g)}
+.bar{display:flex;align-items:center;gap:10px;margin:8px 0}.bar b{width:100px;flex:none}.bar div{height:28px;background:var(--n);transition:width .5s;min-width:4px}.bar span{font-weight:800;white-space:nowrap}
+.fo::before,.fl::before{content:"";display:inline-block;margin-right:7px;vertical-align:-2px;flex:none}
+.fo::before{width:17px;height:12px;background:#f2b84b;border-top:3px solid #d99a26}
+.fl::before{width:11px;height:14px;background:#fff;border:2px solid #8a96b3}
+.tree{font:14px/1.7 ui-monospace,Consolas,monospace;background:#fff;border:2px solid var(--l);padding:10px;overflow:auto;max-height:340px}.tree div{white-space:nowrap}.tree .cw{background:#e4fbf3;outline:2px solid var(--g)}.tree .ok{color:var(--ok);font-weight:700}.tree .no{color:var(--m)}
+.tw{border:2px solid var(--n);margin:10px 0}.tt{background:#1b2f6b;color:#fff;font:600 13px system-ui;padding:6px 10px;display:flex;justify-content:space-between}.tt span{opacity:.7}
+.term{background:#0c0c0c;color:#cccccc;font:14px/1.5 ui-monospace,Consolas,monospace;padding:10px 12px;height:320px;overflow:auto;cursor:text}
+.tw.lin .tt{background:#3c3b37}.tw.lin .term{background:#300a24;color:#fff}
+.term .ln{white-space:pre-wrap;word-break:break-word;min-height:1.5em}.term .er{color:#ff8a9a}.term .dr{color:#6ea8ff;font-weight:700}.term .hi{color:var(--g)}
+.term .pu{color:#8ae234;font-weight:700}.term .pp{color:#729fcf;font-weight:700}
+.term .in{display:flex;white-space:pre}.term input{flex:1;background:transparent;border:0;color:inherit;font:inherit;padding:0;outline:none;min-width:40px}
+.lab{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:14px;align-items:start}
+.ms{padding-left:22px}.ms li{margin:6px 0;color:var(--m)}.ms li.ok{color:var(--ok)}.ms li.now{color:var(--ink);font-weight:700}.ms .c{margin:4px 0 0 6px;font-size:13px;padding:2px 10px}
+.ex{border:2px solid var(--n);background:#fff}.ex .tb{display:flex;flex-wrap:wrap;gap:6px;padding:8px;background:#f7f9fd;border-bottom:1px solid var(--l);align-items:center}
+.ex .tb button{border:1px solid var(--l);background:#fff;color:var(--n);padding:6px 10px;font:600 14px system-ui;cursor:pointer}.ex .tb button:hover{border-color:var(--n)}.ex .tb input{padding:5px 8px;font-size:14px;border-width:1px}
+.ex .ad{padding:6px 10px;font:14px ui-monospace,Consolas,monospace;border-bottom:1px solid var(--l);overflow-x:auto;white-space:nowrap}
+.its{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:4px;padding:8px;min-height:140px;align-content:start}
+.it{display:flex;align-items:center;border:2px solid transparent;background:none;padding:8px;text-align:left;font:14px system-ui;cursor:pointer;color:var(--ink);word-break:break-word}.it:hover{background:var(--bg)}.it.sel{background:#e4fbf3;border-color:var(--g)}.it.dz{border:2px dashed var(--n)}
+.esb{padding:6px 10px;border-top:1px solid var(--l);font-size:14px;color:var(--m);min-height:2.2em}
+.rw{font:800 34px ui-monospace,monospace;color:var(--n);letter-spacing:.1em}
+@media(max-width:760px){.lab{grid-template-columns:1fr}}
+@media(max-width:640px){#sp{display:none}.ut button{padding:5px 7px}}
 @media(max-width:640px){.io{grid-template-columns:1fr 1fr}.t{width:40px;font-size:24px}.logo{width:100px}}
 </style></head><body><div id="pb"></div>
-<header><a class="logo" href="#top"><img src="nbs.jpeg" alt="Nouakchott Business School"></a>
-<nav><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><b id="sp">0 / 7 stops</b><b id="xp">0 XP</b></header>
-<main id="top">
+<header><a class="logo" href="#"><img src="nbs.jpeg" alt="Nouakchott Business School"></a>
+<div class="ut"><button id="b1" class="on">Unit 1</button><button id="b2">Unit 2</button></div><nav id="n1"><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s13">Octal &amp; Hex</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><nav id="n2" hidden><a href="#t1">Warm-up</a><a href="#t2">What is an OS</a><a href="#t3">Types</a><a href="#t4">Files</a><a href="#t5">Command line</a><a href="#t6">Manage</a><a href="#t7">Games</a><a href="#t8">Final quiz</a></nav><b id="sp">0 / 8 stops</b><b id="xp">0 XP</b></header>
+<main id="u1">
 <div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Unit 1</small><h1>Introduction to Information Technology</h1>
 <p>Tap the tiles. Every photo, song and message on a computer is built from 0s and 1s. Turn on 64 and 1 to make the letter A.</p>
 <div id="hb" class="bits"></div>
 <p class="ro"><span id="hd">0</span> in decimal · <span id="hs">00000000</span> in binary · character: <span id="hc">—</span></p></div></div>
 
-<section id="rm" class="sec" style="padding-bottom:0"><h2>Your Unit 1 roadmap</h2><p class="lead">Seven stops cover the whole unit. Answer 2 of 3 questions right at the end of a stop to turn it green.</p><div id="rmap" class="g"></div></section>
+<section id="rm" class="sec" style="padding-bottom:0"><h2>Your Unit 1 roadmap</h2><p class="lead">Eight stops cover the whole unit. Answer 2 of 3 questions right at the end of a stop to turn it green.</p><div id="rmap" class="g"></div></section>
 <section id="s1" class="sec"><h2>Warm-up</h2><p class="lead">Five questions to see what you already know. A wrong answer is part of the game.</p>
 <tip>Hi, I’m Nuo! I’ll explain every answer as we go. Earn XP at the top right.</tip><div id="q1" class="card"></div></section>
 
@@ -108,7 +139,54 @@ footer{background:var(--n);color:#b9c4e4;padding:28px 20px;text-align:center;fon
 <div class="card"><input id="bn" value="101010" maxlength="16"> <span id="bc"></span><div id="bo"></div></div>
 <details class="card"><summary><b>Hexadecimal reference table</b></summary><div id="ht"></div></details>
 <tip>Binary to octal: group bits by 3 from the right. Binary to hex: group by 4. Add zeros on the left if a group is short.</tip>
-<p>Practice: convert 37, 50, 60, 64 and your age to binary, then check with the lab. Answers for the first four: 100101, 110010, 111100, 1000000.</p></section>
+<p>Practice: convert 37, 50, 60, 64 and your age to binary, then check with the lab. Answers for the first four: 100101, 110010, 111100, 1000000.</p>
+<p><a href="#s13">Next: octal and hexadecimal, why and how →</a></p></section>
+<section id="s13" class="sec"><h2>Octal and hexadecimal</h2>
+<p class="lead">Binary is perfect for machines but hard for people: long and easy to misread. <b>Octal</b> (base 8) and <b>hexadecimal</b> (base 16) are <b>short ways to write binary</b>.</p>
+<h3>Why do we need them?</h3>
+<div class="g"><div class="card"><h3>Shorter</h3><p>One octal digit replaces 3 bits. One hex digit replaces 4 bits, so one byte (8 bits) is just 2 hex digits.</p></div>
+<div class="card"><h3>Fewer mistakes</h3><p><span class="pill">1101011010101111</span> is easy to misread. <span class="pill">D6AF</span> is the same number, and much easier.</p></div>
+<div class="card"><h3>Easy to convert</h3><p>8 = 2³ and 16 = 2⁴. That is why converting between binary, octal and hex is just grouping bits.</p></div></div>
+<h3>Same number, four ways. Type a number.</h3>
+<div class="card"><input id="yfn" type="number" min="0" max="65535" value="54959"> <span id="yfc"></span><div id="yfo"></div></div>
+<h3>Where you meet them</h3>
+<div class="g"><div class="card"><h3>Web colors</h3><p><span class="pill">#FF0000</span> is red: FF red, 00 green, 00 blue. Each color is one byte, written as 2 hex digits.</p></div>
+<div class="card"><h3>Network cards</h3><p>A MAC address like <span class="pill">00:1A:2B:3C:4D:5E</span> is 6 bytes written in hex.</p></div>
+<div class="card"><h3>Memory and errors</h3><p>Memory addresses and error codes are shown in hex. The prefix <b>0x</b> means “hexadecimal”: 0x1F = 31.</p></div>
+<div class="card"><h3>Linux rights</h3><p><span class="pill">chmod 755</span> is octal: each digit is 3 bits, r w x. You will see it in Unit 2.</p></div></div>
+<h3>Try it: colors are hexadecimal. Move the sliders.</h3>
+<div class="card"><div id="ycp"></div><div class="g" style="margin-top:10px;align-items:center"><div><p><b>Red</b> <input id="yr" type="range" min="0" max="255" value="6"></p><p><b>Green</b> <input id="yg" type="range" min="0" max="255" value="23"></p><p><b>Blue</b> <input id="yb" type="range" min="0" max="255" value="74"></p></div><div><div id="ysw" style="height:110px;border:2px solid var(--l)"></div><p class="big" id="yhx" style="text-align:center;margin:8px 0 0"></p></div></div><div id="yct"></div></div>
+<h3>The digits</h3>
+<div class="g"><div class="card"><h3>Octal: 8 digits</h3><p><span class="pill">0 1 2 3 4 5 6 7</span></p><small>After 7 comes 10₈ (= 8).</small></div>
+<div class="card"><h3>Hexadecimal: 16 digits</h3><p><span class="pill">0 1 2 3 4 5 6 7 8 9</span> then letters for 10 to 15:</p><p><span class="pill">A = 10</span><span class="pill">B = 11</span><span class="pill">C = 12</span><span class="pill">D = 13</span><span class="pill">E = 14</span><span class="pill">F = 15</span></p><small>After F comes 10₁₆ (= 16).</small></div></div>
+
+<h3>Method 1. Decimal to octal or hexadecimal: divide by 8 or 16</h3>
+<p>It is the same method as decimal to binary, but you divide by <b>8</b> (octal) or <b>16</b> (hexadecimal). Keep dividing the quotient until it is 0, then read the remainders <b>from bottom to top</b>. In hex, a remainder from 10 to 15 is written A to F.</p>
+<div class="card"><div id="y1k"></div><input id="y1n" type="number" min="0" max="1000000" value="52"> <span id="y1e"></span><div id="y1o"></div><button id="y1s" class="b">Next step</button><button id="y1a" class="b">Show all</button></div>
+
+<h3>Method 2. Octal or hexadecimal to decimal: multiply by powers</h3>
+<p>Give each digit its position from the right: 0, 1, 2… Multiply each digit by <b>8</b> or <b>16</b> to the power of its position, then add everything. Example: 64₈ = 6 × 8¹ + 4 × 8⁰ = 48 + 4 = <b>52</b>.</p>
+<div class="card"><div id="y2k"></div><input id="y2n" value="64" maxlength="6" style="width:130px;text-transform:uppercase"> <span id="y2e"></span><div id="y2o"></div></div>
+
+<h3>Method 3. Binary to octal or hexadecimal: group the bits</h3>
+<p>Group the bits from the <b>right</b>: groups of <b>3</b> for octal, groups of <b>4</b> for hexadecimal. Add zeros on the left if the last group is short. Then write the value of each group.</p>
+<div class="card"><input id="y3n" value="1011101111" maxlength="24" style="width:260px;font-family:ui-monospace,monospace"> <span id="y3e"></span><div id="y3o"></div></div>
+<h3>And back: octal or hexadecimal to binary</h3>
+<p>Replace each octal digit by its <b>3</b> bits, or each hex digit by its <b>4</b> bits.</p>
+<div class="card"><div id="y4k"></div><input id="y4n" value="29D" maxlength="6" style="width:130px;text-transform:uppercase"> <span id="y4e"></span><div id="y4o"></div></div>
+
+<h3>Which method should I use?</h3>
+<div style="overflow-x:auto"><table><tr><th>From</th><th>To</th><th>Method</th></tr>
+<tr><td>Decimal</td><td>Octal or hex</td><td>Divide by 8 or 16, read the remainders bottom to top</td></tr>
+<tr><td>Octal or hex</td><td>Decimal</td><td>Multiply each digit by its power of 8 or 16, then add</td></tr>
+<tr><td>Binary</td><td>Octal or hex</td><td>Group the bits by 3 or 4 from the right</td></tr>
+<tr><td>Octal or hex</td><td>Binary</td><td>Each digit becomes 3 or 4 bits</td></tr>
+<tr><td>Octal</td><td>Hex</td><td>Go through binary: octal → binary → groups of 4</td></tr></table></div>
+<tip>Two roads, same answer. To convert 52 to hex you can divide by 16 (52 = 3 × 16 + 4, so 34₁₆), or go through binary: 52 = 110100 → 0011 | 0100 → 34₁₆. Pick the road you find easier and use the other one to check.</tip>
+<h3>Practice: octal and hexadecimal</h3>
+<div id="ypx" class="card"><p>Type your answer, press Check, and open the correction if you are stuck. The first examples come from the course slides.</p></div>
+</section>
+
 
 <section id="s9" class="sec"><h2>Games</h2>
 <h3>Binary challenge. Make the target number with the tiles.</h3>
@@ -118,12 +196,107 @@ footer{background:var(--n);color:#b9c4e4;padding:28px 20px;text-align:center;fon
 
 <section id="s10" class="sec"><h2>Recap and final quiz</h2>
 <h3>10 key terms. Tap one.</h3><div id="kt" class="card"></div>
-<h3>Final quiz</h3><div id="q2" class="card"></div></section>
+<h3>Final quiz</h3><div id="q2" class="card"></div>
+<p><a class="b" style="display:inline-block;text-decoration:none" href="#u2">Next: Unit 2 · Operating Systems →</a></p></section>
 </main>
-<footer>IT1 · Unit 1 · Nouakchott Business School · Course support material</footer>
+<main id="u2" hidden>
+<div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Unit 2</small><h1>Operating Systems</h1>
+<p>The operating system stands between your apps and the hardware. Tap an app to see which parts of the computer the OS hands to it.</p>
+<div class="lyr"><small>Applications</small><div id="zha" class="bits" style="margin:6px 0 10px"></div><div id="zhos" class="osb">Operating system · Windows, macOS, Linux…</div><small>Hardware</small><div id="zhh" class="bits" style="margin:6px 0 12px"></div></div>
+<p class="ro" id="zhr">Tap an app above.</p></div></div>
+
+<section class="sec" style="padding-bottom:0"><h2>Your Unit 2 roadmap</h2><p class="lead">Five stops cover the whole unit. Answer 2 of 3 questions right at the end of a stop to turn it green.</p><div id="zrm" class="g"></div></section>
+
+<section id="t1" class="sec"><h2>Warm-up</h2><p class="lead">Five quick questions about the software that runs every computer.</p>
+<tip>Welcome back, it’s Nuo! In Unit 1 you met hardware and software. Now meet the most important software of all: the operating system.</tip><div id="zq0" class="card"></div></section>
+
+<section id="t2" class="sec"><h2>What is an operating system?</h2>
+<p class="lead">An OS is the software that <b>manages hardware and software resources</b> and provides services for computer programs.</p>
+<div class="g"><div class="card"><h3>Manages resources</h3><p>Shares the CPU, memory and storage between programs.</p></div><div class="card"><h3>Provides a user interface</h3><p>Gives you a way to talk to the computer: windows and icons, or typed commands.</p></div><div class="card"><h3>Security and multitasking</h3><p>Protects your files with accounts and passwords, and runs many programs at once.</p></div></div>
+<tip>Think of the OS as a school principal. Teachers (programs) need classrooms (memory), time slots (CPU time) and keys (permissions). The principal shares them out so everyone can work.</tip>
+<h3>What the OS manages. Tap a job.</h3><div id="zor" class="card"></div>
+<h3>Try it: multitasking. Open and close apps.</h3>
+<div class="card"><div id="zmb"></div><div id="zmr" class="ram"></div><p id="zms" class="fb"></p><p id="zmc"></p><small>The OS switches the CPU between open programs many times per second, so they all seem to run at the same time. It also gives each one a part of the RAM.</small></div>
+<h3>Game: which job of the OS is this?</h3><div id="zg1" class="card"></div></section>
+
+<section id="t3" class="sec"><h2>Major types of operating systems</h2>
+<p class="lead">On computers, the big three are <b>Windows</b>, <b>macOS</b> and <b>Linux</b>, plus Google’s <b>ChromeOS</b>. On phones, <b>Android</b> and <b>iOS</b>.</p>
+<div class="g"><div class="card"><h3>Windows</h3><p>Widely used in businesses and schools.</p><small>Desktop: XP, Vista, 7, 10, 11<br>Servers: Windows Server 2003, 2008, 2019</small></div><div class="card"><h3>macOS</h3><p>Known for its clean design, used mainly by creative professionals.</p><small>Example: macOS Ventura</small></div><div class="card"><h3>Linux</h3><p>Open source and customizable, popular for servers and developers.</p><small>Examples: Ubuntu, Debian, Fedora</small></div><div class="card"><h3>ChromeOS</h3><p>Made by Google for Chromebooks.</p><small>Light and web-based</small></div></div>
+<h3>Meet each OS. Tap one.</h3><div id="zty" class="card"></div>
+<tip><b>Open source</b> means the source code is public: anyone can read it, change it and share it. Linux is open source. Windows and macOS are not.</tip>
+<h3>Who uses what? Share of use worldwide</h3>
+<div class="card"><div id="zsk"></div><div id="zsc"></div><small>Source: Statcounter Global Stats, December 2024 (figures from the course slides).</small></div>
+<h3>Game: Windows, macOS, Linux or ChromeOS?</h3><div id="zg2" class="card"></div></section>
+
+<section id="t4" class="sec"><h2>Files and folders</h2>
+<p class="lead">The OS organizes everything you save into <b>files</b> and <b>folders</b> (also called <b>directories</b>).</p>
+<div class="g"><div class="card"><h3>File</h3><p>Holds data: a document, an image, a song, a program.</p><small>Each file has a <b>size</b> (10 KB, 5 MB…), a <b>type</b> (.txt, .docx, .exe…) and <b>rights</b> (r, w, x).</small></div><div class="card"><h3>Folder (directory)</h3><p>A container that groups files, and other folders, in a tree.</p><small>Each folder has a <b>size</b> (1 GB, 500 MB…) and <b>rights</b> (r, w, x).</small></div></div>
+<h3>What type of file is it? Tap an extension.</h3><div id="zxt" class="card"></div>
+<h3>Paths: the address of a file</h3>
+<div class="g"><div class="card"><h3>Windows</h3><p>Starts with a drive letter and uses <b>backslashes \</b></p><code>C:\Users\Ali\Pictures\Vacation.jpg</code></div><div class="card"><h3>Linux and macOS</h3><p>Starts at the root <b>/</b> and uses <b>forward slashes /</b></p><code>/home/user/documents/vacation.jpg</code></div></div>
+<h3>Find the path. Tap a folder or a file in the tree.</h3>
+<div class="lab"><div id="zpt" class="tree"></div><div id="zpo" class="card" style="margin:0"></div></div>
+<h3>Rights: read, write, execute. Tap the tiles.</h3>
+<div class="card"><div id="zrk"></div><div id="zrb" class="bits"></div><div id="zro"></div></div>
+<tip>Each right is one bit: r = 4, w = 2, x = 1. So rw- is 110 in binary, which is 6. On Linux, rights are given as three digits, for the owner, the group and everyone else. 755 means rwx r-x r-x. Unit 1 binary at work!</tip>
+<h3>Game: what kind of file is it?</h3><div id="zg3" class="card"></div></section>
+
+<section id="t5" class="sec"><h2>The command line interface (CLI)</h2>
+<p class="lead">The CLI lets you talk to the OS by <b>typing text commands</b> instead of clicking.</p>
+<div class="g"><div class="card"><h3>GUI</h3><p>Graphical User Interface: windows, icons, menus and the mouse.</p></div><div class="card"><h3>CLI</h3><p>Command Line Interface: you type a command and press Enter.</p></div></div>
+<h3>Why learn the CLI?</h3>
+<div class="g"><div class="card"><h3>Faster</h3><p>One line like <code>mkdir G1 G2 G3 G4</code> creates four folders at once.</p></div><div class="card"><h3>Troubleshooting</h3><p>Powerful tools to find and fix problems, even when the GUI is broken.</p></div><div class="card"><h3>Automation</h3><p>Save commands in a script and run them again and again.</p></div></div>
+<h3>Read the prompt</h3>
+<div class="g"><div class="card"><h3>Windows: Command Prompt</h3><p><code>C:\NBS&gt;</code></p><p>You are on drive C, inside the folder NBS. Open it: Windows key, type <b>cmd</b>, press Enter.</p></div><div class="card"><h3>Linux: Terminal</h3><p><code>student@nbs:~/NBS$</code></p><p>User <b>student</b> on computer <b>nbs</b>, inside NBS in the home folder (~). Open it with Ctrl + Alt + T on Ubuntu.</p></div></div>
+<h3>Command-line basics</h3>
+<div style="overflow-x:auto"><table><tr><th>Task</th><th>Windows (CMD)</th><th>Linux / macOS</th></tr>
+<tr><td>List the contents of a folder</td><td><code>dir</code></td><td><code>ls</code></td></tr>
+<tr><td>Go into a folder</td><td><code>cd NBS</code></td><td><code>cd NBS</code></td></tr>
+<tr><td>Go up to the parent folder</td><td><code>cd..</code></td><td><code>cd ..</code></td></tr>
+<tr><td>Show where you are</td><td><code>cd</code></td><td><code>pwd</code></td></tr>
+<tr><td>Create a folder</td><td><code>mkdir test</code></td><td><code>mkdir test</code></td></tr>
+<tr><td>Create a file</td><td><code>echo hello &gt; a.txt</code></td><td><code>touch a.txt</code></td></tr>
+<tr><td>Copy a file</td><td><code>copy a.txt G1</code></td><td><code>cp a.txt G1</code></td></tr>
+<tr><td>Move or rename</td><td><code>move a.txt G2</code></td><td><code>mv a.txt G2</code></td></tr>
+<tr><td>Delete a file</td><td><code>del a.txt</code></td><td><code>rm a.txt</code></td></tr>
+<tr><td>Delete an empty folder</td><td><code>rmdir test</code></td><td><code>rmdir test</code></td></tr>
+<tr><td>Show a file</td><td><code>type a.txt</code></td><td><code>cat a.txt</code></td></tr>
+<tr><td>Clear the screen</td><td><code>cls</code></td><td><code>clear</code></td></tr></table></div>
+<h3>Terminal lab: complete the missions</h3>
+<p>This is a practice terminal. Type real commands, press Enter, and watch the folder tree change. Choose Windows or Linux.</p>
+<div id="zk1o"></div>
+<div class="lab"><div><div id="zk1"></div></div><div><div class="card" style="margin:10px 0"><h3>Missions</h3><ol id="zk1m" class="ms"></ol><button id="zk1r" class="b">Reset the lab</button></div><b>Your disk</b><div id="zk1t" class="tree"></div></div></div>
+<tip>Stuck? Type <b>help</b> to see every command. Use the ↑ arrow key to repeat the last command.</tip></section>
+
+<section id="t6" class="sec"><h2>Managing files and folders</h2>
+<p class="lead">You can manage files in two ways: with the mouse in a <b>GUI</b>, or with commands in a <b>CLI</b>.</p>
+<div class="g"><div class="card"><h3>Create</h3><p><b>GUI:</b> right-click › New › Folder</p><p><b>CLI:</b> <code>mkdir name</code></p></div><div class="card"><h3>Move</h3><p><b>GUI:</b> drag and drop, or Ctrl + X then Ctrl + V</p><p><b>CLI:</b> <code>move</code> / <code>mv</code></p></div><div class="card"><h3>Copy</h3><p><b>GUI:</b> Ctrl + C then Ctrl + V</p><p><b>CLI:</b> <code>copy</code> / <code>cp</code></p></div><div class="card"><h3>Delete</h3><p><b>GUI:</b> select, then press Delete</p><p><b>CLI:</b> <code>del</code> (Windows), <code>rm</code> (Linux)</p></div><div class="card"><h3>List</h3><p><b>GUI:</b> open the folder in Explorer or Finder</p><p><b>CLI:</b> <code>dir</code> (Windows), <code>ls</code> (Linux, macOS)</p></div></div>
+<tip>Careful: a file deleted in the GUI usually goes to the Recycle Bin. A file deleted with <b>del</b> or <b>rm</b> is gone. There is no Recycle Bin in the CLI.</tip>
+<h3>Lab: GUI and CLI on the same disk</h3>
+<p>The file explorer (GUI) and the terminal (CLI) share the same drive. Make a change in one and see it appear in the other. In the explorer: tap to select, tap again to open a folder, drag a file onto a folder to move it.</p>
+<div id="zk2o"></div>
+<div class="lab"><div>
+<div class="ex"><div class="tb"><button id="zeu">↑ Up</button><input id="zen" placeholder="Name" size="13" autocomplete="off"><button id="zenf">New folder</button><button id="zenl">New file</button><button id="zern">Rename</button><button id="zedl">Delete</button><button id="zecx">Cut</button><button id="zepv">Paste</button></div><div id="zea" class="ad"></div><div id="zei" class="its"></div><div id="zes" class="esb"></div></div>
+<div id="zk2"></div></div>
+<div class="card" style="margin:0"><h3>Challenge: build this tree</h3><p><small>Use the GUI, the CLI, or both. Write <b>_</b> instead of spaces in names.</small></p><div id="zk2c" class="tree"></div><p id="zk2p" class="fb"></p><button id="zk2r" class="b">Reset the drive</button></div></div>
+<tip>Activity, 5 minutes: on your own PC, create and delete folders and files, first with the File Explorer, then with the Command Prompt.</tip></section>
+
+<section id="t7" class="sec"><h2>Games</h2>
+<h3>Command drill. Type the command for the task.</h3>
+<div class="card"><div id="zdo"></div><h3 id="zdq"></h3><input id="zda" placeholder="Type the command" autocomplete="off" autocapitalize="off" spellcheck="false" style="font-family:ui-monospace,monospace"> <button id="zdk" class="b">Check</button><p id="zdm" class="fb"></p></div>
+<h3>Windows, Linux or both?</h3><div id="zg4" class="card"></div></section>
+
+<section id="t8" class="sec"><h2>Recap and final quiz</h2>
+<h3>Key takeaways</h3>
+<div class="g"><div class="card"><p>The OS is essential for managing hardware and software.</p></div><div class="card"><p>Windows, macOS and Linux are the most common OS types.</p></div><div class="card"><p>Basic OS concepts include files and directories.</p></div><div class="card"><p>The CLI provides powerful file management capabilities.</p></div></div>
+<h3>10 key terms. Tap one.</h3><div id="zkt" class="card"></div>
+<h3>Final quiz</h3><div id="zq1" class="card"></div>
+<p><a class="b" style="display:inline-block;text-decoration:none" href="#u1">← Back to Unit 1</a></p></section>
+</main>
+<footer>IT1 · Information Technology 1 · Nouakchott Business School · Course support material</footer>
 <script>
 const $=s=>document.querySelector(s),H=(e,h)=>e.innerHTML=h,sh=a=>[...a].sort(()=>Math.random()-.5),E=c=>c.replace(/[<&]/g,m=>m=='<'?'&lt;':'&amp;');
-let xp=0;const add=n=>{xp+=n;$('#xp').textContent=xp+' XP'};
+let xp=0,cur=1;const PR={1:0,2:0},PT={1:8,2:5},spU=()=>$('#sp').textContent=PR[cur]+' / '+PT[cur]+' stops';const add=n=>{xp+=n;$('#xp').textContent=xp+' XP'};
 document.querySelectorAll('tip').forEach(e=>e.outerHTML=`<div class="tip"><b class="mas"><i></i><i></i></b><p>${e.innerHTML}</p></div>`);
 onscroll=()=>$('#pb').style.width=100*scrollY/(document.documentElement.scrollHeight-innerHeight)+'%';
 function quiz(id,Q,end){let i=0,s=0;const el=$('#'+id),go=()=>{
@@ -185,8 +358,8 @@ quiz('q2',[
 ['What is 11110000 in hexadecimal?',['0F','FF','F0','10'],2,'1111 = F and 0000 = 0, so F0.'],
 ['What does cache memory do?',['Stores files forever','Keeps frequently used data close to the CPU','Prints documents'],1,'Cache is faster than RAM, so the CPU waits less.']],fin);
 
-const ST=[['s2','1. What is IT?','Data, information, four jobs'],['s3','2. The computer','Hardware, software, five parts'],['s4','3. The CPU','What it is and how it works'],['s5','4. Memory','RAM, ROM, cache, registers'],['s6','5. Software','System and application'],['s7','6. Binary','Bits, bytes, ASCII'],['s8','7. Number systems','Decimal, binary, octal, hex']],done=new Set();
-const paint=()=>{H($('#rmap'),ST.map(x=>`<a class="card" href="#${x[0]}" style="text-decoration:none;color:inherit;${done.has(x[0])?'border-color:var(--ok);background:#e4fbf3':''}"><b>${done.has(x[0])?'✓ ':''}${x[1]}</b><br><small>${x[2]}</small></a>`).join(''));$('#sp').textContent=done.size+' / 7 stops'};paint();
+const ST=[['s2','1. What is IT?','Data, information, four jobs'],['s3','2. The computer','Hardware, software, five parts'],['s4','3. The CPU','What it is and how it works'],['s5','4. Memory','RAM, ROM, cache, registers'],['s6','5. Software','System and application'],['s7','6. Binary','Bits, bytes, ASCII'],['s8','7. Number systems','Decimal, binary, conversion lab'],['s13','8. Octal and hex','Why we use them, how to convert']],done=new Set();
+const paint=()=>{H($('#rmap'),ST.map(x=>`<a class="card" href="#${x[0]}" style="text-decoration:none;color:inherit;${done.has(x[0])?'border-color:var(--ok);background:#e4fbf3':''}"><b>${done.has(x[0])?'✓ ':''}${x[1]}</b><br><small>${x[2]}</small></a>`).join(''));PR[1]=done.size;spU()};paint();
 $('#di').onclick=()=>H($('#do'),'<b>Information:</b> Monday’s forecast is sunny, 36°C. Same facts, now they mean something.');
 pick('us',[['School','Student records, online lessons and exam results are stored and shared with IT.'],['Hospital','Patient files, appointment booking and medical scans are handled by IT systems.'],['Bank','Balances, card payments and transfers are processed in seconds by IT.'],['Shop','Stock lists, barcode scanners and card machines all rely on IT.']]);
 pick('hw',[['Input','<b>Gets data into the computer.</b><br>Restaurant: the waiter who takes your order.<br><small>Keyboard, mouse, touchpad, touch screen, scanner, barcode reader, joystick, trackball</small>'],['CPU','<b>The brain.</b> Calculates, decides and controls the other parts.<br>Restaurant: the chef who cooks the order.<br><small>A small chip with an ALU, a control unit and registers</small>'],['RAM','<b>Short-term workspace.</b> Holds what is in use now. Fast, but emptied when power goes off.<br>Restaurant: the kitchen counter.<br><small>RAM sticks in a PC or laptop</small>'],['Storage','<b>Long-term memory.</b> Keeps files, photos and programs when the computer is off. Bigger than RAM, slower.<br>Restaurant: the pantry and fridge.<br><small>HDD, SSD, USB flash drive, SD card, CD/DVD, Blu-ray, magnetic tape</small>'],['Output','<b>Shows the result</b> as words, pictures or sound.<br>Restaurant: the finished dish at your table.<br><small>Monitor, printer, speakers</small>']]);
@@ -201,7 +374,8 @@ s4:[["What is the correct order of the instruction cycle?","Fetch, decode, execu
 s5:[["Which memory is the fastest and smallest?","Register","RAM","ROM"],["Where are running programs and data held?","RAM","ROM","A CD"],["After you switch the computer off, saved files are still in…","Storage (SSD or HDD)","RAM","Cache"]],
 s6:[["Windows and Linux are…","System software","Application software","Hardware"],["Which one is application software?","WhatsApp","Linux","Windows"],["Software is…","A set of instructions for the computer","A part you can touch","A kind of cable"]],
 s7:[["How many bits are in one byte?","8","4","10"],["Computers use 0 and 1 because electronics have two states:","On and off","Hot and cold","Fast and slow"],["How many bytes are in 1 KB?","1024","1000","100"]],
-s8:[["What is binary 101 in decimal?","5","3","7"],["What is decimal 6 in binary?","110","101","011"],["To convert binary to hex, you group the bits in sets of…","4","3","8"]]};
+s8:[["What is binary 101 in decimal?","5","3","7"],["What is decimal 6 in binary?","110","101","011"],["To convert binary to hex, you group the bits in sets of…","4","3","8"]],
+s13:[["Why do we use octal and hexadecimal?","They are short ways to write binary","Computers only understand hex","They make files smaller"],["One hexadecimal digit replaces how many bits?","4","3","8"],["To convert 52 to octal, you…","divide by 8 and read the remainders bottom to top","divide by 2 three times","multiply by 8"]]};
 Object.keys(MQ).forEach(id=>{$('#'+id).insertAdjacentHTML('beforeend',`<h3>Stop challenge: 3 questions</h3><div id="m${id}" class="card"></div>`);
 quiz('m'+id,MQ[id].map(q=>{const o=sh(q.slice(1));return[q[0],o,o.indexOf(q[1]),'Re-read this stop if it was tricky.']}),p=>{if(p>=.66){done.add(id);paint()}return p>=.66?'Stop complete!':'Almost. Re-read this stop and try again.'})});
 </script>
@@ -328,6 +502,468 @@ quiz('qa',[
 ['What is the code of "z"?',['90','122','97'],1,'a = 97, so z = 97 + 25 = 122.'],
 ['The character "5" and the number 5 are…',['the same thing','different: "5" has code 53','both stored as 5 in ASCII'],1,'ASCII stores the character "5" as 53 (00110101).']
 ],fin);
+})();
+</script>
+
+<!-- ===== Octal and hexadecimal section (Unit 1) ===== -->
+<script>
+(function(){
+const HX=n=>n.toString(16).toUpperCase(),SUB={8:'₈',16:'₁₆',2:'₂',10:'₁₀'},SUP=n=>String(n).replace(/\d/g,d=>'⁰¹²³⁴⁵⁶⁷⁸⁹'[d]);
+const sp4=b=>b.replace(/\B(?=(\d{4})+$)/g,' ');
+const chips=(id,I,cb)=>{pick(id,I,x=>{cb(x);return''});$('#'+id).lastChild.hidden=true};
+
+/* same number, four ways */
+const fw=()=>{const n=+$('#yfn').value,o=$('#yfo');if(!(Number.isInteger(n)&&n>=0&&n<=65535))return H(o,'<p>Enter a whole number from 0 to 65535.</p>');
+ const b=n.toString(2),oc=n.toString(8),h=HX(n),r=(t,v,d)=>`<tr><td>${t}</td><td style="font:800 20px ui-monospace,monospace;color:var(--n)">${v}</td><td>${d}</td></tr>`;
+ H(o,`<table style="margin-top:10px"><tr><th>System</th><th>Writing</th><th>Digits</th></tr>${r('Decimal (base 10)',n,String(n).length)}${r('Binary (base 2)',sp4(b),b.length)}${r('Octal (base 8)',oc,oc.length)}${r('Hexadecimal (base 16)',h,h.length)}</table><p>Binary needs <b>${b.length}</b> digits. Hexadecimal needs only <b>${h.length}</b>.</p>`)};
+$('#yfn').oninput=fw;ex('yfc',[255,1000,54959,65535],'#yfn',fw);fw();
+
+/* colors */
+const PC=[['NBS navy',6,23,74],['NBS green',47,207,155],['Red',255,0,0],['Green',0,255,0],['Blue',0,0,255],['White',255,255,255],['Black',0,0,0]];
+const col=()=>{const v=['#yr','#yg','#yb'].map(s=>+$(s).value),hx=v.map(x=>HX(x).padStart(2,'0'));
+ $('#ysw').style.background=`rgb(${v})`;$('#yhx').textContent='#'+hx.join('');
+ H($('#yct'),`<table style="margin-top:10px"><tr><th>Color</th><th>Decimal</th><th>Binary (1 byte)</th><th>Hex (2 digits)</th></tr>${['Red','Green','Blue'].map((c,i)=>{const b=v[i].toString(2).padStart(8,'0');return`<tr><td>${c}</td><td>${v[i]}</td><td style="font-family:ui-monospace,monospace">${b.slice(0,4)} ${b.slice(4)}</td><td><b>${b.slice(0,4)}→${hx[i][0]} &nbsp; ${b.slice(4)}→${hx[i][1]}</b> = <span class="big" style="font-size:20px">${hx[i]}</span></td></tr>`}).join('')}</table>`)};
+['#yr','#yg','#yb'].forEach(s=>$(s).oninput=col);
+chips('ycp',PC,x=>{$('#yr').value=x[1];$('#yg').value=x[2];$('#yb').value=x[3];col()});
+
+/* method 1: divide */
+let b1=8,rows=[],shown=0,n1=0;
+const d1=()=>{const o=$('#y1o');if(!rows.length)return H(o,'<p>Enter a whole number from 0 to 1 000 000.</p>');
+ const res=rows.map(r=>HX(r[2])).reverse().join(''),all=shown>=rows.length;
+ H(o,`<table style="margin-top:10px"><tr><th>Division</th><th>Quotient</th><th>Remainder</th></tr>${rows.slice(0,shown).map(([x,q,r])=>`<tr><td>${x} ÷ ${b1}</td><td>${q}</td><td class="r">${r>9?`${r} → ${HX(r)}`:r}</td></tr>`).join('')}</table>
+ ${all?`<p>The quotient is 0, so we stop. Read the remainders <b>from bottom to top</b>: <span class="big">${res}</span>${SUB[b1]}</p><p><small>So (${n1})₁₀ = (${res})${SUB[b1]}. Check: ${[...res].map((d,i)=>`${/[A-F]/.test(d)?parseInt(d,16):d}×${b1}${SUP(res.length-1-i)}`).join(' + ')} = ${n1}</small></p>`:`<p><small>${shown} of ${rows.length} steps. Press Next step.</small></p>`}`);
+ $('#y1s').disabled=all};
+const m1=()=>{n1=+$('#y1n').value;rows=[];if(Number.isInteger(n1)&&n1>=0&&n1<=1e6){let x=n1;do{rows.push([x,Math.floor(x/b1),x%b1]);x=Math.floor(x/b1)}while(x>0)}shown=Math.min(1,rows.length);d1()};
+$('#y1n').oninput=m1;$('#y1s').onclick=()=>{shown++;d1()};$('#y1a').onclick=()=>{shown=rows.length;d1()};
+const e1=()=>{H($('#y1e'),'');const L=b1==8?[52,136,416]:[479,894,5386];L.forEach(n=>$('#y1e').insertAdjacentHTML('beforeend',`<button class="c">${n}</button>`));[...$('#y1e').children].forEach(b=>b.onclick=()=>{$('#y1n').value=b.textContent;m1()})};
+chips('y1k',[['To octal (÷ 8)',8],['To hexadecimal (÷ 16)',16]],x=>{b1=x[1];e1();m1()});
+
+/* method 2: powers */
+let b2=8;
+const m2=()=>{const s=$('#y2n').value.trim().toUpperCase(),o=$('#y2o'),ok=b2==8?/^[0-7]{1,6}$/:/^[0-9A-F]{1,6}$/;
+ if(!ok.test(s))return H(o,`<p>Type ${b2==8?'only the digits 0 to 7':'digits 0 to 9 and letters A to F'} (up to 6).</p>`);
+ const D=[...s].map(c=>parseInt(c,16)),P=D.map((_,i)=>D.length-1-i),V=D.map((d,i)=>d*b2**P[i]),t=V.reduce((a,b)=>a+b,0);
+ H(o,`<div style="overflow-x:auto;margin-top:10px"><table><tr><th>Digit</th>${[...s].map(c=>`<td><b>${c}</b>${/[A-F]/.test(c)?` = ${parseInt(c,16)}`:''}</td>`).join('')}</tr><tr><th>Power</th>${P.map(p=>`<td>${b2}<sup>${p}</sup> = ${b2**p}</td>`).join('')}</tr><tr><th>Value</th>${V.map(v=>`<td>${v}</td>`).join('')}</tr></table></div>
+ <p>${D.map((d,i)=>`${d} × ${b2}${SUP(P[i])}`).join(' + ')}<br>= ${V.join(' + ')} = <span class="big">${t}</span></p><p><small>So (${s})${SUB[b2]} = (${t})₁₀</small></p>`)};
+$('#y2n').oninput=m2;
+const e2=()=>{H($('#y2e'),'');(b2==8?['64','210','755']:['FF','1DF','37E']).forEach(n=>$('#y2e').insertAdjacentHTML('beforeend',`<button class="c">${n}</button>`));[...$('#y2e').children].forEach(b=>b.onclick=()=>{$('#y2n').value=b.textContent;m2()})};
+chips('y2k',[['From octal',8],['From hexadecimal',16]],x=>{b2=x[1];$('#y2n').value=b2==8?'64':'1DF';e2();m2()});
+
+/* method 3: grouping */
+const grp=(b,k)=>b.padStart(Math.ceil(b.length/k)*k,'0').match(new RegExp('.{'+k+'}','g'));
+const gt=(G,f,lab)=>`<div style="overflow-x:auto"><table style="width:auto"><tr><th>Groups</th>${G.map(g=>`<td style="font-family:ui-monospace,monospace">${g}</td>`).join('')}</tr><tr><th>${lab}</th>${G.map(g=>`<td class="r">${f(g)}</td>`).join('')}</tr></table></div>`;
+const m3=()=>{const s=$('#y3n').value.trim(),o=$('#y3o');if(!/^[01]{1,24}$/.test(s))return H(o,'<p>Type only 0s and 1s (up to 24 bits).</p>');
+ const g3=grp(s,3),g4=grp(s,4),oc=g3.map(g=>parseInt(g,2)).join(''),hx=g4.map(g=>HX(parseInt(g,2))).join('');
+ H(o,`<h3>To octal: groups of 3</h3>${gt(g3,g=>parseInt(g,2),'Octal digit')}<p>${s}₂ = <span class="big">${oc}</span>₈</p><h3>To hexadecimal: groups of 4</h3>${gt(g4,g=>{const v=parseInt(g,2);return v>9?`${v} = ${HX(v)}`:v},'Hex digit')}<p>${s}₂ = <span class="big">${hx}</span>₁₆</p><p><small>Check: both are equal to ${parseInt(s,2)} in decimal.</small></p>`)};
+$('#y3n').oninput=m3;ex('y3e',['10010','1001101','1011101111','11111111'],'#y3n',m3);m3();
+
+let b4=16;
+const m4=()=>{const s=$('#y4n').value.trim().toUpperCase(),o=$('#y4o'),k=b4==8?3:4,ok=b4==8?/^[0-7]{1,6}$/:/^[0-9A-F]{1,6}$/;
+ if(!ok.test(s))return H(o,`<p>Type ${b4==8?'only the digits 0 to 7':'digits 0 to 9 and letters A to F'} (up to 6).</p>`);
+ const G=[...s].map(c=>parseInt(c,16).toString(2).padStart(k,'0'));
+ H(o,`<div style="overflow-x:auto;margin-top:10px"><table style="width:auto"><tr><th>Digit</th>${[...s].map(c=>`<td><b>${c}</b></td>`).join('')}</tr><tr><th>${k} bits</th>${G.map(g=>`<td class="r" style="font-family:ui-monospace,monospace">${g}</td>`).join('')}</tr></table></div><p>(${s})${SUB[b4]} = <span class="big">${G.join(' ')}</span>₂</p><p><small>You can drop the zeros on the left: ${G.join('').replace(/^0+(?=.)/,'')}₂ = ${parseInt(s,b4)} in decimal.</small></p>`)};
+$('#y4n').oninput=m4;
+chips('y4k',[['From hexadecimal',16],['From octal',8]],x=>{b4=x[1];$('#y4n').value=b4==8?'1235':'29D';m4()});
+
+/* practice */
+const dvS=(n,b)=>{let x=n,r=[];do{const q=Math.floor(x/b),m=x%b;r.push(`${x} ÷ ${b} = ${q} r <b>${m>9?m+' = '+HX(m):m}</b>`);x=q}while(x>0);return r.join('<br>')+`<br>Read bottom to top: <b>${n.toString(b).toUpperCase()}</b>`};
+const pwS=(s,b)=>{const L=[...s],v=L.map((c,i)=>parseInt(c,16)*b**(L.length-1-i));return L.map((c,i)=>`${c}${/[A-F]/.test(c)?'('+parseInt(c,16)+')':''} × ${b}${SUP(L.length-1-i)}`).join(' + ')+` = ${v.join(' + ')} = <b>${parseInt(s,b)}</b>`};
+const PX=[...[52,136,416].map(n=>[`${n} → octal`,n.toString(8),dvS(n,8)]),...[479,894,5386].map(n=>[`${n} → hexadecimal`,HX(n),dvS(n,16)]),
+ ...['64','755'].map(s=>[`(${s})₈ → decimal`,''+parseInt(s,8),pwS(s,8)]),...['FF','1DF','2A'].map(s=>[`(${s})₁₆ → decimal`,''+parseInt(s,16),pwS(s,16)])];
+const nz=s=>s.replace(/\s/g,'').toUpperCase().replace(/^0+(?=.)/,'');
+PX.forEach(([q,a,s])=>{const r=document.createElement('div');r.style.cssText='padding:8px 0;border-top:1px solid var(--l)';
+ r.innerHTML=`<span class="pill">${q}</span> <input size="10" autocomplete="off" placeholder="Your answer"> <button class="b" style="padding:6px 14px">Check</button> <button class="c" style="margin:0">Correction</button> <span class="fb"></span><div class="det" hidden>${s}</div>`;
+ const i=r.querySelector('input'),f=r.querySelector('.fb');let got=0;
+ const chk=()=>{const v=nz(i.value);if(!v){f.textContent='';return}if(v==nz(a)){f.innerHTML='<b style="color:var(--ok)">Correct!</b>';if(!got){got=1;add(10)}}else f.innerHTML='<b style="color:var(--bad)">Not yet.</b> Try again or open the correction.'};
+ r.querySelector('.b').onclick=chk;i.onkeydown=e=>{if(e.key=='Enter')chk()};r.querySelector('.c').onclick=()=>{const d=r.querySelector('.det');d.hidden=!d.hidden};
+ $('#ypx').append(r)});
+})();
+</script>
+
+<!-- ===== UNIT 2: Operating Systems ===== -->
+<script>
+(function(){
+const rnd=n=>Math.floor(Math.random()*n),own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+const pk=(id,I,f)=>{pick(id,I,f);$('#'+id).lastChild.hidden=true};
+const and=a=>a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a[a.length-1];
+
+/* ---------- hero: apps -> OS -> hardware ---------- */
+const HWN=['CPU','Memory','Screen','Storage','Speakers','Network'];
+const AP=[['Word','saves your report',[0,1,2,3]],['Browser','opens a web page',[0,1,2,5]],['WhatsApp','plays a voice note',[0,1,4,5]],['Excel','calculates the totals',[0,1,2]],['Music','plays a song from the disk',[0,1,3,4]]];
+H($('#zha'),AP.map(a=>`<button class="ap">${a[0]}</button>`).join(''));
+H($('#zhh'),HWN.map(h=>`<div class="hw2">${h}</div>`).join(''));
+[...$('#zha').children].forEach((b,i)=>b.onclick=()=>{
+ [...$('#zha').children].forEach(x=>x.classList.toggle('on',x==b));
+ const os=$('#zhos');os.classList.add('on');setTimeout(()=>os.classList.remove('on'),700);
+ [...$('#zhh').children].forEach((h,k)=>h.classList.toggle('on',AP[i][2].includes(k)));
+ H($('#zhr'),`<span>${AP[i][0]}</span> ${AP[i][1]}. It asks the OS, and the OS gives it the ${and(AP[i][2].map(k=>k?HWN[k].toLowerCase():HWN[k]))}.`)});
+
+/* ---------- warm-up ---------- */
+quiz('zq0',[
+['Which of these is an operating system?',['Windows','Microsoft Word','A web page'],0,'Word is an application. Windows runs the whole computer.'],
+['Can your apps use the hardware without an OS?',['Yes, they talk to the hardware directly','No: in practice, apps ask the OS to use the hardware'],1,'The OS sits between the apps and the hardware.'],
+['Which OS runs on most phones?',['Android','macOS','Windows'],0,'Android is the most used mobile OS.'],
+['A folder is used to…',['organize files into groups','make the CPU faster','print documents'],0,'Folders (directories) group files in a tree.'],
+['In a command line interface you…',['type text commands','only use the mouse','draw on the screen'],0,'CLI = Command Line Interface: you type commands.']],()=>'Let’s find out more, step by step.');
+
+/* ---------- t2: what is an OS ---------- */
+pick('zor',[
+['CPU','The OS decides which program uses the processor, and for how long. It switches between programs very fast.'],
+['Memory','When you open a program, the OS gives it a part of the RAM. When you close it, the OS takes that RAM back.'],
+['Storage','The OS saves files on the disk (SSD, HDD, USB) and finds them again, organized in folders.'],
+['User interface','The OS shows windows, icons and menus (GUI), or a command line (CLI), so you can give it orders.'],
+['Security','User accounts, passwords and rights decide who can open, change or delete each file.'],
+['Multitasking','Several programs run at the same time: music plays while you write in Word and download a file.'],
+['Devices','The OS talks to the keyboard, mouse, printer and screen through small programs called drivers.']]);
+const MA=[['Word',1,'#4f7cff'],['Browser',2.5,'#ff8c42'],['WhatsApp',.5,'#16a678'],['Excel',1,'#2f9e5b'],['Music',.5,'#9b5de5'],['Game',3,'#d93f55']],RAM=8,OSR=1.5;
+let opn=[],cpi=0;
+const mt=()=>{H($('#zmb'),MA.map(a=>`<button class="c${opn.includes(a[0])?' on':''}">${opn.includes(a[0])?'Close ':'Open '}${a[0]}</button>`).join(''));
+ [...$('#zmb').children].forEach((b,i)=>b.onclick=()=>{const n=MA[i][0];
+  if(opn.includes(n)){opn=opn.filter(x=>x!=n);$('#zms').textContent=`The OS closed ${n} and took back its RAM.`}
+  else{const used=OSR+opn.reduce((s,x)=>s+MA.find(a=>a[0]==x)[1],0);
+   if(used+MA[i][1]>RAM){$('#zms').innerHTML=`<b style="color:var(--bad)">Not enough RAM for ${n}!</b> The computer would slow down. Close an app first.`;return}
+   opn.push(n);$('#zms').textContent=`The OS loaded ${n} into RAM (${MA[i][1]} GB).`}
+  mt()});
+ const used=OSR+opn.reduce((s,x)=>s+MA.find(a=>a[0]==x)[1],0);
+ H($('#zmr'),`<div style="width:${OSR/RAM*100}%;background:var(--n)">OS</div>`+opn.map(x=>{const a=MA.find(y=>y[0]==x);return`<div style="width:${a[1]/RAM*100}%;background:${a[2]}">${x}</div>`}).join('')+`<div style="flex:1;color:var(--m)">free</div>`);
+ $('#zmr').title=`${used} GB of ${RAM} GB used`;cpi=0};
+mt();
+setInterval(()=>{const segs=[...$('#zmr').children].slice(0,-1);if(!segs.length)return;cpi=(cpi+1)%segs.length;segs.forEach((s,i)=>s.classList.toggle('cp',i==cpi));
+ const used=OSR+opn.reduce((s,x)=>s+MA.find(a=>a[0]==x)[1],0);
+ H($('#zmc'),`RAM: <b>${used} GB of ${RAM} GB</b> used · CPU is now running: <b>${segs[cpi].textContent}</b>`)},900);
+srt('zg1',['Managing resources','User interface','Security','Multitasking'],[
+['Decides which program uses the processor now',0,'Sharing the CPU is resource management.'],
+['Gives RAM to a program when you open it',0,'Memory is a resource the OS manages.'],
+['Saves your file on the SSD in the right folder',0,'Storage is a resource too.'],
+['Shows windows, icons and a mouse pointer',1,'That is the GUI, the graphical user interface.'],
+['Lets you type commands in a terminal',1,'The CLI is also a user interface.'],
+['Asks for your password when you log in',2,'Accounts and passwords are security.'],
+['Stops other users from opening your private files',2,'File rights protect your data.'],
+['Lets you listen to music while you write in Word',3,'Two programs at once: multitasking.'],
+['Keeps WhatsApp running while you browse the web',3,'Many programs at once: multitasking.']]);
+
+/* ---------- t3: types of OS ---------- */
+pick('zty',[
+['Windows','Microsoft','Widely used in businesses and schools. Sold with most PCs.','Desktop: Windows XP, Vista, 7, 10, 11. Servers: Windows Server 2003, 2008, 2019.'],
+['macOS','Apple','Runs on Mac computers. Known for its clean design, used mainly by creative professionals.','macOS Ventura'],
+['Linux','a worldwide community','Open source: free to use, study, change and share. Customizable, popular for servers and developers.','Ubuntu, Debian, Fedora'],
+['ChromeOS','Google','Runs on Chromebooks. Light and simple: most work happens in the Chrome browser and online.','Chromebooks used in schools'],
+['Android','Google','The most used mobile OS, on phones and tablets from many brands.','Phones and tablets'],
+['iOS','Apple','The mobile OS of the iPhone.','iPhone']],x=>`<h3>${x[0]}</h3><p><b>Made by:</b> ${x[1]}</p><p>${x[2]}</p><p><b>Examples:</b> ${x[3]}</p>`);
+const MS={'Desktop computers':[['Windows',73.41],['macOS',14.14],['Linux',4.13],['ChromeOS',1.9],['Others',6.41]],'Mobile':[['Android',47.22],['iOS',17.38],['Others',35.4]]};
+pk('zsk',Object.keys(MS).map(k=>[k]),x=>{const d=MS[x[0]],mx=Math.max(...d.map(y=>y[1]));setTimeout(()=>[...$('#zsc').querySelectorAll('.bar div')].forEach((e,i)=>e.style.width=d[i][1]/mx*70+'%'),30);
+ H($('#zsc'),d.map(y=>`<div class="bar"><b>${y[0]}</b><div style="width:0"></div><span>${y[1]}%</span></div>`).join(''));return''});
+srt('zg2',['Windows','macOS','Linux','ChromeOS'],[
+['Windows 11',0,'The latest desktop Windows.'],['Windows Server 2019',0,'Windows for servers.'],['Most used desktop OS in the world',0,'Windows: about 73% of desktops.'],
+['Ventura',1,'macOS Ventura is a version of macOS.'],['Known for its clean design, liked by designers',1,'macOS is popular with creative professionals.'],
+['Ubuntu',2,'Ubuntu is a Linux distribution.'],['Fedora',2,'Fedora is a Linux distribution.'],['Open source and free',2,'Linux is open source.'],['Debian',2,'Debian is a Linux distribution.'],
+['Made by Google for Chromebooks',3,'That is ChromeOS.']]);
+
+/* ---------- t4: files and folders ---------- */
+pick('zxt',[
+['.txt','Plain text: just letters, no formatting. Opened with Notepad.'],['.docx','A Word document.'],['.xlsx','An Excel spreadsheet.'],['.pptx','A PowerPoint presentation.'],['.pdf','A document that looks the same on every computer.'],
+['.jpg','A photo (compressed image).'],['.png','An image, often a screenshot or logo.'],['.mp3','A sound or music file.'],['.mp4','A video file.'],['.zip','A compressed folder: many files packed into one.'],['.exe','A program you can run on Windows. Only open .exe files you trust!']],x=>`<p><span class="big">${x[0]}</span></p><p>${x[1]}</p>`);
+const TR=['Mauritanie',[['Nouakchott',[['Toujinine',[['Toto.txt']]],['Tevragh_Zeina',[['photo.png']]]]],['hodh.jpg'],['Hodh_El_Chargui',[['Timbedra',[['Toto.doc']]],['Nema',[]]]]]];
+const pth=[];(function rec(n,p,d){const q=[...p,n[0]];pth.push([n[0],q,!!n[1],d]);(n[1]||[]).forEach(c=>rec(c,q,d+1))})(TR,[],1);
+H($('#zpt'),`<div class="fo"><b>C:\\</b></div>`+pth.map(([n,q,f,d],i)=>`<div class="${f?'fo':'fl'}" data-i="${i}" style="padding-left:${d*18}px;cursor:pointer">${n}</div>`).join(''));
+$('#zpt').querySelectorAll('[data-i]').forEach(e=>e.onclick=()=>{$('#zpt').querySelectorAll('[data-i]').forEach(x=>x.classList.toggle('cw',x==e));const [n,q,f]=pth[+e.dataset.i];
+ H($('#zpo'),`<h3>${n}</h3><p>A ${f?'folder':'file'}.</p><p><b>Windows path</b><br><code>C:\\${q.join('\\')}</code></p><p><b>Linux path</b><br><code>/home/student/${q.join('/')}</code></p><p><small>Count the levels: ${q.length} step${q.length>1?'s':''} down from the top.</small></p>`)});
+$('#zpt').querySelector('[data-i="10"]').click();
+let rk='File';const RM={File:['open and read it','change its content','run it as a program'],Folder:['list what is inside (dir, ls)','create, rename or delete items inside','enter it with cd']};
+const rshow=s=>{s=(s||'000').padStart(3,'0');const L=[...s].map((b,i)=>b=='1'?'rwx'[i]:'-').join('');
+ H($('#zro'),`<p><span class="rw">${L}</span> &nbsp; = ${s}₂ = <b class="big">${parseInt(s,2)}</b></p><ul>${RM[rk].map((m,i)=>`<li>${s[i]=='1'?'<b style="color:var(--ok)">Allowed</b>':'<b style="color:var(--bad)">Not allowed</b>'}: ${m}</li>`).join('')}</ul>`)};
+let rbits='000';
+pk('zrk',[['File'],['Folder']],x=>{rk=x[0];rshow(rbits);return''});
+bits($('#zrb'),3,(d,s)=>{rbits=s;rshow(s)});
+[...$('#zrb').children].forEach((b,i)=>b.querySelector('small').textContent='rwx'[i]+' = '+[4,2,1][i]);
+rshow('000');
+srt('zg3',['Document','Image','Sound or video','Program'],[
+['report.docx',0,'.docx is a Word document.'],['notes.txt',0,'.txt is plain text.'],['budget.xlsx',0,'.xlsx is an Excel spreadsheet.'],['course.pdf',0,'.pdf is a document.'],
+['photo.png',1,'.png is an image.'],['hodh.jpg',1,'.jpg is a photo.'],
+['song.mp3',2,'.mp3 is sound.'],['lesson.mp4',2,'.mp4 is video.'],
+['setup.exe',3,'.exe is a Windows program.']]);
+
+/* ---------- virtual file system + terminal ---------- */
+const D=(n,c=[])=>({n,d:1,c}),F=(n,s='')=>({n,d:0,s});
+const eq=(a,b,w)=>w?a.toLowerCase()==b.toLowerCase():a==b;
+const fnd=(dir,n,w)=>dir&&dir.d?dir.c.find(x=>eq(x.n,n,w)):null;
+const walk=(r,names)=>{let n=r;for(const x of names){n=fnd(n,x,0);if(!n)return null}return n};
+const srt2=a=>[...a].sort((x,y)=>y.d-x.d||x.n.localeCompare(y.n));
+const cl=n=>n.d?D(n.n,n.c.map(cl)):F(n.n,n.s);
+const HOME='/home/student',wp=a=>'C:\\'+a.join('\\'),lp=a=>a.length?'~/'+a.join('/'):'~',ap=a=>HOME+(a.length?'/'+a.join('/'):'');
+const pre=(a,b)=>a.length<=b.length&&a.every((x,i)=>x==b[i]);
+function res(W,p){const w=W.m=='w';let path;
+ if(w){p=p.replace(/\//g,'\\');if(/^c:/i.test(p)){p=p.slice(2);path=p[0]=='\\'?[]:W.cwd.slice()}else path=p[0]=='\\'?[]:W.cwd.slice()}
+ else{if(p=='~'||p.startsWith('~/')){path=[];p=p.slice(1)}else if(p==HOME||p.startsWith(HOME+'/')){path=[];p=p.slice(HOME.length)}else if(p[0]=='/')return null;else path=W.cwd.slice()}
+ let node=walk(W.root,path);
+ for(const q of p.split(w?'\\':'/')){if(!q||q=='.')continue;if(q=='..'){path.pop();node=walk(W.root,path);continue}
+  if(!node.d)return null;const k=fnd(node,q,w);if(!k)return null;path.push(k.n);node=k}
+ return{path,node}}
+function spl(W,p){const w=W.m=='w',s=w?'\\':'/';if(w)p=p.replace(/\//g,'\\');p=p.replace(w?/\\+$/:/\/+$/,'');
+ const i=p.lastIndexOf(s);let name=i<0?p:p.slice(i+1),pp=i<0?'.':p.slice(0,i+1);
+ if(w&&i<0&&/^c:/i.test(p)){name=p.slice(2);pp='C:'}
+ return{par:res(W,pp),name,pp}}
+const rmN=(W,path)=>{const par=walk(W.root,path.slice(0,-1)),n=walk(W.root,path);par.c.splice(par.c.indexOf(n),1)};
+function mk(W,p,deep){const q=spl(W,p);if(!q.name||q.name=='.'||q.name=='..')return'ex';if(W.m=='w'&&/[:*?"<>|]/.test(q.name))return'bad';
+ if(q.par&&q.par.node.d){if(fnd(q.par.node,q.name,W.m=='w'))return'ex';q.par.node.c.push(D(q.name));return'ok'}
+ if(!deep||q.par||q.pp=='.')return'np';const r=mk(W,q.pp,1);if(r!='ok'&&r!='ex')return r;return mk(W,p,0)}
+function wf(W,p,txt,app){const q=spl(W,p);if(!q.name)return'np';if(W.m=='w'&&/[:*?"<>|]/.test(q.name))return'bad';if(!q.par||!q.par.node.d)return'np';
+ const e=fnd(q.par.node,q.name,W.m=='w');if(e&&e.d)return'dir';if(e){e.s=app?e.s+txt:txt;return'ok'}q.par.node.c.push(F(q.name,txt));return'ok'}
+function cpmv(W,src,dst,move,allowDir){const s=res(W,src);if(!s||!s.path.length)return['ns'];if(s.node.d&&!allowDir)return['dir'];
+ const d=res(W,dst||'.');let par,name;
+ if(d&&d.node.d){par=d;name=s.node.n}else{const q=spl(W,dst);if(!q.par||!q.par.node.d||!q.name)return['nd'];par=q.par;name=q.name}
+ if(s.node.d&&pre(s.path,par.path))return['self'];
+ if(move&&pre(s.path,W.cwd))return['busy'];
+ const ex=fnd(par.node,name,W.m=='w');if(ex===s.node)return['same'];
+ if(ex){if(ex.d||s.node.d)return['clash'];par.node.c.splice(par.node.c.indexOf(ex),1)}
+ let nn;if(move){rmN(W,s.path);nn=s.node}else nn=cl(s.node);nn.n=name;par.node.c.push(nn);return['ok',s.node.d]}
+const tok=s=>(s.match(/"[^"]*"|'[^']*'|\S+/g)||[]).map(x=>x.replace(/^(["'])(.*)\1$/,'$2'));
+const treeL=(n,pf,o,w)=>{const k=srt2(n.c);k.forEach((x,i)=>{const last=i==k.length-1;o(pf+(w?(last?'└───':'├───'):(last?'└── ':'├── '))+x.n,x.d?'dr':'');if(x.d)treeL(x,pf+(last?'    ':'│   '),o,w)})};
+const cnt=n=>n.c.reduce((a,x)=>x.d?[a[0]+1+cnt(x)[0],a[1]+cnt(x)[1]]:[a[0],a[1]+1],[0,0]);
+const bad=o=>o('The syntax of the command is incorrect.','er');
+const WN={
+ dir(W,a,o){const t=a.filter(x=>x[0]!='/').join(' ');const r=res(W,t||'.');if(!r){o('File Not Found','er');return}
+  if(!r.node.d){o(' Directory of '+wp(r.path.slice(0,-1)));o('');o(String(r.node.s.length).padStart(14)+' '+r.node.n);return}
+  o(' Directory of '+wp(r.path));o('');let nf=0,nd=0,b=0;if(r.path.length){o('<DIR>          .');o('<DIR>          ..');nd=2}
+  srt2(r.node.c).forEach(x=>{if(x.d){nd++;o('<DIR>          '+x.n,'dr')}else{nf++;b+=x.s.length;o(String(x.s.length).padStart(14)+' '+x.n)}});
+  o(String(nf).padStart(16)+' File(s) '+String(b).padStart(10)+' bytes');o(String(nd).padStart(16)+' Dir(s)')},
+ cd(W,a,o){a=a.filter(x=>!/^\/d$/i.test(x));if(!a.length){o(wp(W.cwd));return}const r=res(W,a.join(' '));
+  if(!r)o('The system cannot find the path specified.','er');else if(!r.node.d)o('The directory name is invalid.','er');else W.cwd=r.path},
+ mkdir(W,a,o){if(!a.length)return bad(o);a.forEach(p=>{const r=mk(W,p,1);if(r=='ex')o('A subdirectory or file '+p+' already exists.','er');else if(r=='bad')o('The filename, directory name, or volume label syntax is incorrect.','er');else if(r=='np')o('The system cannot find the path specified.','er')})},
+ rmdir(W,a,o){const s=a.some(x=>/^\/s$/i.test(x)),ps=a.filter(x=>x[0]!='/');if(!ps.length)return bad(o);
+  ps.forEach(p=>{const r=res(W,p);if(!r)o('The system cannot find the file specified.','er');else if(!r.node.d)o('The directory name is invalid.','er');
+   else if(!r.path.length||pre(r.path,W.cwd))o('The process cannot access the file because it is being used by another process.','er');
+   else if(r.node.c.length&&!s)o('The directory is not empty.','er');else rmN(W,r.path)})},
+ del(W,a,o){const ps=a.filter(x=>x[0]!='/');if(!ps.length)return bad(o);
+  ps.forEach(p=>{const r=res(W,p);if(!r){const q=spl(W,p);o('Could Not Find '+(q.par?wp([...q.par.path,q.name]):p),'er')}
+   else if(r.node.d)o('del deletes files. To delete a folder, use rmdir.','er');else rmN(W,r.path)})},
+ copy(W,a,o){const ps=a.filter(x=>x[0]!='/');if(!ps.length)return bad(o);const [c]=cpmv(W,ps[0],ps[1],0,0);
+  o({ok:'        1 file(s) copied.',ns:'The system cannot find the file specified.',dir:'In this lab, copy works on files. (Windows copies folders with xcopy.)',nd:'The system cannot find the path specified.',same:'The file cannot be copied onto itself.',clash:'Access is denied.'}[c]||'Access is denied.',c=='ok'?'':'er')},
+ move(W,a,o){const ps=a.filter(x=>x[0]!='/');if(ps.length<2)return bad(o);const [c,isd]=cpmv(W,ps[0],ps[1],1,1);
+  o({ok:isd?'        1 dir(s) moved.':'        1 file(s) moved.',same:'        1 file(s) moved.',ns:'The system cannot find the file specified.',nd:'The system cannot find the path specified.',self:'The process cannot access the file because it is being used by another process.',busy:'The process cannot access the file because it is being used by another process.'}[c]||'Access is denied.',c=='ok'||c=='same'?'':'er')},
+ ren(W,a,o){if(a.length!=2||/[\\/]/.test(a[1]))return bad(o);const r=res(W,a[0]);if(!r||!r.path.length){o('The system cannot find the file specified.','er');return}
+  if(pre(r.path,W.cwd)){o('The process cannot access the file because it is being used by another process.','er');return}
+  const par=walk(W.root,r.path.slice(0,-1)),e=fnd(par,a[1],1);if(e&&e!==r.node){o('A duplicate file name exists, or the file cannot be found.','er');return}r.node.n=a[1]},
+ echo(W,a,o,x){if(!x.red){o(x.raw||'ECHO is on.');return}const r=wf(W,x.red.f,(x.raw||'ECHO is on.')+'\r\n',x.red.app);if(r=='np')o('The system cannot find the path specified.','er');else if(r!='ok')o('Access is denied.','er')},
+ type(W,a,o,x){if(!a.length)return bad(o);let txt;if(/^nul$/i.test(a[0]))txt='';else{const r=res(W,a[0]);if(!r){o('The system cannot find the file specified.','er');return}if(r.node.d){o('Access is denied.','er');return}txt=r.node.s}
+  if(x.red){const k=wf(W,x.red.f,txt,x.red.app);if(k!='ok')o('The system cannot find the path specified.','er')}else if(txt)txt.replace(/\r?\n$/,'').split(/\r?\n/).forEach(l=>o(l))},
+ cls(W,a,o,x){x.clr()},
+ tree(W,a,o){o('Folder PATH listing');o(wp(W.cwd));const n=walk(W.root,W.cwd);if(!n.c.length)o('No subfolders exist');else treeL(n,'',o,1)},
+ help(W,a,o){['dir              list the current folder','cd name          go into a folder','cd..             go up one level','cd               show where you are','mkdir a b c      create folders (md also works)','rmdir name       delete an empty folder (rmdir /s name: with its content)','del name         delete a file','copy a.txt G1    copy a file','move a.txt G2    move or rename a file or folder','ren old new      rename','echo hi > a.txt  create a file with text (type nul > a.txt: empty file)','type a.txt       show what is in a file','tree             show the folder tree','cls              clear the screen'].forEach(l=>o(l))},
+ exit(W,a,o){o('(This practice window stays open.)','hi')}};
+WN.md=WN.mkdir;WN.rd=WN.rmdir;WN.erase=WN.del;WN.rename=WN.ren;WN.chdir=WN.cd;
+const LN={
+ ls(W,a,o){const ps=a.filter(x=>x[0]!='-'),t=ps[0]||'.',r=res(W,t);if(!r){o(`ls: cannot access '${t}': No such file or directory`,'er');return}
+  if(!r.node.d){o(r.node.n);return}const k=[...r.node.c].sort((x,y)=>x.n.localeCompare(y.n));if(k.length)o(k.flatMap((x,i)=>[[x.n,x.d?'dr':''],[i<k.length-1?'  ':'']]))},
+ cd(W,a,o){if(a.length>1){o('bash: cd: too many arguments','er');return}const t=a[0];if(!t||t=='~'){W.cwd=[];return}
+  if(t[0]=='/'&&!(t==HOME||t.startsWith(HOME+'/'))){o(`(This practice terminal stays inside your home folder, ${HOME}.)`,'hi');return}
+  const r=res(W,t);if(!r)o(`bash: cd: ${t}: No such file or directory`,'er');else if(!r.node.d)o(`bash: cd: ${t}: Not a directory`,'er');else W.cwd=r.path},
+ pwd(W,a,o){o(ap(W.cwd))},
+ mkdir(W,a,o){const p=a.includes('-p'),ps=a.filter(x=>x[0]!='-');if(!ps.length){o('mkdir: missing operand','er');o("Try 'mkdir --help' for more information.",'er');return}
+  ps.forEach(x=>{const r=mk(W,x,p);if(r=='ex'&&!p)o(`mkdir: cannot create directory '${x}': File exists`,'er');else if(r=='np')o(`mkdir: cannot create directory '${x}': No such file or directory`,'er')})},
+ rmdir(W,a,o){const ps=a.filter(x=>x[0]!='-');if(!ps.length){o('rmdir: missing operand','er');return}
+  ps.forEach(p=>{const r=res(W,p),f=m=>o(`rmdir: failed to remove '${p}': ${m}`,'er');if(!r)f('No such file or directory');else if(!r.node.d)f('Not a directory');else if(!r.path.length||pre(r.path,W.cwd))f('Device or resource busy');else if(r.node.c.length)f('Directory not empty');else rmN(W,r.path)})},
+ rm(W,a,o){const rf=a.some(x=>/^-[a-zA-Z]*[rR]/.test(x)),ps=a.filter(x=>x[0]!='-');if(!ps.length){o('rm: missing operand','er');return}
+  ps.forEach(p=>{const r=res(W,p),f=m=>o(`rm: cannot remove '${p}': ${m}`,'er');if(!r)f('No such file or directory');else if(r.node.d&&!rf)f('Is a directory');else if(!r.path.length||pre(r.path,W.cwd))f('Device or resource busy');else rmN(W,r.path)})},
+ cp(W,a,o){const rf=a.some(x=>/^-[a-zA-Z]*[rR]/.test(x)),ps=a.filter(x=>x[0]!='-');if(!ps.length){o('cp: missing file operand','er');return}if(ps.length<2){o(`cp: missing destination file operand after '${ps[0]}'`,'er');return}
+  const [c]=cpmv(W,ps[0],ps[1],0,rf);if(c!='ok')o({ns:`cp: cannot stat '${ps[0]}': No such file or directory`,dir:`cp: -r not specified; omitting directory '${ps[0]}'`,nd:`cp: cannot create regular file '${ps[1]}': No such file or directory`,same:`cp: '${ps[0]}' and '${ps[1]}' are the same file`,self:`cp: cannot copy a directory, '${ps[0]}', into itself`}[c]||`cp: cannot overwrite '${ps[1]}'`,'er')},
+ mv(W,a,o){const ps=a.filter(x=>x[0]!='-');if(!ps.length){o('mv: missing file operand','er');return}if(ps.length<2){o(`mv: missing destination file operand after '${ps[0]}'`,'er');return}
+  const [c]=cpmv(W,ps[0],ps[1],1,1);if(c!='ok')o({ns:`mv: cannot stat '${ps[0]}': No such file or directory`,nd:`mv: cannot move '${ps[0]}' to '${ps[1]}': No such file or directory`,same:`mv: '${ps[0]}' and '${ps[1]}' are the same file`,self:`mv: cannot move '${ps[0]}' to a subdirectory of itself`,busy:`mv: cannot move '${ps[0]}': Device or resource busy`}[c]||`mv: cannot overwrite '${ps[1]}'`,'er')},
+ touch(W,a,o){if(!a.length){o('touch: missing file operand','er');return}a.forEach(p=>{if(res(W,p))return;if(wf(W,p,'')!='ok')o(`touch: cannot touch '${p}': No such file or directory`,'er')})},
+ cat(W,a,o,x){if(!a.length){o('(cat is waiting for text. In this lab, give it a file name.)','hi');return}let txt='';
+  for(const p of a){const r=res(W,p);if(!r){o(`cat: ${p}: No such file or directory`,'er');return}if(r.node.d){o(`cat: ${p}: Is a directory`,'er');return}txt+=r.node.s}
+  if(x.red){if(wf(W,x.red.f,txt,x.red.app)!='ok')o(`bash: ${x.red.f}: No such file or directory`,'er')}else if(txt)txt.replace(/\n$/,'').split('\n').forEach(l=>o(l))},
+ echo(W,a,o,x){const t=a.join(' ');if(!x.red){o(t);return}const r=wf(W,x.red.f,t+'\n',x.red.app);if(r=='dir')o(`bash: ${x.red.f}: Is a directory`,'er');else if(r!='ok')o(`bash: ${x.red.f}: No such file or directory`,'er')},
+ clear(W,a,o,x){x.clr()},
+ tree(W,a,o){o('.','dr');const n=walk(W.root,W.cwd);treeL(n,'',o,0);const [d,f]=cnt(n);o('');o(`${d} director${d==1?'y':'ies'}, ${f} file${f==1?'':'s'}`)},
+ help(W,a,o){['ls               list the current folder','cd name          go into a folder','cd ..            go up one level','pwd              show where you are','mkdir a b c      create folders (mkdir -p a/b: with parents)','rmdir name       delete an empty folder','rm name          delete a file (rm -r name: a folder and its content)','cp a.txt G1      copy a file (cp -r: a folder)','mv a.txt G2      move or rename','touch a.txt      create an empty file','echo hi > a.txt  create a file with text','cat a.txt        show what is in a file','tree             show the folder tree','clear            clear the screen','Remember: Linux is case-sensitive. NBS and nbs are two different names.'].forEach(l=>o(l))},
+ exit(W,a,o){o('(This practice window stays open.)','hi')}};
+LN.dir=LN.ls;
+const TIPW={ls:'dir',rm:'del',cp:'copy',mv:'move',pwd:'cd',clear:'cls',touch:'echo hello > name.txt',cat:'type'},
+ TIPL={del:'rm',erase:'rm',copy:'cp',move:'mv',cls:'clear',type:'cat',md:'mkdir',rd:'rmdir',ren:'mv',rename:'mv','cd..':'cd ..  (with a space)'};
+function run(W,raw,o,clr){let line=raw.trim(),red=null;const gi=line.indexOf('>');
+ if(gi>=0){const app=line[gi+1]=='>';red={app,f:line.slice(gi+(app?2:1)).trim().replace(/^"(.*)"$/,'$1')};line=line.slice(0,gi).trim();if(!red.f){o(W.m=='w'?'The syntax of the command is incorrect.':"bash: syntax error near unexpected token `newline'",'er');return''}}
+ const t=tok(line),w=W.m=='w';let c=t[0]||'',a=t.slice(1);
+ if(w){const m=c.match(/^(cd|chdir)((?:\.\.|\\).*)$/i);if(m){c=m[1];a.unshift(m[2])}c=c.toLowerCase()}
+ const T=w?WN:LN;
+ if(!c)return'';
+ if(!own(T,c)){
+  if(w){o(`'${t[0]}' is not recognized as an internal or external command,`,'er');o('operable program or batch file.','er');const k=TIPW[c];if(k)o(`Tip: that is a Linux command. On Windows, use: ${k}`,'hi')}
+  else{o(`bash: ${c}: command not found`,'er');const lc=c.toLowerCase(),k=own(TIPL,lc)?TIPL[lc]:own(LN,lc)?lc:'';if(k)o(`Tip: ${own(TIPL,lc)?'on Linux, use: ':'Linux is case-sensitive. Type: '}${k}`,'hi')}
+  return''}
+ if(red&&!['echo','type','cat'].includes(c)){o('In this lab, > only works with echo'+(w?' and type.':' and cat.'),'er');return c}
+ T[c](W,a,o,{red,raw:line.slice((t[0]||'').length).trim(),clr});return c}
+
+function termUI(box,W,onCmd){
+ box.innerHTML=`<div class="tw"><div class="tt"><b></b><span>practice</span></div><div class="term"><div class="out"></div><label class="in"><span class="pr"></span><input spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="Command" placeholder="type a command, e.g. help"></label></div></div>`;
+ const tw=box.firstChild,term=tw.querySelector('.term'),out=tw.querySelector('.out'),pr=tw.querySelector('.pr'),inp=tw.querySelector('input'),hist=[];let hi=0;
+ const seg=(t,c)=>{const s=document.createElement('span');s.textContent=t;if(c)s.className=c;return s};
+ const line=(t,c)=>{const d=document.createElement('div');d.className='ln'+(c?' '+c:'');if(Array.isArray(t))t.forEach(([x,k])=>d.append(seg(x,k)));else d.textContent=t;out.append(d)};
+ const prm=()=>W.m=='w'?[[wp(W.cwd)+'>']]:[['student@nbs','pu'],[':'],[lp(W.cwd),'pp'],['$ ']];
+ const draw=()=>{while(W.cwd.length&&!walk(W.root,W.cwd))W.cwd.pop();tw.classList.toggle('lin',W.m=='l');tw.querySelector('.tt b').textContent=W.m=='w'?'Command Prompt':'Terminal · student@nbs';pr.replaceChildren(...prm().map(([x,k])=>seg(x,k)))};
+ const banner=()=>{out.innerHTML='';line(W.m=='w'?'Windows Command Prompt (practice). Type help to see the commands.':'Linux terminal (practice). Type help to see the commands.','hi');line('');draw()};
+ const exec=v=>{line([...prm(),[v]]);if(v.trim()){hist.push(v);hi=hist.length}const c=v.trim()?run(W,v,line,()=>out.innerHTML=''):'';draw();term.scrollTop=term.scrollHeight;onCmd&&onCmd(c.toLowerCase())};
+ inp.onkeydown=e=>{if(e.key=='Enter'){const v=inp.value;inp.value='';exec(v)}
+  else if(e.key=='ArrowUp'){if(hi>0)inp.value=hist[--hi];e.preventDefault()}else if(e.key=='ArrowDown'){hi=Math.min(hist.length,hi+1);inp.value=hist[hi]||'';e.preventDefault()}};
+ term.onclick=()=>{if(!getSelection().toString())inp.focus({preventScroll:true})};
+ banner();return{banner,draw,exec}}
+
+function drawTree(el,W){const h=[`<div class="fo${W.cwd.length?'':' cw'}"><b>${W.m=='w'?'C:\\':'~ (/home/student)'}</b></div>`];
+ (function rec(n,p,d){srt2(n.c).forEach(x=>{const q=[...p,x.n],c=x.d&&q.length==W.cwd.length&&pre(q,W.cwd);h.push(`<div class="${x.d?'fo':'fl'}${c?' cw':''}" style="padding-left:${d*18}px">${E(x.n)}</div>`);if(x.d)rec(x,q,d+1)})})(W.root,[],1);H(el,h.join(''))}
+const modeChips=(id,W,cb)=>pk(id,[['Windows Command Prompt','w'],['Linux Terminal','l']],x=>{if(W.m!=x[1]){W.m=x[1];cb()}return''});
+
+/* ---------- t5: terminal lab with missions ---------- */
+const W1={root:null,cwd:[],m:'w'};
+const init1=()=>{W1.root=D('',[D('Documents'),D('Pictures'),D('Downloads'),F('notes.txt','Bring a USB key on Monday.\r\n')]);W1.cwd=[]};init1();
+const hs=(W,p,t)=>{let n=W.root;for(const x of p.split('/')){n=fnd(n,x,1);if(!n)return false}return !t||(t=='d'?!!n.d:!n.d)};
+const cwdIs=(W,p)=>W.cwd.join('/').toLowerCase()==p.toLowerCase();
+const M1=[
+['Create a folder named NBS','mkdir NBS','mkdir NBS',W=>hs(W,'NBS','d')],
+['Go into the NBS folder','cd NBS','cd NBS',W=>cwdIs(W,'NBS')],
+['Create G1, G2, G3 and G4 with one command','mkdir G1 G2 G3 G4','mkdir G1 G2 G3 G4',W=>['G1','G2','G3','G4'].every(g=>hs(W,'NBS/'+g,'d'))],
+['Check: list what is inside NBS','dir','ls',(W,c)=>/^(dir|ls)$/.test(c)&&cwdIs(W,'NBS')],
+['Create a file named file1.txt in NBS','echo hello > file1.txt','touch file1.txt',W=>hs(W,'NBS/file1.txt','f')],
+['Copy file1.txt into G1','copy file1.txt G1','cp file1.txt G1',W=>hs(W,'NBS/G1/file1.txt','f')&&hs(W,'NBS/file1.txt','f')],
+['Move file1.txt from NBS into G2','move file1.txt G2','mv file1.txt G2',W=>hs(W,'NBS/G2/file1.txt','f')&&!hs(W,'NBS/file1.txt')],
+['Delete the empty folder G4','rmdir G4','rmdir G4',W=>hs(W,'NBS/G3','d')&&!hs(W,'NBS/G4')],
+['Delete the copy of file1.txt inside G1','del G1\\file1.txt','rm G1/file1.txt',W=>hs(W,'NBS/G1','d')&&!hs(W,'NBS/G1/file1.txt')],
+['Go back up to the parent folder','cd..','cd ..',W=>W.cwd.length==0&&hs(W,'NBS','d')]];
+let m1=0;const g1=new Set();
+const paintM1=()=>{H($('#zk1m'),M1.map((m,i)=>`<li class="${i<m1?'ok':i==m1?'now':''}">${i<m1?'✓ ':''}${m[0]}${i==m1?`<br><button class="c">Show the command</button><code hidden>${E(W1.m=='w'?m[1]:m[2])}</code>`:''}</li>`).join('')+(m1>=M1.length?'<li class="ok"><b>All missions complete! +100 XP</b></li>':''));
+ const b=$('#zk1m').querySelector('.c');if(b)b.onclick=()=>{b.hidden=1;b.nextSibling.hidden=0};drawTree($('#zk1t'),W1)};
+const T1=termUI($('#zk1'),W1,c=>{let k=c;while(m1<M1.length&&M1[m1][3](W1,k)){if(!g1.has(m1)){g1.add(m1);add(10)}m1++;k=''}paintM1()});
+modeChips('zk1o',W1,()=>{T1.banner();paintM1()});
+$('#zk1r').onclick=()=>{init1();m1=0;T1.banner();paintM1()};paintM1();
+
+/* ---------- t6: explorer + terminal on the same drive ---------- */
+const W2={root:D(''),cwd:[],m:'w'};let ec=[],sel=null,cut=null,drag=null;
+const st=t=>$('#zes').textContent=t;
+const vname=n=>n&&!/[\\/:*?"<>|]/.test(n)&&n!='.'&&n!='..';
+const uniq=(dir,b,ext='')=>{let n=b+ext,i=2;while(fnd(dir,n,1))n=`${b} (${i++})${ext}`;return n};
+const pathOf=x=>{let r=null;(function rec(n,p){n.c.forEach(y=>{if(y===x)r=[...p,y.n];else if(y.d&&!r)rec(y,[...p,y.n])})})(W2.root,[]);return r};
+function moveTo(node,tp){const sp=pathOf(node);if(!sp)return;const tgt=walk(W2.root,tp);
+ if(node.d&&pre(sp,tp)){st('You cannot move a folder into itself.');return}
+ if(pre(sp.slice(0,-1),tp)&&sp.length-1==tp.length){st('It is already in that folder.');return}
+ if(fnd(tgt,node.n,1)){st(`There is already an item named ${node.n} there.`);return}
+ rmN(W2,sp);tgt.c.push(node);st(`Moved ${node.n} to ${W2.m=='w'?wp(tp):ap(tp)}.`);sync2()}
+function drawEx(){while(ec.length&&!walk(W2.root,ec))ec.pop();T2.draw();const dir=walk(W2.root,ec),k=srt2(dir.c);if(sel&&!k.includes(sel))sel=null;
+ $('#zea').textContent=(W2.m=='w'?'This PC › ':'')+(W2.m=='w'?wp(ec):ap(ec));
+ H($('#zei'),k.map((x,i)=>`<button class="it ${x.d?'fo':'fl'}${sel===x?' sel':''}" draggable="true" data-i="${i}">${E(x.n)}</button>`).join('')||'<small>This folder is empty.</small>');
+ $('#zei').querySelectorAll('.it').forEach(b=>{const x=k[+b.dataset.i];
+  b.onclick=()=>{if(sel===x&&x.d){ec.push(x.n);sel=null;st('Opened '+x.n+'.')}else{sel=x;st(`Selected ${x.n}. ${x.d?'Tap again to open it.':''}`)}drawEx()};
+  b.ondragstart=e=>{drag=x;e.dataTransfer.setData('text/plain',x.n)};
+  if(x.d){b.ondragover=e=>{if(drag&&drag!==x){e.preventDefault();b.classList.add('dz')}};b.ondragleave=()=>b.classList.remove('dz');b.ondrop=e=>{e.preventDefault();b.classList.remove('dz');if(drag)moveTo(drag,[...ec,x.n]);drag=null}}});
+ drawTree2()}
+const up=$('#zeu');up.onclick=()=>{if(ec.length){ec.pop();sel=null;drawEx()}};
+up.ondragover=e=>{if(drag&&ec.length)e.preventDefault()};up.ondrop=e=>{e.preventDefault();if(drag&&ec.length)moveTo(drag,ec.slice(0,-1));drag=null};
+const nm=()=>$('#zen').value.trim();
+const mkNew=dirQ=>{const dir=walk(W2.root,ec);let n=nm();if(n&&!vname(n)){st('A name cannot contain \\ / : * ? " < > |');return}
+ if(!n)n=dirQ?uniq(dir,'New_folder'):uniq(dir,'New_file','.txt');if(fnd(dir,n,1)){st(`${n} already exists here.`);return}
+ dir.c.push(dirQ?D(n):F(n));$('#zen').value='';sel=null;st(`Created ${dirQ?'folder':'file'} ${n}.`);sync2()};
+$('#zenf').onclick=()=>mkNew(1);$('#zenl').onclick=()=>mkNew(0);
+$('#zern').onclick=()=>{if(!sel){st('Select an item first, then type the new name.');return}const n=nm();if(!vname(n)){st('Type a valid new name in the Name box.');return}
+ const dir=walk(W2.root,ec),e=fnd(dir,n,1);if(e&&e!==sel){st(`${n} already exists here.`);return}
+ const old=[...ec,sel.n];if(pre(old,W2.cwd))W2.cwd[ec.length]=n;st(`Renamed ${sel.n} to ${n}.`);sel.n=n;$('#zen').value='';sync2()};
+$('#zedl').onclick=()=>{if(!sel){st('Select an item first.');return}const p=[...ec,sel.n];if(pre(p,W2.cwd))W2.cwd=p.slice(0,-1);rmN(W2,p);st(`Deleted ${sel.n}. (On a real PC it would go to the Recycle Bin.)`);sel=null;sync2()};
+$('#zecx').onclick=()=>{if(!sel){st('Select an item first.');return}cut=sel;st(`Cut ${sel.n}. Open the target folder, then press Paste.`)};
+$('#zepv').onclick=()=>{if(!cut||!pathOf(cut)){st('Nothing to paste. Select an item and press Cut first.');return}const c=cut;cut=null;moveTo(c,ec.slice())};
+const TG=[['d','Mauritanie'],['d','Mauritanie/Nouakchott'],['d','Mauritanie/Nouakchott/Toujinine'],['f','Mauritanie/Nouakchott/Toujinine/Toto.txt'],['d','Mauritanie/Nouakchott/Tevragh_Zeina'],['f','Mauritanie/Nouakchott/Tevragh_Zeina/photo.png'],['f','Mauritanie/hodh.jpg'],['d','Mauritanie/Hodh_El_Chargui'],['d','Mauritanie/Hodh_El_Chargui/Timbedra'],['f','Mauritanie/Hodh_El_Chargui/Timbedra/Toto.doc'],['d','Mauritanie/Hodh_El_Chargui/Nema']];
+const nrm=s=>s.toLowerCase().replace(/[\s_-]+/g,'_').replace(/^mauritania$/,'mauritanie').replace(/^hodh_el_charghi$/,'hodh_el_chargui');
+const has2=(t,p)=>{let n=W2.root;for(const x of p.split('/')){n=n&&n.d&&n.c.find(y=>nrm(y.n)==nrm(x));if(!n)return false}return t=='d'?!!n.d:!n.d};
+let gb=0,gn=0;
+function drawTree2(){const ok=TG.map(([t,p])=>has2(t,p)),n=ok.filter(Boolean).length,inNema=W2.cwd.map(nrm).join('/')==TG[10][1].split('/').map(nrm).join('/');
+ H($('#zk2c'),`<div class="fo"><b>C:\\</b></div>`+TG.map(([t,p],i)=>{const s=p.split('/');return`<div class="${t=='d'?'fo':'fl'} ${ok[i]?'ok':'no'}" style="padding-left:${s.length*18}px">${ok[i]?'✓ ':''}${s[s.length-1]}</div>`}).join('')+
+  `<div class="${inNema?'ok':'no'}" style="margin-top:8px;white-space:normal">${inNema?'✓':'○'} Bonus: in the terminal, go into Nema with one cd command</div>`);
+ if(n==TG.length&&!gb){gb=1;add(40)}if(inNema&&!gn){gn=1;add(10)}
+ H($('#zk2p'),n==TG.length?`<b style="color:var(--ok)">Tree complete! +40 XP</b> The path of Nema is <code>C:\\Mauritanie\\Hodh_El_Chargui\\Nema</code>`:`<b>${n} / ${TG.length}</b> items built`)}
+const sync2=()=>drawEx();
+const T2=termUI($('#zk2'),W2,()=>sync2());
+modeChips('zk2o',W2,()=>{T2.banner();drawEx()});
+$('#zk2r').onclick=()=>{W2.root=D('');W2.cwd=[];ec=[];sel=cut=null;T2.banner();st('The drive is empty. Start building!');sync2()};
+st('Tip: type a name in the Name box, then press New folder.');sync2();
+
+/* ---------- t7: games ---------- */
+const NM=['Test','NBS','G1','Docs','Photos','Exam'],FN=['file1.txt','notes.txt','toto.txt','cv.docx'];
+const DT=[
+()=>['List the contents of the current folder',['dir'],['ls']],
+n=>[`Create a folder named ${n}`,[`mkdir ${n}`,`md ${n}`],[`mkdir ${n}`]],
+n=>[`Go into the folder ${n}`,[`cd ${n}`],[`cd ${n}`]],
+()=>['Go up to the parent folder',['cd..','cd ..'],['cd ..']],
+()=>['Show which folder you are in',['cd'],['pwd']],
+(n,f)=>[`Delete the file ${f}`,[`del ${f}`,`erase ${f}`],[`rm ${f}`]],
+(n,f)=>[`Copy ${f} into the folder ${n}`,[`copy ${f} ${n}`],[`cp ${f} ${n}`]],
+(n,f)=>[`Move ${f} into the folder ${n}`,[`move ${f} ${n}`],[`mv ${f} ${n}`]],
+n=>[`Delete the empty folder ${n}`,[`rmdir ${n}`,`rd ${n}`],[`rmdir ${n}`]],
+()=>['Clear the screen',['cls'],['clear']],
+()=>['Create the folders G1, G2 and G3 with one command',['mkdir G1 G2 G3','md G1 G2 G3'],['mkdir G1 G2 G3']],
+(n,f)=>[`Show what is written in ${f}`,[`type ${f}`],[`cat ${f}`]]];
+let dm='w',ds=0,dq,dt;
+const nC=(s,w)=>{s=s.trim().replace(/\s+/g,' ').replace(/[\\/]+$/,'');return w?s.toLowerCase():s};
+const nx2=()=>{clearTimeout(dt);dq=DT[rnd(DT.length)](NM[rnd(NM.length)],FN[rnd(FN.length)]);$('#zdq').textContent=dq[0]+(dm=='w'?' · Windows':' · Linux');$('#zda').value='';$('#zdm').textContent=''};
+pk('zdo',[['Windows','w'],['Linux','l']],x=>{dm=x[1];ds=0;nx2();return''});
+$('#zdk').onclick=()=>{const v=$('#zda').value;if(!v.trim())return;const w=dm=='w',A=w?dq[1]:dq[2],B=w?dq[2]:dq[1],a=nC(v,w);
+ if(A.some(x=>nC(x,w)==a)){ds++;add(10);$('#zdm').textContent='Correct! Streak: '+ds;dt=setTimeout(nx2,900);return}
+ const lo=nC(v,1);let m;
+ if(B.some(x=>nC(x,1)==lo)&&!A.some(x=>nC(x,1)==lo))m=`That is the ${w?'Linux':'Windows'} command. On ${w?'Windows':'Linux'}, type: ${A[0]}`;
+ else if(!w&&A.some(x=>nC(x,1)==lo))m=`Almost! Linux is case-sensitive. Type exactly: ${A[0]}`;
+ else m=`Not yet. The answer was: ${A[0]}`;
+ ds=0;$('#zdm').textContent=m;dt=setTimeout(nx2,3500)};
+$('#zda').onkeydown=e=>e.key=='Enter'&&$('#zdk').click();
+srt('zg4',['Windows','Linux','Both'],[
+['dir',0,'dir lists a folder on Windows.'],['del',0,'del deletes a file on Windows.'],['cls',0,'cls clears the screen on Windows.'],['copy',0,'copy is the Windows copy command.'],['move',0,'move is the Windows move command.'],
+['ls',1,'ls lists a folder on Linux and macOS.'],['rm',1,'rm deletes a file on Linux.'],['pwd',1,'pwd prints the working directory on Linux.'],['cp',1,'cp copies on Linux.'],['mv',1,'mv moves on Linux.'],['clear',1,'clear clears the screen on Linux.'],
+['mkdir',2,'mkdir creates a folder on both.'],['cd',2,'cd changes folder on both.'],['rmdir',2,'rmdir removes an empty folder on both.']]);
+
+/* ---------- t8: recap ---------- */
+pick('zkt',[
+['OS','Operating system: the software that manages hardware and software resources and provides services for programs.'],
+['GUI','Graphical User Interface: windows, icons, menus and the mouse.'],
+['CLI','Command Line Interface: you type text commands to talk to the OS.'],
+['File','Holds data (document, image, program). Has a name, a size, a type and rights.'],
+['Folder','Also called a directory. Groups files and other folders in a tree.'],
+['Path','The address of a file: C:\\NBS\\G1\\file1.txt on Windows, /home/user/file1.txt on Linux.'],
+['Extension','The end of a file name that tells its type: .txt, .docx, .jpg, .exe…'],
+['Rights','r = read, w = write, x = execute. They decide who can do what with a file or folder.'],
+['Open source','The source code is public: anyone can read, change and share it. Example: Linux.'],
+['Multitasking','The OS runs several programs at the same time by sharing the CPU and the memory.']]);
+quiz('zq1',[
+['What is the main role of an OS?',['To write software','To manage hardware and software resources','To browse the internet'],1,'The OS manages hardware and software resources.'],
+['Which OS is open source?',['Windows','macOS','Linux'],2,'Linux is open source.'],
+['Which command creates a folder named Test?',['mkdir Test','cd Test','dir Test','del Test'],0,'mkdir = make directory. It works on Windows and Linux.'],
+['Which command lists the contents of a folder on Linux?',['dir','ls','cd','pwd'],1,'ls on Linux and macOS, dir on Windows.'],
+['You are in C:\\NBS and you type cd G1. The prompt becomes…',['C:\\G1>','C:\\NBS\\G1>','C:\\NBS>'],1,'G1 is inside NBS, so the new path is C:\\NBS\\G1.'],
+['Which one is a Linux path?',['C:\\Users\\Ali\\photo.jpg','/home/ali/photo.jpg','My Documents → photo.jpg'],1,'Linux paths start at / and use forward slashes.'],
+['What does the extension .exe tell you?',['It is a picture','It is a program you can run','It is a folder'],1,'.exe files are Windows programs.'],
+['Which command moves file1.txt into the folder G2 on Windows?',['copy file1.txt G2','move file1.txt G2','cd file1.txt G2'],1,'move takes the file out of NBS and puts it in G2.'],
+['Which desktop OS was the most used worldwide in December 2024?',['macOS','Linux','Windows'],2,'Windows: about 73% of desktop computers.'],
+['Which right lets you run a file as a program?',['r','w','x'],2,'x = execute.'],
+['Why learn the CLI?',['It is faster, and powerful for troubleshooting and automation','It is the only way to open a file','It makes the screen brighter'],0,'One command can do the work of many clicks, and commands can be automated.']],
+p=>p>=.8?'Gold: you master operating systems!':p>=.5?'Silver: review the topics you missed, then play again.':'Bronze: try the terminal lab again, then replay.');
+
+/* ---------- stop challenges + roadmap ---------- */
+const ST2=[['t2','1. What is an OS?','Definition and role'],['t3','2. Types of OS','Windows, macOS, Linux, ChromeOS'],['t4','3. Files and folders','Types, paths, rights'],['t5','4. Command line','CLI commands, terminal lab'],['t6','5. Managing files','GUI and CLI methods']],done2=new Set();
+const paint2=()=>{H($('#zrm'),ST2.map(x=>`<a class="card" href="#${x[0]}" style="text-decoration:none;color:inherit;${done2.has(x[0])?'border-color:var(--ok);background:#e4fbf3':''}"><b>${done2.has(x[0])?'✓ ':''}${x[1]}</b><br><small>${x[2]}</small></a>`).join(''));PR[2]=done2.size;spU()};
+const MQ2={
+t2:[["An OS is software that…","manages hardware and software resources","only edits photos","is a part you can touch"],["Running Word and music at the same time is called…","Multitasking","Formatting","Printing"],["Which is NOT a job of the OS?","Writing your essay for you","Managing memory","Providing a user interface"]],
+t3:[["Which OS is open source?","Linux","Windows","macOS"],["Ubuntu, Debian and Fedora are versions of…","Linux","Windows","macOS"],["ChromeOS is made by…","Google","Apple","Microsoft"]],
+t4:[["Which part of photo.png tells you its type?",".png (the extension)","photo","its size"],["Which one is a Windows path?","C:\\NBS\\G1\\file1.txt","/home/user/file1.txt","G1 → file1.txt → NBS"],["The right x on a folder lets you…","enter it with cd","read a file faster","print it"]],
+t5:[["CLI stands for…","Command Line Interface","Computer Linked Internet","Central Logic Item"],["Which command lists a folder on Windows?","dir","ls","pwd"],["Which command goes up to the parent folder?","cd ..","cd up","mkdir .."]],
+t6:[["Which command deletes a file on Linux?","rm","del","dir"],["How do you move a file with the mouse in a GUI?","Drag and drop it onto a folder","Double-click the clock","Press F5"],["A file deleted with del or rm goes to…","Nowhere: it is deleted for good","The Recycle Bin","The printer"]]};
+Object.keys(MQ2).forEach(id=>{$('#'+id).insertAdjacentHTML('beforeend',`<h3>Stop challenge: 3 questions</h3><div id="m${id}" class="card"></div>`);
+ quiz('m'+id,MQ2[id].map(q=>{const o=sh(q.slice(1));return[q[0],o,o.indexOf(q[1]),'Re-read this stop if it was tricky.']}),p=>{if(p>=.66){done2.add(id);paint2()}return p>=.66?'Stop complete!':'Almost. Re-read this stop and try again.'})});
+paint2();
+})();
+
+/* ---------- unit switcher ---------- */
+(function(){
+const U=n=>{cur=n;[1,2].forEach(k=>{$('#u'+k).hidden=k!=n;$('#n'+k).hidden=k!=n;$('#b'+k).classList.toggle('on',k==n)});
+ document.title=(n==1?'IT1 · Unit 1 · Introduction to Information Technology':'IT1 · Unit 2 · Operating Systems')+' · NBS';spU();try{localStorage.setItem('it1unit',n)}catch(e){}};
+const go=n=>{U(n);history.replaceState(null,'','#u'+n);scrollTo(0,0)};
+$('#b1').onclick=()=>go(1);$('#b2').onclick=()=>go(2);
+const route=()=>{const h=decodeURIComponent(location.hash.slice(1)),t=h&&document.getElementById(h);if(!t)return false;const m=t.closest('main');if(!m)return false;
+ const n=m.id=='u2'?2:1;if(n!=cur||t==m){U(n);if(t==m)scrollTo(0,0);else t.scrollIntoView()}return true};
+addEventListener('hashchange',route);
+if(!route()){let s=1;try{s=+localStorage.getItem('it1unit')||1}catch(e){}U(s==2?2:1)}
 })();
 </script>
 </body></html>

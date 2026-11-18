@@ -90,12 +90,28 @@ table.xl{border-collapse:collapse;width:auto;background:#fff;outline:none;font:1
 .ag td{width:44px;height:30px;border:1px solid #d4d4d4;cursor:pointer;padding:0}.ag td:hover{background:#e3f1e8}.ag td.ok{background:var(--g)}.ag td.no{background:#fde4e8}
 .kc{background:#fff;border:3px dashed var(--l);padding:22px;text-align:center;cursor:pointer;outline:none}.kc:focus{border-color:var(--n);border-style:solid}
 kbd{display:inline-block;border:2px solid var(--n);border-bottom-width:4px;padding:2px 8px;font:700 15px ui-monospace,monospace;background:#fff;margin:0 2px}
+.xl td.hd{font-weight:700;background:#f7f9fd}.xl td.hit{background:#c6efce!important;color:#006100;font-weight:700}
+.syn{font:700 clamp(14px,2.4vw,18px) ui-monospace,Consolas,monospace;background:#fff;border:2px solid var(--l);padding:12px 14px;overflow-x:auto;white-space:nowrap}
+.vm{border-collapse:collapse;background:#fff}.vm td{transition:background .25s}.vm td.scan{background:#fff2a8}.vm td.no{background:#fde4e8;color:var(--m)}.vm td.row{background:#e4fbf3}.vm td.res{background:var(--g);font-weight:800;outline:3px solid var(--n);outline-offset:-3px}
+.dl td input{width:74px;padding:4px 6px;text-align:center}.dl td.y{background:#d9f7ec;color:#0d6b4c;font-weight:700}.dl td.n{background:#fde4e8;color:#a3243a;font-weight:700}.dl tr[data-i]{cursor:pointer}.dl tr.sel th{background:var(--n);color:#fff}
+.sw{border:2px solid var(--n);background:#fff;color:var(--n);font:800 15px system-ui;padding:8px 14px;cursor:pointer;margin:0 6px 6px 0}.sw.on{background:var(--g)}
+.pv th{background:#e8edf7}.pv td{cursor:pointer;text-align:right}.pv td:hover{background:#e4fbf3}.pv tr.gt td,.pv tr.gt th{border-top:3px solid var(--n);font-weight:800}
+.pb{display:block;height:5px;background:var(--g);margin-top:3px;margin-left:auto}
+.src{font-size:14px}.src td{white-space:nowrap;transition:background .3s}.src tr.hl td{background:#fff2a8;font-weight:700}
+.cf{font-size:14px}.cf td{transition:background-color .3s}
+.sl{position:relative;overflow:hidden;aspect-ratio:16/9;border:2px solid var(--n);max-width:560px;width:100%;background:#fff}
+.sl .in{position:absolute;inset:0;padding:6% 7%;display:flex;flex-direction:column;transition:background .4s,color .4s}#vsd2 .in{background:var(--n);color:#fff}
+@keyframes sIn{from{transform:translateX(100%);opacity:0}to{transform:none;opacity:1}}@keyframes fIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.chg.ins{color:#2b579a;text-decoration:underline}.chg.del{color:var(--bad);text-decoration:line-through}
+.mmf{background:#e8edf7;color:#2b579a;font-family:ui-monospace,monospace;padding:0 4px}
+.card p>code{overflow-wrap:anywhere}
+.cit{font-family:Georgia,'Times New Roman',serif}
 @media(max-width:760px){.lab{grid-template-columns:1fr}}
 @media(max-width:640px){#sp{display:none}.ut button{padding:5px 7px}}
 @media(max-width:640px){.io{grid-template-columns:1fr 1fr}.t{width:40px;font-size:24px}.logo{width:100px}}
 </style></head><body><div id="pb"></div>
 <header><a class="logo" href="#"><img src="nbs.jpeg" alt="Nouakchott Business School"></a>
-<div class="ut"><button id="b1" class="on">Unit 1</button><button id="b2">Unit 2</button><button id="b3">Unit 3</button></div><nav id="n1"><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s13">Octal &amp; Hex</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><nav id="n2" hidden><a href="#t1">Warm-up</a><a href="#t2">What is an OS</a><a href="#t3">Types</a><a href="#t4">Files</a><a href="#t5">Command line</a><a href="#t6">Manage</a><a href="#t7">Games</a><a href="#t8">Final quiz</a></nav><nav id="n3" hidden><a href="#w1">Warm-up</a><a href="#w2">Office suite</a><a href="#w3">Interface</a><a href="#w4">Word</a><a href="#w5">Excel basics</a><a href="#w6">Formulas</a><a href="#w7">Games</a><a href="#w8">Final quiz</a></nav><b id="sp">0 / 8 stops</b><b id="xp">0 XP</b></header>
+<div class="ut"><button id="b1" class="on">Unit 1</button><button id="b2">Unit 2</button><button id="b3">Unit 3</button></div><nav id="n1"><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s13">Octal &amp; Hex</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><nav id="n2" hidden><a href="#t1">Warm-up</a><a href="#t2">What is an OS</a><a href="#t3">Types</a><a href="#t4">Files</a><a href="#t5">Command line</a><a href="#t6">Manage</a><a href="#t7">Games</a><a href="#t8">Final quiz</a></nav><nav id="n3" hidden><a href="#w1">Warm-up</a><a href="#w2">Suite</a><a href="#w3">Word</a><a href="#w4">Excel basics</a><a href="#w5">SUM · SUMIF</a><a href="#w6">IF · AND · OR</a><a href="#w7">VLOOKUP</a><a href="#w8">Pivot tables</a><a href="#w9">Cond. formatting</a><a href="#w10">PowerPoint · Access</a><a href="#w11">Games</a><a href="#w12">Final quiz</a></nav><b id="sp">0 / 8 stops</b><b id="xp">0 XP</b></header>
 <main id="u1">
 <div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Unit 1</small><h1>Introduction to Information Technology</h1>
 <p>Tap the tiles. Every photo, song and message on a computer is built from 0s and 1s. Turn on 64 and 1 to make the letter A.</p>
@@ -317,40 +333,35 @@ kbd{display:inline-block;border:2px solid var(--n);border-bottom-width:4px;paddi
 <div class="g"><div class="card"><p>The OS is essential for managing hardware and software.</p></div><div class="card"><p>Windows, macOS and Linux are the most common OS types.</p></div><div class="card"><p>Basic OS concepts include files and directories.</p></div><div class="card"><p>The CLI provides powerful file management capabilities.</p></div></div>
 <h3>10 key terms. Tap one.</h3><div id="zkt" class="card"></div>
 <h3>Final quiz</h3><div id="zq1" class="card"></div>
-<p><a class="b" style="display:inline-block;text-decoration:none" href="#u1">← Back to Unit 1</a> <a class="b" style="display:inline-block;text-decoration:none" href="#u3">Next: Unit 3 · Microsoft Office →</a></p></section>
+<p><a class="b" style="display:inline-block;text-decoration:none" href="#u1">← Back to Unit 1</a> <a class="b" style="display:inline-block;text-decoration:none" href="#u3">Next: Unit 3 · Productivity Software →</a></p></section>
 </main>
 <main id="u3" hidden>
-<div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Unit 3</small><h1>Introduction to Microsoft Office</h1>
-<p>Every job needs the right tool. Read the task, then tap the app you would use.</p>
+<div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Unit 3</small><h1>Productivity Software</h1>
+<p>Word writes, Excel calculates, PowerPoint presents and Access stores. Read the task, then tap the app you would use.</p>
 <p class="ro" id="vht" style="min-height:2.2em"></p>
 <div id="vha" class="bits"></div>
 <p class="ro">Score: <span id="vhs">0</span> · <span id="vhm" style="color:#fff;font-weight:400"></span></p></div></div>
 
-<section class="sec" style="padding-bottom:0"><h2>Your Unit 3 roadmap</h2><p class="lead">Five stops cover the whole unit. Answer 2 of 3 questions right at the end of a stop to turn it green.</p><div id="vrm" class="g"></div></section>
+<section class="sec" style="padding-bottom:0"><h2>Your Unit 3 roadmap</h2><p class="lead">Nine stops cover the whole unit. Excel is the star: five stops are about it. Answer 2 of 3 questions right at the end of a stop to turn it green.</p><div id="vrm" class="g"></div></section>
 
 <section id="w1" class="sec"><h2>Warm-up</h2><p class="lead">Five quick questions. You probably already use some of these apps.</p>
-<tip>Hi again, Nuo here! In Unit 2 you met the operating system. Now let’s open the apps you will use in every office job: Word and Excel.</tip><div id="vq0" class="card"></div></section>
+<tip>Hi again, Nuo here! In Unit 2 you met the operating system. Now let’s open the apps of every office job. By the end of this unit you will build your own pivot table!</tip><div id="vq0" class="card"></div></section>
 
-<section id="w2" class="sec"><h2>The Microsoft Office suite</h2>
-<p class="lead">Microsoft Office is a <b>suite</b>: a family of applications made by Microsoft for office work. Its subscription version is called <b>Microsoft 365</b>. It runs on Windows, macOS, the web and phones.</p>
-<div class="g"><div class="card"><h3>Word</h3><p>Write documents: letters, CVs, reports.</p><small>File type: .docx</small></div><div class="card"><h3>Excel</h3><p>Calculate with tables: budgets, grades, salaries, charts.</p><small>File type: .xlsx</small></div><div class="card"><h3>PowerPoint</h3><p>Build slides to present an idea.</p><small>File type: .pptx</small></div><div class="card"><h3>Outlook</h3><p>Email, calendar and contacts.</p><small>Email and meetings</small></div></div>
-<h3>Meet the whole family. Tap an app.</h3><div id="vap" class="card"></div>
-<tip>Office is not free, but there are free alternatives that open the same files: <b>LibreOffice</b> (open source, like Linux in Unit 2) and <b>Google Docs and Sheets</b> (online).</tip>
-<h3>Game: which app would you use?</h3><div id="vg1" class="card"></div></section>
-
-<section id="w3" class="sec"><h2>The common interface</h2>
-<p class="lead">Word, Excel and PowerPoint share the same layout. Learn it once, use it everywhere.</p>
-<h3>The parts of the window. Tap a part.</h3>
+<section id="w2" class="sec"><h2>Productivity software</h2>
+<p class="lead">Productivity software helps you <b>write, calculate, present and organize data</b>. The best known is the <b>Microsoft Office</b> suite (Microsoft 365). Google offers free online versions.</p>
+<div class="g"><div class="card"><h3>Word processing</h3><p>Microsoft Word, Google Docs</p><small>Letters, CVs, reports · .docx</small></div><div class="card"><h3>Spreadsheets</h3><p>Microsoft Excel, Google Sheets</p><small>Budgets, grades, sales · .xlsx</small></div><div class="card"><h3>Presentations</h3><p>Microsoft PowerPoint, Google Slides</p><small>Slides for a talk · .pptx</small></div><div class="card"><h3>Databases</h3><p>Microsoft Access</p><small>Tables, queries, forms · .accdb</small></div></div>
+<h3>Meet the family. Tap an app.</h3><div id="vap" class="card"></div>
+<tip>Office is not free, but <b>LibreOffice</b> (open source, like Linux in Unit 2) and <b>Google Docs, Sheets and Slides</b> (online and free) open the same files.</tip>
+<h3>One interface for all. Tap a part of the window.</h3>
 <div class="lab"><div class="mw" id="vmw">
 <div class="t1"><span data-p="0">Save · Undo · Redo</span><span data-p="1">Document1 - Word</span><span>— ▢ ✕</span></div>
-<div class="t2" data-p="2"><span>File</span><span class="on">Home</span><span>Insert</span><span>Layout</span><span>Review</span><span>View</span></div>
+<div class="t2" data-p="2"><span>File</span><span class="on">Home</span><span>Insert</span><span>Layout</span><span>References</span><span>Review</span></div>
 <div class="t3" data-p="3"><div><b>Paste</b><small>Clipboard</small></div><div><b>B I U</b><small>Font</small></div><div><b>≡ ☰</b><small>Paragraph</small></div><div><b>Heading 1</b><small>Styles</small></div></div>
 <div class="t4" data-p="4"><div>Type your text here…|</div></div>
 <div class="t5"><span data-p="5">Page 1 of 1 · 120 words · English</span><span data-p="6">− ━━━━ + 100%</span></div></div>
 <div id="vmd" class="card" style="margin:0"></div></div>
 <h3>The ribbon tabs. Tap a tab.</h3><div id="vtb" class="card"></div>
-<div class="g"><div class="card"><h3>Save</h3><p>Ctrl + S. The first time, it asks for a name and a folder.</p></div><div class="card"><h3>Save As</h3><p>Makes a copy with a new name, place or type, for example a PDF.</p></div><div class="card"><h3>Export to PDF</h3><p>File › Export (or Save As › PDF). A PDF looks the same on every computer.</p></div></div>
-<h3>Keyboard shortcuts: the same in Word and Excel</h3>
+<h3>Keyboard shortcuts: the same in every app</h3>
 <div style="overflow-x:auto"><table><tr><th>Keys</th><th>Action</th><th>Keys</th><th>Action</th></tr>
 <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd></td><td>Copy</td><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td>Save</td></tr>
 <tr><td><kbd>Ctrl</kbd>+<kbd>X</kbd></td><td>Cut</td><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td><td>Print</td></tr>
@@ -359,11 +370,11 @@ kbd{display:inline-block;border:2px solid var(--n);border-bottom-width:4px;paddi
 <tr><td><kbd>Ctrl</kbd>+<kbd>Y</kbd></td><td>Redo</td><td><kbd>Ctrl</kbd>+<kbd>B</kbd> / <kbd>I</kbd> / <kbd>U</kbd></td><td>Bold / Italic / Underline</td></tr></table></div>
 <h3>Try it: click the box, then press a shortcut</h3>
 <div id="vkc" class="kc" tabindex="0"><p style="margin:0">Click here, then press <kbd>Ctrl</kbd> + a letter (<kbd>⌘</kbd> on a Mac).</p><p id="vko" class="big" style="margin:10px 0 0"></p></div>
-<h3>Game: which shortcut?</h3><div id="vg2" class="card"></div></section>
+<h3>Game: which app would you use?</h3><div id="vg1" class="card"></div></section>
 
-<section id="w4" class="sec"><h2>Microsoft Word</h2>
-<p class="lead">Word is a <b>word processor</b>: you type text, then format it so it is clear and professional. A Word file is a <b>document</b> (.docx).</p>
-<div class="g"><div class="card"><h3>Select text</h3><p>Double-click a word. Triple-click a paragraph. <kbd>Ctrl</kbd>+<kbd>A</kbd> selects everything.</p></div><div class="card"><h3>Character formatting</h3><p>Font, size, bold, italic, underline, color. It changes the selected letters.</p></div><div class="card"><h3>Paragraph formatting</h3><p>Alignment, lists, line spacing. It changes the whole paragraph.</p></div><div class="card"><h3>Styles</h3><p>Title, Heading 1, Heading 2, Normal. Headings make a table of contents possible.</p></div></div>
+<section id="w3" class="sec"><h2>Word processing</h2>
+<p class="lead">A <b>word processor</b> (Word, Google Docs) lets you type text, format it, and work on it with other people.</p>
+<div class="g"><div class="card"><h3>Basic formatting</h3><p>Font, size, bold, italic, color, alignment, lists.</p></div><div class="card"><h3>Advanced formatting</h3><p>Margins, orientation, columns, headers, footers, page numbers, tables.</p></div><div class="card"><h3>Styles</h3><p>Title, Heading 1, Heading 2, Normal. Change a style once and every heading changes.</p></div><div class="card"><h3>Templates</h3><p>File › New: ready-made CVs, letters and reports. Replace the text and you are done.</p></div></div>
 <tip>First type, then format. Select the text first, then press the button. No selection means nothing changes (except for paragraph buttons).</tip>
 <h3>Word lab: format the letter</h3>
 <p>This is a mini Word. Select text in the page, then use the ribbon. The checklist ticks itself when a task is done.</p>
@@ -382,52 +393,128 @@ kbd{display:inline-block;border:2px solid var(--n);border-bottom-width:4px;paddi
 <div class="card" style="margin:0"><h3>Checklist</h3><ol id="vwt" class="ms"></ol><button id="vwr" class="b">Reset the letter</button></div></div>
 <h3>Page layout: orientation and margins</h3>
 <div class="lab"><div id="vlp" class="lp"><div class="pp"><div class="ta"></div></div></div><div class="card" style="margin:0"><p><b>Orientation</b></p><div id="vlo"></div><p><b>Margins</b></p><div id="vlm"></div><p id="vli"></p></div></div>
+<h3>Collaboration: track changes and comments</h3>
+<p>Your teacher corrected your message with <b>Track Changes</b> (Review tab). Blue underlined text was added, red crossed-out text was deleted. Accept or reject each change, then resolve the comment.</p>
+<div class="lab"><div id="vtc" class="pg" style="min-height:0"></div><div class="card" style="margin:0"><div id="vtl"></div><button id="vta" class="b">Accept all</button><button id="vtr" class="b" style="background:var(--m)">Start again</button></div></div>
+<h3>References: APA or IEEE?</h3>
+<p>A report must cite its sources. The two styles of this course are <b>APA</b> (author and year) and <b>IEEE</b> (numbers in square brackets). In Word: References › Style, then Insert Citation and Bibliography.</p>
+<div class="card"><div id="vcs"></div><div id="vco"></div><small>Example sources, made up for practice.</small></div>
+<h3>Mail merge: one letter, many people</h3>
+<p>Write the letter once with <b>fields</b>, connect a list (often an Excel file), and Word makes one personal letter per person.</p>
+<div class="lab"><div><div class="rb"><button id="vgp" title="Previous record">◀</button><b id="vgn" style="padding:0 8px;font-size:14px"></b><button id="vgx" title="Next record">▶</button><i class="sep"></i><button id="vgv">Preview Results</button></div><div id="vgl" class="pg" style="min-height:0"></div></div>
+<div class="card" style="margin:0"><h3>Recipient list (Excel)</h3><div id="vgd" style="overflow-x:auto"></div><ol class="ms" style="margin-top:10px"><li>Mailings › Start Mail Merge › Letters</li><li>Select Recipients › Use an Existing List</li><li>Insert Merge Field</li><li>Preview Results</li><li>Finish &amp; Merge</li></ol></div></div>
 <h3>Useful Word features. Tap one.</h3><div id="vwf" class="card"></div>
 <h3>Game: in which tab is it?</h3><div id="vg3" class="card"></div></section>
 
-<section id="w5" class="sec"><h2>Excel basics</h2>
-<p class="lead">Excel is a <b>spreadsheet</b>: a big table where Excel can calculate for you. An Excel file is a <b>workbook</b> (.xlsx).</p>
+<section id="w4" class="sec"><h2>Excel basics</h2>
+<p class="lead">Excel (or Google Sheets) is a <b>spreadsheet</b>: a big table where the computer calculates for you. An Excel file is a <b>workbook</b> (.xlsx).</p>
 <div class="g"><div class="card"><h3>Workbook</h3><p>The Excel file. It contains one or more worksheets.</p></div><div class="card"><h3>Worksheet</h3><p>One page of the workbook, shown as a tab at the bottom: Sheet1, Sheet2…</p></div><div class="card"><h3>Cell</h3><p>One box. Its <b>address</b> is its column letter + row number: <b>C4</b>.</p></div><div class="card"><h3>Range</h3><p>A block of cells, written with a colon: <b>A1:A5</b> means A1 to A5.</p></div></div>
 <h3>Game: click the cell</h3>
 <div class="card"><p class="big" id="vat" style="font-size:22px"></p><div style="overflow-x:auto"><table class="ag" id="vag" style="width:auto"></table></div><p id="vam" class="fb"></p></div>
-<h3>What can you type in a cell?</h3>
-<div class="g"><div class="card"><h3>Text</h3><p>Names, labels. Sits on the <b>left</b> of the cell.</p></div><div class="card"><h3>Numbers</h3><p>Prices, quantities, dates. Sit on the <b>right</b>.</p></div><div class="card"><h3>Formulas</h3><p>Always start with <b>=</b>. Example: <code>=B2*C2</code>. Excel shows the result.</p></div></div>
+<h3>Organize your data well</h3>
+<div class="g"><div class="card"><h3>One header row</h3><p>Row 1 holds the titles: Product, Price, Quantity. Make it bold.</p></div><div class="card"><h3>One record per row</h3><p>Each row is one product, one student or one sale.</p></div><div class="card"><h3>No empty rows</h3><p>Excel stops at the first empty row when it sorts, filters or builds a pivot table.</p></div><div class="card"><h3>One type per column</h3><p>Numbers in a number column, dates in a date column. Text sits on the left, numbers on the right.</p></div></div>
 <h3>Operators and the order of operations</h3>
 <div style="overflow-x:auto"><table><tr><th>Operator</th><th>Meaning</th><th>Example</th><th>Result</th></tr>
 <tr><td><code>+</code></td><td>add</td><td><code>=5+3</code></td><td>8</td></tr><tr><td><code>-</code></td><td>subtract</td><td><code>=5-3</code></td><td>2</td></tr>
 <tr><td><code>*</code></td><td>multiply</td><td><code>=5*3</code></td><td>15</td></tr><tr><td><code>/</code></td><td>divide</td><td><code>=6/3</code></td><td>2</td></tr>
 <tr><td><code>^</code></td><td>power</td><td><code>=2^3</code></td><td>8</td></tr><tr><td><code>%</code></td><td>percent</td><td><code>=200*10%</code></td><td>20</td></tr></table></div>
 <tip>Excel calculates in this order: brackets ( ) first, then ^, then * and /, then + and −. So <b>=2+3*4</b> gives 14, but <b>=(2+3)*4</b> gives 20.</tip>
-<h3>Guess the result</h3><div id="vg4" class="card"></div></section>
-
-<section id="w6" class="sec"><h2>Excel formulas and functions</h2>
-<p class="lead">A <b>formula</b> calculates with cell addresses, so when a number changes, the result updates by itself. A <b>function</b> is a ready-made formula, like SUM.</p>
+<h3>Guess the result</h3><div id="vg4" class="card"></div>
 <h3>Excel lab: the shop’s sales</h3>
-<p>This is a mini Excel. Click a cell, type in it (or in the formula bar), press Enter. While typing a formula, you can click a cell to add its address. Drag over cells to select a range.</p>
+<p>This is a mini Excel. Click a cell, type in it (or in the formula bar), press Enter. While typing a formula, click a cell to add its address. Drag over cells to select a range.</p>
 <div id="vx1"></div>
 <div class="lab" style="margin-top:12px"><div class="card" style="margin:0"><h3>Missions</h3><ol id="vxm" class="ms"></ol><button id="vxr" class="b">Reset the sheet</button></div><div class="card" style="margin:0"><h3>Chart: total by product</h3><div id="vxc" class="col"></div><div id="vxl" class="coll"></div><small>The chart reads D2:D5. Change a number and watch it move.</small></div></div>
-<tip>Using Excel in French? Function names change (SUM = SOMME, AVERAGE = MOYENNE, IF = SI) and you separate arguments with <b>;</b> instead of <b>,</b>. This mini Excel understands both.</tip>
+<tip>Using Excel in French? Function names change (SUM = SOMME, IF = SI, VLOOKUP = RECHERCHEV) and you separate arguments with <b>;</b> instead of <b>,</b>. The mini Excels on this page understand both.</tip>
 <h3>The main functions. Tap one.</h3><div id="vfn" class="card"></div>
 <h3>Relative or absolute reference? Pick a formula for B2, then copy it down.</h3>
 <div class="card"><div id="vrk"></div><div id="vro"></div></div>
 <tip>A <b>$</b> locks a reference. <b>$E$1</b> never changes when you copy the formula. Press <kbd>F4</kbd> in Excel to add the $ signs.</tip>
 <h3>Error messages. Tap one.</h3><div id="ver" class="card"></div></section>
 
-<section id="w7" class="sec"><h2>Games</h2>
-<h3>Formula drill. Write a formula that uses the cells.</h3>
-<div class="card"><div style="overflow-x:auto"><table id="vdd" style="width:auto"></table></div><h3 id="vdq"></h3><input id="vda" placeholder="=" autocomplete="off" spellcheck="false" style="font-family:ui-monospace,monospace;width:260px"> <button id="vdk" class="b">Check</button><p id="vdm" class="fb"></p></div>
-<h3>Word or Excel?</h3><div id="vg5" class="card"></div></section>
+<section id="w5" class="sec"><h2>SUM and SUMIF</h2>
+<p class="lead"><b>SUM</b> adds numbers. <b>SUMIF</b> adds only the numbers that match a <b>condition</b>.</p>
+<div class="g"><div class="card"><h3>SUM with numbers</h3><p><code>=SUM(10, 20, 30)</code></p><p>Gives 60.</p></div><div class="card"><h3>SUM with a range</h3><p><code>=SUM(A2:A6)</code></p><p>Adds A2 to A6.</p></div><div class="card"><h3>SUM with two ranges</h3><p><code>=SUM(A2:A6, B2:B6)</code></p><p>Adds both ranges.</p></div></div>
+<h3>Try SUM. Tap a formula or write your own.</h3><p><small>Each range gets its own color, like in Excel and Google Sheets.</small></p><div id="vp1"></div>
+<h3>SUMIF: add with a condition</h3>
+<div class="syn">=SUMIF(<span style="color:#f29d38">range</span>, <span style="color:#0b7a3e">criteria</span>, <span style="color:#9b5de5">[sum_range]</span>)</div>
+<div class="g" style="margin-top:12px"><div class="card"><h3 style="color:#c97a1c">range</h3><p>Where Excel checks the condition.</p></div><div class="card"><h3 style="color:#0b7a3e">criteria</h3><p>The condition, in quotes: "Apple", "&gt;80", "&lt;&gt;Fruit".</p></div><div class="card"><h3 style="color:#7c3fc4">sum_range</h3><p>(Optional) The cells to add. Leave it out and Excel adds the range itself.</p></div></div>
+<h3>Try SUMIF. The green cells are the ones Excel adds.</h3><div id="vp2"></div>
+<h3>Your turn: write the SUMIF</h3><div id="vt2" class="card"></div>
+<tip>Criteria with a sign go in quotes: "&gt;80", "&lt;=50", "&lt;&gt;Apple" (not Apple). Text is not case-sensitive: "apple" is the same as "Apple".</tip></section>
 
-<section id="w8" class="sec"><h2>Recap and final quiz</h2>
-<h3>10 key terms. Tap one.</h3><div id="vkt" class="card"></div>
+<section id="w6" class="sec"><h2>IF, AND, OR</h2>
+<p class="lead"><b>IF</b> lets Excel make a decision: if a test is true, show one thing; if not, show another.</p>
+<div class="syn">=IF(<span style="color:#2b7de9">logical_test</span>, <span style="color:var(--ok)">value_if_true</span>, <span style="color:var(--bad)">value_if_false</span>)</div>
+<div class="g" style="margin-top:12px"><div class="card"><h3>IF</h3><p><code>=IF(A2&gt;=50,"Pass","Fail")</code></p><p>One test.</p></div><div class="card"><h3>IF + AND</h3><p><code>=IF(AND(A2&gt;=70,B2="Yes"),"Approved","Denied")</code></p><p>TRUE only if <b>all</b> the tests are true.</p></div><div class="card"><h3>IF + OR</h3><p><code>=IF(OR(A2&gt;=70,B2="Yes"),"Approved","Denied")</code></p><p>TRUE if <b>at least one</b> test is true.</p></div></div>
+<h3>AND or OR? Flip the switches.</h3><div id="vao" class="card"></div>
+<h3>Decision lab: change the scores, the status and the limits</h3>
+<p>Edit a score, tap Yes/No to change the status, move the sliders. Tap a row to see how Excel decides.</p>
+<div class="card"><div class="g" style="align-items:center"><p style="margin:0"><b>Pass mark</b> (column C): <b id="vpmv">50</b><input id="vpm" type="range" min="0" max="100" value="50"></p><p style="margin:0"><b>Approval score</b> (columns D and E): <b id="vapv">70</b><input id="vapm" type="range" min="0" max="100" value="70"></p></div>
+<div style="overflow-x:auto;margin-top:10px"><table class="dl" id="vdl"></table></div><div id="vdx" class="det" style="margin-top:10px"></div></div>
+<h3>Try it in the sheet</h3><div id="vp3"></div>
+<h3>Your turn: write the formula for row 2. It must work on every row.</h3><div id="vt3" class="card"></div>
+<tip>Text in a formula goes in quotes: "Yes", "Pass". Numbers do not: A2&gt;=70. The comparison signs are = &lt;&gt; &lt; &gt; &lt;= &gt;=.</tip></section>
+
+<section id="w7" class="sec"><h2>VLOOKUP</h2>
+<p class="lead"><b>VLOOKUP</b> searches for a value in the <b>first column</b> of a table and returns the value from <b>another column</b> of the same row. V means vertical.</p>
+<div class="syn">=VLOOKUP(<span style="color:#2b7de9">lookup_value</span>, <span style="color:#f29d38">table_array</span>, <span style="color:#2fa36b">col_index_num</span>, <span style="color:#9b5de5">[range_lookup]</span>)</div>
+<div class="g" style="margin-top:12px"><div class="card"><h3 style="color:#2b7de9">lookup_value</h3><p>The value to search for: "Banana", or a cell like F2.</p></div><div class="card"><h3 style="color:#c97a1c">table_array</h3><p>The range of the table: A2:C6. The search happens in its first column.</p></div><div class="card"><h3 style="color:#2fa36b">col_index_num</h3><p>The column number to return, counting from 1 inside the table.</p></div><div class="card"><h3 style="color:#7c3fc4">range_lookup</h3><p>(Optional) FALSE for an exact match. TRUE for an approximate match. Use FALSE most of the time.</p></div></div>
+<tip>Think of a phone book: you look for a <b>name</b> in the first column, then read the <b>number</b> on the same line.</tip>
+<h3>The VLOOKUP machine. Choose, then press Run.</h3>
+<div class="card"><p style="margin:0 0 4px"><b style="color:#2b7de9">lookup_value</b></p><div id="vqk"></div><p style="margin:4px 0"><b style="color:#2fa36b">col_index_num</b></p><div id="vqc"></div><p class="syn" id="vqf" style="font-size:16px;margin:10px 0"></p><button id="vqr" class="b">▶ Run VLOOKUP</button>
+<div class="lab" style="margin-top:12px"><div style="overflow-x:auto"><table class="vm" id="vqt"></table></div><div id="vqo" class="det"></div></div></div>
+<h3>Try it in the sheet</h3><div id="vp4"></div>
+<h3>Your turn</h3><div id="vt4" class="card"></div>
+<tip>Copying a VLOOKUP down? Lock the table with $: <b>$A$2:$C$6</b>. Otherwise the table moves down too, and Excel cannot find the first products.</tip></section>
+
+<section id="w8" class="sec"><h2>Pivot tables</h2>
+<p class="lead">A <b>pivot table</b> (in French <b>TCD</b>, tableau croisé dynamique) summarizes a big table in a few clicks, without writing any formula.</p>
+<div class="g"><div class="card"><h3>Rows</h3><p>The groups you want, one per line: each region, each product.</p></div><div class="card"><h3>Columns</h3><p>(Optional) A second group, across the top.</p></div><div class="card"><h3>Values</h3><p>The numbers to summarize: Sum, Count, Average, Max.</p></div><div class="card"><h3>Insert it</h3><p>Click in the data, then Insert › PivotTable. In Google Sheets: Insert › Pivot table.</p></div></div>
+<h3>The data: 10 sales in February 2024</h3><div id="vsd" style="overflow-x:auto"></div>
+<h3>Pivot table lab: build it yourself</h3>
+<div class="lab"><div class="card" style="margin:0"><div id="vpe"></div><div id="vpo" style="overflow-x:auto;margin-top:10px"></div><small>Tap a number in the pivot table: the sales behind it light up in the data above.</small></div><div class="card" style="margin:0"><h3>Activities</h3><ol id="vpmi" class="ms"></ol></div></div>
+<tip>A pivot table never changes your data. If the data changes, right-click the pivot table › Refresh.</tip></section>
+
+<section id="w9" class="sec"><h2>Conditional formatting</h2>
+<p class="lead"><b>Conditional formatting</b> colors cells automatically, following a rule. When the numbers change, the colors change by themselves.</p>
+<div class="g"><div class="card"><h3>Highlight cells</h3><p>Less than, greater than, equal to, text that contains…</p></div><div class="card"><h3>Top / Bottom</h3><p>The top 3, the bottom 10%…</p></div><div class="card"><h3>Data bars</h3><p>A bar inside the cell, longer for bigger numbers.</p></div><div class="card"><h3>Color scales</h3><p>From red (low) to green (high).</p></div></div>
+<h3>Lab: the class results. Turn the rules on and off.</h3>
+<div class="lab"><div style="overflow-x:auto"><table class="cf" id="vcf"></table></div><div class="card" style="margin:0"><h3>Rules manager</h3><div id="vcr"></div><p style="margin-top:10px"><b>Pass mark</b>: <b id="vcpv">10</b> / 20<input id="vcp" type="range" min="8" max="14" value="10" step="0.5"></p><p id="vcn" class="fb"></p><small>Home › Conditional Formatting › Highlight Cells Rules › Less Than…</small></div></div>
+<h3>Game: which rule would you use?</h3><div id="vg6" class="card"></div></section>
+
+<section id="w10" class="sec"><h2>PowerPoint and Access</h2>
+<h3>Presentations: PowerPoint and Google Slides</h3>
+<div class="g"><div class="card"><h3>Design professional slides</h3><p>Few words, big text, strong contrast, one or two fonts, one theme.</p></div><div class="card"><h3>Structure your content</h3><p>Title, agenda, main points, conclusion, questions. One idea per slide.</p></div><div class="card"><h3>Animations and transitions</h3><p>Use them a little, to guide the eye. Too many effects distract.</p></div><div class="card"><h3>Collaborate and share</h3><p>Share a link, add comments, edit together (OneDrive or Google Drive).</p></div></div>
+<h3>Fix the slide. Press each button.</h3>
+<div class="lab"><div class="sl" id="vsl"><div class="in"></div></div><div class="card" style="margin:0"><div id="vsf"></div><p id="vsm" class="fb"></p></div></div>
+<h3>Transition or animation? Press play.</h3>
+<div class="card"><button id="vst" class="b">▶ Play a transition</button><button id="vsa" class="b">▶ Play an animation</button><div class="sl" id="vsd2" style="margin-top:12px"><div class="in"><div style="font-weight:800;font-size:22px">1 · Agenda</div><p>Results · Plans · Questions</p></div></div><p id="vsx"></p></div>
+<h3>Databases: Microsoft Access</h3>
+<p class="lead">A <b>database</b> stores large amounts of organized data so you can find it fast. Schools, banks and hospitals all use databases.</p>
+<h3>The parts of an Access database. Tap one.</h3><div id="vax" class="card"></div>
+<h3>Case study: a simple school database</h3>
+<div class="g"><div class="card"><h3>Table: Students</h3><p><b>StudentID</b> <small>(primary key)</small><br>Name<br>City<br>GroupID<br>Average</p></div><div class="card" style="display:flex;flex-direction:column;justify-content:center;text-align:center"><p class="big" style="margin:0">1 ⟶ ∞</p><p><b>Relationship</b>: one group has many students. The field <b>GroupID</b> links the two tables.</p></div><div class="card"><h3>Table: Groups</h3><p><b>GroupID</b> <small>(primary key)</small><br>Room<br>Teacher</p></div></div>
+<h3>Run a query. Choose a criterion and a sort.</h3>
+<div class="card"><p style="margin:0 0 4px"><b>Criteria</b></p><div id="vaq"></div><p style="margin:4px 0"><b>Sort</b></p><div id="vas"></div><p><small>The query in SQL, the language behind Access:</small><br><code id="vaw"></code></p><div id="vaz" style="overflow-x:auto"></div></div></section>
+
+<section id="w11" class="sec"><h2>Games</h2>
+<h3>Formula drill. Write a formula that uses the cells.</h3>
+<div class="card"><div style="overflow-x:auto"><table id="vdd" style="width:auto"></table></div><h3 id="vdq"></h3><input id="vda" placeholder="=" autocomplete="off" spellcheck="false" style="font-family:ui-monospace,monospace;width:300px"> <button id="vdk" class="b">Check</button><p id="vdm" class="fb"></p></div>
+<h3>Which function or tool?</h3><div id="vg7" class="card"></div>
+<h3>Word, Excel, PowerPoint or Access?</h3><div id="vg5" class="card"></div></section>
+
+<section id="w12" class="sec"><h2>Recap and final quiz</h2>
+<h3>Key takeaways</h3>
+<div class="g"><div class="card"><p>Word: styles, templates, track changes, references and mail merge.</p></div><div class="card"><p>Excel: SUM and SUMIF add, IF decides, VLOOKUP finds.</p></div><div class="card"><p>Pivot tables summarize, conditional formatting colors.</p></div><div class="card"><p>PowerPoint presents, Access stores and searches data.</p></div></div>
+<h3>13 key terms. Tap one.</h3><div id="vkt" class="card"></div>
 <h3>Final quiz</h3><div id="vq1" class="card"></div>
-<p><a class="b" style="display:inline-block;text-decoration:none" href="#u2">← Back to Unit 2</a></p></section>
+<p><a class="b" style="display:inline-block;text-decoration:none" href="#u2">← Back to Unit 2</a> <a class="b" style="display:inline-block;text-decoration:none" href="#u1">Back to Unit 1</a></p></section>
 </main>
 
 <footer>IT1 · Information Technology 1 · Nouakchott Business School · Course support material</footer>
 <script>
 const $=s=>document.querySelector(s),H=(e,h)=>e.innerHTML=h,sh=a=>[...a].sort(()=>Math.random()-.5),E=c=>c.replace(/[<&]/g,m=>m=='<'?'&lt;':'&amp;');
-let xp=0,cur=1;const PR={1:0,2:0,3:0},PT={1:8,2:5,3:5},spU=()=>$('#sp').textContent=PR[cur]+' / '+PT[cur]+' stops';const add=n=>{xp+=n;$('#xp').textContent=xp+' XP'};
+let xp=0,cur=1;const PR={1:0,2:0,3:0},PT={1:8,2:5,3:9},spU=()=>$('#sp').textContent=PR[cur]+' / '+PT[cur]+' stops';const add=n=>{xp+=n;$('#xp').textContent=xp+' XP'};
 document.querySelectorAll('tip').forEach(e=>e.outerHTML=`<div class="tip"><b class="mas"><i></i><i></i></b><p>${e.innerHTML}</p></div>`);
 onscroll=()=>$('#pb').style.width=100*scrollY/(document.documentElement.scrollHeight-innerHeight)+'%';
 function quiz(id,Q,end){let i=0,s=0;const el=$('#'+id),go=()=>{
@@ -712,58 +799,59 @@ PX.forEach(([q,a,s])=>{const r=document.createElement('div');r.style.cssText='pa
 </script>
 
 
-<!-- ===== UNIT 3: Microsoft Office (Word and Excel) ===== -->
+<!-- ===== UNIT 3: Productivity Software (Word, Excel, PowerPoint, Access) ===== -->
 <script>
 (function(){
 const rnd=n=>Math.floor(Math.random()*n);
 const pk=(id,I,f)=>{pick(id,I,f);$('#'+id).lastChild.hidden=true};
+const chipRow=(el,L,i0,cb)=>{H(el,L.map(x=>`<button class="c">${x}</button>`).join(''));const bs=[...el.children];const set=i=>{bs.forEach((b,k)=>b.classList.toggle('on',k==i));cb(i,L[i])};bs.forEach((b,i)=>b.onclick=()=>set(i));if(i0!=null)set(i0);return set};
 
 /* ---------- hero: which app? ---------- */
-const APPS=[['Word','#2b579a'],['Excel','#217346'],['PowerPoint','#c43e1c'],['Outlook','#0f6cbd']];
-const TK=[['Write a cover letter',0],['Calculate the salaries of 20 employees',1],['Present your project to the class',2],['Send a file to your teacher',3],['Make a budget for the month',1],['Write a report with a table of contents',0],['Draw a chart of the sales',1],['Create slides with animations',2],['Plan a meeting in your calendar',3],['Print your CV',0],['Keep the grades of a class with their averages',1],['Show photos of a trip on a big screen',2]];
+const APPS=[['Word','#2b579a'],['Excel','#217346'],['PowerPoint','#c43e1c'],['Access','#a4373a']];
+const TK=[['Write a cover letter',0],['Calculate the salaries of 20 employees',1],['Present your project to the class',2],['Store 5,000 customers and find one in a second',3],['Make a budget for the month',1],['Write a report with a table of contents',0],['Summarize the sales by region with a pivot table',1],['Create slides with transitions',2],['Build a form to enter new students',3],['Send the same letter to 200 clients, each with their name',0],['Find the price of a product with VLOOKUP',1],['Show photos of a trip on a big screen',2],['Link a table of students to a table of groups',3],['Color the grades below 10 in red automatically',1]];
 let ht,hs=0,hn=0,hl=0;
 H($('#vha'),APPS.map(a=>`<button class="oa" style="background:${a[1]}">${a[0]}</button>`).join(''));
-const hnext=()=>{let i;do i=rnd(TK.length);while(TK.length>1&&TK[i]===ht);ht=TK[i];hl=0;H($('#vht'),`Task: <span>${ht[0]}</span>`);[...$('#vha').children].forEach(b=>b.classList.remove('ok','no'))};
-[...$('#vha').children].forEach((b,i)=>b.onclick=()=>{if(hl)return;hl=1;hn++;const ok=i==ht[1];if(ok)hs++;b.classList.add(ok?'ok':'no');$('#vha').children[ht[1]].classList.add('ok');
- $('#vhs').textContent=hs+' / '+hn;$('#vhm').textContent=ok?`Right: “${ht[0]}” is a job for ${APPS[ht[1]][0]}!`:`Not quite: “${ht[0]}” is a job for ${APPS[ht[1]][0]}.`;setTimeout(hnext,1300)});
+const hnext=()=>{let i;do i=rnd(TK.length);while(TK[i]===ht);ht=TK[i];hl=0;H($('#vht'),`Task: <span>${ht[0]}</span>`);[...$('#vha').children].forEach(b=>b.classList.remove('ok','no'))};
+[...$('#vha').children].forEach((b,i)=>b.onclick=()=>{if(hl)return;hl=1;hn++;const ok=i==ht[1];if(ok){hs++;add(2)}b.classList.add(ok?'ok':'no');$('#vha').children[ht[1]].classList.add('ok');
+ $('#vhs').textContent=hs+' / '+hn;$('#vhm').textContent=ok?`Right: “${ht[0]}” is a job for ${APPS[ht[1]][0]}!`:`Not quite: “${ht[0]}” is a job for ${APPS[ht[1]][0]}.`;setTimeout(hnext,1400)});
 hnext();
 
 /* ---------- warm-up ---------- */
 quiz('vq0',[
-['Microsoft Word is mainly used to…',['write documents','make calculations','send emails'],0,'Word is a word processor: letters, CVs, reports.'],
-['Which app is a spreadsheet?',['PowerPoint','Excel','Outlook'],1,'Excel is the spreadsheet of Microsoft Office.'],
+['Microsoft Word is mainly used to…',['write documents','make calculations','store a database'],0,'Word is a word processor: letters, CVs, reports.'],
+['Which app is a spreadsheet?',['PowerPoint','Excel','Access'],1,'Excel is the spreadsheet of Microsoft Office. Google Sheets is the free online one.'],
 ['In Excel, every formula starts with…',['=','+','#'],0,'A formula always starts with the equal sign.'],
-['What does Ctrl + Z do?',['Zoom','Undo','Save'],1,'Ctrl + Z undoes your last action.'],
-['A Word file usually ends with…',['.docx','.xlsx','.exe'],0,'.docx is a Word document. .xlsx is Excel.']],()=>'Now let’s learn how to use them, step by step.');
+['Microsoft Access is a…',['database','web browser','photo editor'],0,'Access stores organized data in tables you can search.'],
+['What does =SUM(A1:A3) do?',['Adds A1, A2 and A3','Multiplies A1 by A3','Counts the cells'],0,'SUM adds all the numbers of the range.']],()=>'Now let’s learn them, step by step.');
 
 /* ---------- w2: the suite ---------- */
 pick('vap',[
-['Word','Word processor','Letters, CVs, reports, contracts.','.docx'],['Excel','Spreadsheet','Budgets, grades, salaries, charts.','.xlsx'],['PowerPoint','Presentations','Slides for a talk, a class or a client.','.pptx'],
-['Outlook','Email and calendar','Send emails, plan meetings, keep contacts.','email'],['Access','Database','Store and search large amounts of organized data.','.accdb'],['OneNote','Digital notebook','Take notes with text, pictures and drawings.','notebook'],['Teams','Teamwork','Chat, video meetings and file sharing.','chat and meetings']],
+['Word','Word processor','Letters, CVs, reports. Styles, templates, track changes, mail merge.','.docx'],
+['Excel','Spreadsheet','Budgets, grades, salaries. Formulas, functions, pivot tables, charts.','.xlsx'],
+['PowerPoint','Presentations','Slides with transitions and animations for a talk, a class or a client.','.pptx'],
+['Access','Database','Tables linked by relationships, queries to search, forms to type data, reports to print.','.accdb'],
+['Google Docs, Sheets, Slides','Free online apps','The same jobs as Word, Excel and PowerPoint, in the browser. Many people can edit the same file at once.','saved in Google Drive'],
+['Outlook and Teams','Communication','Outlook: email and calendar. Teams: chat, video meetings and shared files.','email, chat']],
 x=>`<h3>${x[0]}</h3><p><b>${x[1]}.</b> ${x[2]}</p><p><small>Files: ${x[3]}</small></p>`);
-srt('vg1',['Word','Excel','PowerPoint','Outlook'],[
+srt('vg1',['Word','Excel','PowerPoint','Access'],[
 ['A job application letter',0,'Writing a letter: Word.'],['A 10-page internship report',0,'Long documents: Word.'],['A CV',0,'A CV is a document: Word.'],
 ['The monthly budget of a family',1,'Calculations: Excel.'],['The list of students with their averages',1,'A table with calculations: Excel.'],['A sales chart for the year',1,'Charts from numbers: Excel.'],
 ['The slides for your final presentation',2,'Slides: PowerPoint.'],['A short show for a product launch',2,'Presenting to an audience: PowerPoint.'],
-['An invitation to a meeting next Monday',3,'Emails and calendar: Outlook.'],['Reply to a client’s email',3,'Email: Outlook.']]);
-
-/* ---------- w3: interface ---------- */
+['The catalogue of a library with 10,000 books',3,'Lots of organized records to search: Access.'],['The records of a clinic, with a form to add new patients',3,'Tables and forms: Access.']]);
 const MP=[['Quick Access Toolbar','Small buttons always visible: Save, Undo, Redo. You can add your favorite commands.'],['Title bar','Shows the file name and the app: “Document1 - Word”. A new file is called Document1 until you save it.'],
-['Ribbon tabs','File, Home, Insert, Layout, Review, View… Each tab opens a different set of tools.'],['Ribbon and groups','The tools of the open tab, organized in groups: Clipboard, Font, Paragraph, Styles.'],
-['Work area','Your document (Word), your sheet of cells (Excel) or your slide (PowerPoint).'],['Status bar','Information about your file: page number, number of words, language.'],['Zoom','Make the page look bigger or smaller. It does not change the printed size.']];
+['Ribbon tabs','File, Home, Insert, Layout, References, Review… Each tab opens a different set of tools.'],['Ribbon and groups','The tools of the open tab, organized in groups: Clipboard, Font, Paragraph, Styles.'],
+['Work area','Your document (Word), your sheet of cells (Excel) or your slide (PowerPoint).'],['Status bar','Information about your file: page number, number of words, language.'],['Zoom','Makes the page look bigger or smaller. It does not change the printed size.']];
 const mps=[...$('#vmw').querySelectorAll('[data-p]')];
 mps.forEach(e=>e.onclick=()=>{mps.forEach(x=>x.classList.toggle('hl',x.dataset.p==e.dataset.p));const m=MP[+e.dataset.p];H($('#vmd'),`<h3>${m[0]}</h3><p>${m[1]}</p>`)});mps[2].click();
-pick('vtb',[['File','Backstage view: New, Open, Save, Save As, Print, Export to PDF, Close.'],['Home','The most used tools: copy and paste, font, bold, alignment, lists, styles.'],['Insert','Add things: table, picture, shapes, chart, link, header, footer, page numbers.'],
-['Layout','The page: margins, orientation (portrait or landscape), size (A4), columns.'],['Review','Spelling and grammar, word count, comments, track changes.'],['View','How you see the file: zoom, rulers, read mode, page layout.']]);
+pick('vtb',[['File','Backstage view: New, Open, Save, Save As, Print, Export to PDF, Share.'],['Home','The most used tools: copy and paste, font, bold, alignment, lists, styles. In Excel: number format and Conditional Formatting.'],['Insert','Add things: table, picture, chart, link, header, footer, page numbers. In Excel: PivotTable.'],
+['Layout','The page: margins, orientation (portrait or landscape), size (A4), columns.'],['References','Table of contents, citations, bibliography, APA or IEEE style.'],['Mailings','Mail merge: one letter for many people.'],['Review','Spelling and grammar, word count, comments, Track Changes.'],['View','Zoom, rulers, read mode. In Excel: Freeze Panes keeps the header row visible.']]);
 const SC={c:'Copy',x:'Cut',v:'Paste',z:'Undo',y:'Redo',s:'Save',p:'Print',a:'Select all',f:'Find',h:'Replace',b:'Bold',i:'Italic',u:'Underline',k:'Insert a link'};
-const kc=$('#vkc');kc.onkeydown=e=>{const k=e.key.toLowerCase();if((e.ctrlKey||e.metaKey)&&SC[k]){e.preventDefault();H($('#vko'),`<kbd>${e.metaKey?'⌘':'Ctrl'}</kbd> + <kbd>${k.toUpperCase()}</kbd> = ${SC[k]}`)}
+$('#vkc').onkeydown=e=>{const k=e.key.toLowerCase();if((e.ctrlKey||e.metaKey)&&SC[k]){e.preventDefault();H($('#vko'),`<kbd>${e.metaKey?'⌘':'Ctrl'}</kbd> + <kbd>${k.toUpperCase()}</kbd> = ${SC[k]}`)}
  else if((e.ctrlKey||e.metaKey)&&k.length==1)H($('#vko'),`<small>Ctrl + ${k.toUpperCase()} is not in our list. Try C, X, V, Z, Y, S, P, A, F, B, I or U.</small>`)};
-const SK=Object.keys(SC).filter(k=>'cxvzysp abfiu'.includes(k));
-quiz('vg2',sh(SK).slice(0,8).map(k=>{const o=sh([SC[k],...sh(Object.values(SC).filter(v=>v!=SC[k])).slice(0,3)]);return[`What does Ctrl + ${k.toUpperCase()} do?`,o,o.indexOf(SC[k]),`Ctrl + ${k.toUpperCase()} = ${SC[k]}.`]}),p=>p>=.75?'Shortcut master!':'Practice in the box above, then play again.');
 
-/* ---------- w4: Word lab ---------- */
+/* ---------- w3: Word lab ---------- */
 const ed=$('#ved');
-const W0='<p>Nouakchott Business School</p><p>Welcome to IT1</p><p>This semester you will learn:</p><p>Information technology</p><p>Operating systems</p><p>Microsoft Office</p><p>See you in class!</p>';
+const W0='<p>Nouakchott Business School</p><p>Welcome to IT1</p><p>This semester you will learn:</p><p>Information technology</p><p>Operating systems</p><p>Productivity software</p><p>See you in class!</p>';
 let rng=null;
 document.addEventListener('selectionchange',()=>{const s=getSelection();if(s.rangeCount&&ed.contains(s.anchorNode))rng=s.getRangeAt(0).cloneRange()});
 const rest=()=>{const s=getSelection();if(s.rangeCount&&ed.contains(s.anchorNode))rng=s.getRangeAt(0).cloneRange();ed.focus({preventScroll:true});if(rng){s.removeAllRanges();s.addRange(rng)}};
@@ -778,8 +866,8 @@ const WT=[
 ['Center that heading','Click in it, then press ☰ (center).',()=>cs('Nouakchott Business School',s=>s.textAlign=='center')],
 ['Make “Welcome to IT1” bold','Select it, then press B or Ctrl + B.',()=>cs('Welcome to IT1',s=>+s.fontWeight>=600)],
 ['Make “Welcome to IT1” size 16 or bigger','Select it, then choose 16 in the size list.',()=>cs('Welcome to IT1',s=>parseFloat(s.fontSize)>=21)],
-['Turn the three subjects into a bulleted list','Select the three lines, then press • List.',()=>{const u=['Information technology','Operating systems','Microsoft Office'].map(t=>{const e=deep(t);return e&&e.closest('ul')});return!!u[0]&&u.every(x=>x===u[0])}],
-['Make “Microsoft Office” italic','Select it, then press I or Ctrl + I.',()=>cs('Microsoft Office',s=>s.fontStyle=='italic')],
+['Turn the three subjects into a bulleted list','Select the three lines, then press • List.',()=>{const u=['Information technology','Operating systems','Productivity software'].map(t=>{const e=deep(t);return e&&e.closest('ul')});return!!u[0]&&u.every(x=>x===u[0])}],
+['Make “Productivity software” italic','Select it, then press I or Ctrl + I.',()=>cs('Productivity software',s=>s.fontStyle=='italic')],
 ['Give “See you in class!” a color','Select it, then press a color square.',()=>cs('See you in class!',s=>s.color!=getComputedStyle(ed).color)]];
 const wg=new Set();
 function wchk(){const n=ed.innerText.trim().split(/\s+/).filter(Boolean).length;$('#vwc').textContent=n+' words';
@@ -792,19 +880,52 @@ const lp=()=>{const L=ori=='Landscape',w=L?29.7:21,h=L?21:29.7,k=7.4,m=MG[mar],p
  Object.assign(pp.style,{width:w*k+'px',height:h*k+'px'});Object.assign(ta.style,{top:m[0]*k+'px',right:m[1]*k+'px',bottom:m[2]*k+'px',left:m[3]*k+'px'});
  H($('#vli'),`<b>A4 ${ori.toLowerCase()}</b>: ${w} × ${h} cm.<br>Margins: top ${m[0]}, right ${m[1]}, bottom ${m[2]}, left ${m[3]} cm.<br>Text area: <b>${(w-m[1]-m[3]).toFixed(2)} × ${(h-m[0]-m[2]).toFixed(2)} cm</b>.<br><small>Layout › Orientation and Layout › Margins.</small>`)};
 pk('vlo',[['Portrait'],['Landscape']],x=>{ori=x[0];lp();return''});pk('vlm',[['Normal'],['Narrow'],['Wide']],x=>{mar=x[0];lp();return''});
+
+/* track changes */
+const TC=['Dear students, the IT1 ',['c','exam'],' will take place on ',['d','Monday'],['i','Tuesday'],' in room ',['d','12'],['i','B4'],'. Please bring your ',['i','student card and your '],'calculator. ',['d','Phones are allowed.']];
+const TCL=TC.filter(x=>Array.isArray(x)&&x[0]!='c');let tcs,tcx=0;
+const tcInit=()=>{tcs={c:0,ch:TCL.map(()=>null)}};tcInit();
+const tcR=()=>{let k=0;H($('#vtc'),'<p>'+TC.map(x=>{if(typeof x=='string')return E(x);if(x[0]=='c')return`<span style="${tcs.c?'':'background:#fde9a6;border-bottom:2px solid #e0a800'}">${x[1]}</span>`;
+  const s=tcs.ch[k++];if(s=='a')return x[0]=='i'?E(x[1]):'';if(s=='r')return x[0]=='d'?E(x[1]):'';return`<span class="chg ${x[0]=='i'?'ins':'del'}">${E(x[1])}</span>`}).join('')+'</p>');
+ const all=tcs.c&&tcs.ch.every(Boolean);
+ H($('#vtl'),`<div class="card" style="background:#fffbe6;border-color:#f2d36b;margin:0 0 10px"><b>Comment · Teacher</b> <small>on “exam”</small><br>${tcs.c?'<s>Add the time of the exam.</s> <small>Resolved</small>':'Add the time of the exam.<br><button class="c" data-r="1" style="margin:6px 0 0">Resolve</button>'}</div>`+
+  TCL.map((x,i)=>`<div style="padding:4px 0">${x[0]=='i'?'<b style="color:#2b579a">Inserted</b>':'<b style="color:var(--bad)">Deleted</b>'} “${E(x[1].trim())}” ${tcs.ch[i]?`<small>· ${tcs.ch[i]=='a'?'accepted':'rejected'}</small>`:`<br><button class="c" data-a="${i}" style="margin:2px 4px 0 0;padding:2px 10px">Accept</button><button class="c" data-j="${i}" style="margin:2px 0 0;padding:2px 10px">Reject</button>`}</div>`).join('')+
+  (all?'<p class="fb"><b style="color:var(--ok)">Clean document: no more marks!</b></p>':''));
+ if(all&&!tcx){tcx=1;add(10)}
+ $('#vtl').querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.dataset.r)tcs.c=1;else if(b.dataset.a)tcs.ch[+b.dataset.a]='a';else tcs.ch[+b.dataset.j]='r';tcR()})};
+$('#vta').onclick=()=>{tcs.ch=tcs.ch.map(x=>x||'a');tcR()};$('#vtr').onclick=()=>{tcInit();tcR()};tcR();
+
+/* citations */
+const CIT={APA:{i:'Computers store everything in binary (Sall, 2023). The operating system manages the hardware (Ba &amp; Diallo, 2021).',r:['Ba, M., &amp; Diallo, F. (2021). <i>Operating systems for beginners</i> (2nd ed.). Sahel Books.','Sall, A. (2023). <i>Introduction to computing</i>. NBS Press.'],n:'<b>APA</b>: author and year in brackets. The reference list is in <b>alphabetical order</b> of the authors. Common in business, education and social sciences.'},
+IEEE:{i:'Computers store everything in binary [1]. The operating system manages the hardware [2].',r:['[1] A. Sall, <i>Introduction to Computing</i>. Nouakchott: NBS Press, 2023.','[2] M. Ba and F. Diallo, <i>Operating Systems for Beginners</i>, 2nd ed. Dakar: Sahel Books, 2021.'],n:'<b>IEEE</b>: a number in square brackets. The list follows the <b>order of citation</b>: [1] is the first source you cite. Common in engineering and IT.'}};
+pk('vcs',[['APA'],['IEEE']],x=>{const c=CIT[x[0]];H($('#vco'),`<div class="pg cit" style="min-height:0;padding:18px 24px;margin-top:8px"><p>${c.i}</p><p style="margin-top:12px"><b>References</b></p>${c.r.map(r=>`<p style="padding-left:2em;text-indent:-2em">${r}</p>`).join('')}</div><p>${c.n}</p>`);return''});
+
+/* mail merge */
+const MMD=[['Aminetou','Mint Ahmed','G1','15.5'],['Sidi','Ould Cheikh','G2','12'],['Mariem','Mint Sidi','G3','16.25'],['Moussa','Ba','G1','9.75']],MMF=['FirstName','LastName','Group','Average'];let mi=0,mv=0;
+const mmR=()=>{const f=k=>mv?`<b class="mmf" style="background:#e4fbf3;color:var(--ink)">${MMD[mi][k]}</b>`:`<span class="mmf">«${MMF[k]}»</span>`;
+ H($('#vgl'),`<p><b>Nouakchott Business School</b></p><p>Dear ${f(0)} ${f(1)},</p><p>We are happy to send you your IT1 results. You are in group ${f(2)} and your average is ${f(3)} / 20.</p><p>See you next semester!</p><p>The NBS team</p>`);
+ $('#vgn').textContent=mv?`Record ${mi+1} of ${MMD.length}`:'Fields';$('#vgv').textContent=mv?'Show fields':'Preview Results';
+ H($('#vgd'),`<table><tr>${MMF.map(x=>`<th>${x}</th>`).join('')}</tr>${MMD.map((r,i)=>`<tr${mv&&i==mi?' style="background:#e4fbf3;font-weight:700"':''}>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</table>`)};
+$('#vgv').onclick=()=>{mv^=1;mmR()};$('#vgp').onclick=()=>{mv=1;mi=(mi+MMD.length-1)%MMD.length;mmR()};$('#vgx').onclick=()=>{mv=1;mi=(mi+1)%MMD.length;mmR()};mmR();
+
 pick('vwf',[
-['Spelling and grammar','A red wavy line means a spelling mistake. A blue double line means grammar. Right-click to fix it, or press F7 (Review tab).'],
-['Header and footer','Text repeated at the top or bottom of every page: the school name, the date. Insert › Header or Footer.'],
-['Page numbers','Insert › Page Number. Word numbers the pages for you and updates them.'],
-['Table of contents','References › Table of Contents. It only works if your titles use the Heading 1 and Heading 2 styles.'],
-['Tables','Insert › Table. Choose the number of columns and rows: perfect for a timetable.'],
-['Pictures','Insert › Pictures. Then use Wrap Text to place it around your text.'],
+['Styles','Home › Styles: Title, Heading 1, Heading 2. Change a style once, and every text with that style changes.'],
+['Templates','File › New: ready-made CVs, letters and reports. You can also save your own document as a template (.dotx).'],
+['Track Changes','Review › Track Changes. Every change is marked, so the author can accept or reject it.'],
+['Comments','Review › New Comment. A note in the margin, without changing the text.'],
+['Table of contents','References › Table of Contents. It only works if your titles use the Heading styles.'],
+['Citations and bibliography','References › Insert Citation, then Bibliography. Choose APA or IEEE in the Style list.'],
+['Header, footer, page numbers','Insert › Header, Footer, Page Number. Repeated on every page.'],
+['Mail merge','Mailings › Start Mail Merge. One letter, many people, each with their own details.'],
 ['Find and Replace','Ctrl + F finds a word. Ctrl + H replaces it everywhere at once.'],
-['Templates','File › New: ready-made CVs, letters and reports. Just replace the text.']]);
-srt('vg3',['File','Home','Insert','Layout','Review'],[
-['Save as PDF',0,'Export is in the File tab.'],['Print the document',0,'Print is in File.'],['Make text bold',1,'Font tools are in Home.'],['Change the font',1,'Home › Font group.'],['Add bullets',1,'Home › Paragraph group.'],
-['Add a picture',2,'Insert › Pictures.'],['Add a table',2,'Insert › Table.'],['Add page numbers',2,'Insert › Page Number.'],
-['Change the margins',3,'Layout › Margins.'],['Switch to landscape',3,'Layout › Orientation.'],['Check the spelling',4,'Review › Spelling and Grammar.'],['Count the words',4,'Review › Word Count.']]);
+['Spelling and grammar','Red wavy line: spelling. Blue double line: grammar. Press F7 (Review tab).']]);
+srt('vg3',['Home','Insert','Layout','References','Mailings','Review'],[
+['Make text bold',0,'Font tools are in Home.'],['Apply the Heading 1 style',0,'Styles are in Home.'],['Add bullets',0,'Home › Paragraph group.'],
+['Add a picture',1,'Insert › Pictures.'],['Add page numbers',1,'Insert › Page Number.'],
+['Change the margins',2,'Layout › Margins.'],['Switch to landscape',2,'Layout › Orientation.'],
+['Insert a table of contents',3,'References › Table of Contents.'],['Choose APA or IEEE style',3,'References › Style.'],
+['Start a mail merge',4,'Mailings › Start Mail Merge.'],['Insert a merge field',4,'Mailings › Insert Merge Field.'],
+['Turn on Track Changes',5,'Review › Track Changes.'],['Add a comment',5,'Review › New Comment.'],['Check the spelling',5,'Review › Spelling and Grammar.']]);
 
 /* ---------- Excel engine ---------- */
 class XE{constructor(e){this.e=e}}
@@ -830,19 +951,22 @@ function parse(s){const T=lex(s);let p=0;const is=v=>T[p]&&T[p].k=='op'&&T[p].v=
    if(n=='TRUE'||n=='VRAI')return{t:'b',v:true};if(n=='FALSE'||n=='FAUX')return{t:'b',v:false};return{t:'name',n}}
   if(is('(')){p++;const x=cmp();eat(')');return x}throw new SyntaxError('tok')};
  const r=cmp();if(p<T.length)throw new SyntaxError('extra');return r}
-const FN={SUM:'SUM',SOMME:'SUM',AVERAGE:'AVG',MOYENNE:'AVG',MIN:'MIN',MAX:'MAX',COUNT:'COUNT',NB:'COUNT',COUNTA:'COUNTA',NBVAL:'COUNTA',IF:'IF',SI:'IF',ROUND:'ROUND',ARRONDI:'ROUND',COUNTIF:'COUNTIF','NB.SI':'COUNTIF'};
-const num=v=>{if(v instanceof XE)throw v;if(Array.isArray(v))throw new XE('#VALUE!');if(v==='')return 0;if(typeof v=='number')return v;if(typeof v=='boolean')return+v;if(/^\s*-?\d+(\.\d+)?\s*$/.test(v))return+v;throw new XE('#VALUE!')};
+const FN={SUM:'SUM',SOMME:'SUM',AVERAGE:'AVG',MOYENNE:'AVG',MIN:'MIN',MAX:'MAX',COUNT:'COUNT',NB:'COUNT',COUNTA:'COUNTA',NBVAL:'COUNTA',IF:'IF',SI:'IF',ROUND:'ROUND',ARRONDI:'ROUND',COUNTIF:'COUNTIF','NB.SI':'COUNTIF',
+ SUMIF:'SUMIF','SOMME.SI':'SUMIF',AND:'AND',ET:'AND',OR:'OR',OU:'OR',VLOOKUP:'VLOOKUP',RECHERCHEV:'VLOOKUP'};
+const num=v=>{if(v instanceof XE)throw v;if(Array.isArray(v))throw new XE('#VALUE!');if(v===''||v==null)return 0;if(typeof v=='number')return v;if(typeof v=='boolean')return+v;if(/^\s*-?\d+(\.\d+)?\s*$/.test(v))return+v;throw new XE('#VALUE!')};
 const fmt=v=>!isFinite(v)?'#NUM!':String(+v.toPrecision(12));
 const str=v=>typeof v=='boolean'?(v?'TRUE':'FALSE'):typeof v=='number'?fmt(v):v;
 const sc=v=>{if(Array.isArray(v))throw new XE('#VALUE!');if(v instanceof XE)throw v;return v};
 const cmpv=(a,b,o)=>{if(a==='')a=typeof b=='string'?'':0;if(b==='')b=typeof a=='string'?'':0;let r;
  if(typeof a==typeof b){const x=typeof a=='string'?a.toLowerCase():a,y=typeof b=='string'?b.toLowerCase():b;r=x<y?-1:x>y?1:0}else{const k=v=>typeof v=='number'?0:typeof v=='string'?1:2;r=k(a)-k(b)}
  return{'=':r==0,'<>':r!=0,'<':r<0,'>':r>0,'<=':r<=0,'>=':r>=0}[o]};
+const crit=cr=>{let op='=',val=cr;if(typeof cr=='string'){const m=cr.match(/^(<=|>=|<>|<|>|=)?(.*)$/);op=m[1]||'=';val=m[2];if(/^-?\d+(\.\d+)?$/.test(val))val=+val}
+ return y=>!(y instanceof XE)&&y!==''&&y!=null&&(typeof val!='number'||typeof y=='number')&&cmpv(y,val,op)};
 function ev(n,S,get){switch(n.t){
  case'n':case's':case'b':return n.v;
  case'name':throw new XE('#NAME?');
  case'ref':if(n.c<0||n.r<0||n.c>=S.nc||n.r>=S.nr)throw new XE('#REF!');{const v=get(ad(n.c,n.r));if(v instanceof XE)throw v;return v}
- case'rng':{if(n.c2>=S.nc||n.r2>=S.nr)throw new XE('#REF!');const o=[];for(let r=n.r1;r<=n.r2;r++)for(let c=n.c1;c<=n.c2;c++)o.push(get(ad(c,r)));return o}
+ case'rng':{if(n.c2>=S.nc||n.r2>=S.nr)throw new XE('#REF!');const o=[];for(let r=n.r1;r<=n.r2;r++)for(let c=n.c1;c<=n.c2;c++)o.push(get(ad(c,r)));o.w=n.c2-n.c1+1;return o}
  case'neg':return-num(ev(n.x,S,get));
  case'pct':return num(ev(n.x,S,get))/100;
  case'op':{const a=sc(ev(n.l,S,get)),b=sc(ev(n.r,S,get));switch(n.o){case'+':return num(a)+num(b);case'-':return num(a)-num(b);case'*':return num(a)*num(b);
@@ -858,10 +982,16 @@ function ev(n,S,get){switch(n.t){
   case'COUNTA':return flat().filter(y=>y!=='').length;
   case'IF':{if(A.length>3)throw new XE('#VALUE!');const c=sc(ev(A[0],S,get));if(typeof c=='string'&&c!=='')throw new XE('#VALUE!');const t=c!==''&&!!num(c);
    const r=t?ev(A[1],S,get):A.length>2?ev(A[2],S,get):false;return sc(r)}
+  case'AND':case'OR':{const v=flat().filter(y=>y!==''&&y!=null).map(y=>{if(y instanceof XE)throw y;if(typeof y=='boolean')return y;if(typeof y=='number')return y!=0;throw new XE('#VALUE!')});if(!v.length)throw new XE('#VALUE!');return f=='AND'?v.every(Boolean):v.some(Boolean)}
   case'ROUND':{const x=num(sc(ev(A[0],S,get))),d=A[1]?Math.trunc(num(sc(ev(A[1],S,get)))):0,m=10**d;return Math.sign(x)*Math.round(Math.abs(x)*m+1e-9)/m}
-  case'COUNTIF':{if(A.length!=2)throw new XE('#VALUE!');const r=ev(A[0],S,get),cr=sc(ev(A[1],S,get));let op='=',val=cr;
-   if(typeof cr=='string'){const m=cr.match(/^(<=|>=|<>|<|>|=)?(.*)$/);op=m[1]||'=';val=m[2];if(/^-?\d+(\.\d+)?$/.test(val))val=+val}
-   return(Array.isArray(r)?r:[r]).filter(y=>!(y instanceof XE)&&y!==''&&(typeof val!='number'||typeof y=='number')&&cmpv(y,val,op)).length}}}}}
+  case'COUNTIF':{if(A.length!=2)throw new XE('#VALUE!');const r=ev(A[0],S,get),cr=sc(ev(A[1],S,get));return(Array.isArray(r)?r:[r]).filter(crit(cr)).length}
+  case'SUMIF':{if(A.length<2||A.length>3)throw new XE('#VALUE!');const r=ev(A[0],S,get),R=Array.isArray(r)?r:[r],cr=sc(ev(A[1],S,get)),s=A[2]?ev(A[2],S,get):R,SS=Array.isArray(s)?s:[s],t=crit(cr);let sum=0;
+   R.forEach((y,i)=>{if(t(y)){const v=SS[i];if(v instanceof XE)throw v;if(typeof v=='number')sum+=v}});return sum}
+  case'VLOOKUP':{if(A.length<3||A.length>4)throw new XE('#VALUE!');const lv=sc(ev(A[0],S,get)),tb=ev(A[1],S,get);if(!Array.isArray(tb)||!tb.w)throw new XE('#VALUE!');
+   const ci=Math.trunc(num(sc(ev(A[2],S,get)))),ap=A[3]?!!num(sc(ev(A[3],S,get))):true;if(ci<1)throw new XE('#VALUE!');if(ci>tb.w)throw new XE('#REF!');
+   const nr=tb.length/tb.w;let hit=-1;
+   for(let i=0;i<nr;i++){const k=tb[i*tb.w];if(k instanceof XE||k===''||typeof k!=typeof lv)continue;if(ap){if(cmpv(k,lv,'<='))hit=i;else break}else if(cmpv(k,lv,'=')){hit=i;break}}
+   if(hit<0)throw new XE('#N/A');const v=tb[hit*tb.w+ci-1];if(v instanceof XE)throw v;return v===''?0:v}}}}}
 function calc(S){const V={},st=new Set(),cir=new Set();S.circ=false;
  const get=id=>{if(id in V)return V[id];if(st.has(id)){S.circ=true;cir.add(id);return 0}const raw=S.c[id];let v;
   if(raw==null||raw==='')v='';
@@ -870,12 +1000,12 @@ function calc(S){const V={},st=new Set(),cir=new Set();S.circ=false;
   V[id]=v;return v};
  Object.keys(S.c).forEach(get);return V}
 const evalF=(S,f)=>{const V=calc(S);try{const t=parse(f.replace(/^=/,''));let v=ev(t,S,id=>id in V?V[id]:'');if(v===''&&t.t=='ref')v=0;return Array.isArray(v)?new XE('#VALUE!'):v}catch(e){return e instanceof XE?e:null}};
-const disp=v=>v instanceof XE?v.e:v===''?'':str(v);
+const disp=v=>v==null?'':v instanceof XE?v.e:v===''?'':str(v);
 const kind=v=>v instanceof XE?'e':typeof v=='number'?'n':typeof v=='boolean'?'b':'';
 const upF=f=>f.split(/("(?:[^"]|"")*")/).map((s,i)=>i%2?s:s.toUpperCase()).join('');
 const shiftF=(f,dr,dc)=>f.split(/("(?:[^"]|"")*")/).map((s,i)=>i%2?s:s.replace(/(^|[^A-Za-z0-9_.$])(\$?)([A-Za-z]{1,3})(\$?)(\d+)(?![A-Za-z0-9_(])/g,(m,pre,ac,col,ar,row)=>{let c=colIdx(col),r=+row-1;if(!ac)c+=dc;if(!ar)r+=dr;return pre+(c<0||r<0?'#REF!':ac+colName(c)+ar+(r+1))})).join('');
 
-/* ---------- Excel UI ---------- */
+/* ---------- mini Excel (editable) ---------- */
 function xlUI(box,S,onChange){
  box.innerHTML=`<div class="xb"><button data-a="sum">Σ AutoSum</button><button data-a="fill">Fill down ↓ (Ctrl+D)</button><button data-a="show">Show formulas</button><button data-a="clr">Clear cell</button></div><div class="fx"><span class="nb"></span><b>fx</b><input spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="Formula bar"></div><div class="xlw"><table class="xl" tabindex="0"></table></div><div class="xs"></div>`;
  const tb=box.querySelector('table'),inp=box.querySelector('.fx input'),nb=box.querySelector('.nb'),xs=box.querySelector('.xs'),sb=box.querySelector('[data-a="show"]');
@@ -916,23 +1046,66 @@ function xlUI(box,S,onChange){
   if(k=='sum')asum();else if(k=='fill')fill();else if(k=='show'){showF=!showF;sb.classList.toggle('on',showF);sb.textContent=showF?'Show results':'Show formulas';draw()}else{const R=rg();for(let r=R.r1;r<=R.r2;r++)for(let c=R.c1;c<=R.c2;c++)delete S.c[ad(c,r)];draw()}}});
  tb.onkeydown=e=>{const mv={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0],Enter:[0,1],Tab:[1,0]}[e.key];
   if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()=='d'){e.preventDefault();fill();return}
-  if(mv){e.preventDefault();const n={c:Math.max(0,Math.min(S.nc-1,(e.shiftKey&&!['Enter','Tab'].includes(e.key)?b:a).c+mv[0])),r:Math.max(0,Math.min(S.nr-1,(e.shiftKey&&!['Enter','Tab'].includes(e.key)?b:a).r+mv[1]))};if(e.shiftKey&&!['Enter','Tab'].includes(e.key))b=n;else{a=n;b=n}msg='';draw()}
+  if(mv){e.preventDefault();const sh2=e.shiftKey&&!['Enter','Tab'].includes(e.key),n={c:Math.max(0,Math.min(S.nc-1,(sh2?b:a).c+mv[0])),r:Math.max(0,Math.min(S.nr-1,(sh2?b:a).r+mv[1]))};if(sh2)b=n;else{a=n;b=n}msg='';draw()}
   else if(e.key=='Delete'||e.key=='Backspace'){e.preventDefault();const R=rg();for(let r=R.r1;r<=R.r2;r++)for(let c=R.c1;c<=R.c2;c++)delete S.c[ad(c,r)];draw()}
   else if(e.key=='F2'){e.preventDefault();inp.focus();editing=true}
   else if(e.key.length==1&&!e.ctrlKey&&!e.metaKey&&!e.altKey){e.preventDefault();b={...a};editing=true;inp.value=e.key;inp.focus();inp.setSelectionRange(1,1)}};
  draw();return{draw,sel:id=>{const p=pRef(id);a=p;b=p;draw()}}}
 
-/* ---------- w5: cell address game ---------- */
+/* ---------- formula playground (read-only sheet, colored ranges) ---------- */
+const HC=['#f29d38','#9b5de5','#2fa36b','#2b7de9'];
+const ERRS={'#N/A':'#N/A means “not available”: the value was not found in the first column of the table.','#REF!':'#REF! means the formula points outside the table (for example column 4 of a 3-column table).','#VALUE!':'#VALUE! means a wrong type of data or a wrong number of arguments.','#NAME?':'#NAME? means Excel does not know a name. Check the spelling of the function and put text in "quotes".','#DIV/0!':'#DIV/0! means a division by zero.'};
+const refsOf=t=>{const o=[];(function w(n){if(!n||typeof n!='object')return;if(n.t=='ref')o.push({c1:n.c,r1:n.r,c2:n.c,r2:n.r});else if(n.t=='rng')o.push(n);['l','r','x'].forEach(k=>w(n[k]));(n.a||[]).forEach(w)})(t);return o};
+const colorF=f=>{let k=0;return f.split(/("(?:[^"]|"")*")/).map((s,i)=>i%2?`<span style="color:#0b7a3e">${E(s)}</span>`:E(s).replace(/\$?[A-Za-z]{1,3}\$?\d+(?::\$?[A-Za-z]{1,3}\$?\d+)?(?![A-Za-z0-9_(])/g,m=>`<b style="color:${HC[k++%4]}">${m}</b>`)).join('')};
+const mark=(t,S)=>{const o=[];if(!t||t.t!='fn')return o;const f=FN[t.n],V=calc(S),get=id=>id in V?V[id]:'';
+ try{if(f=='SUMIF'&&t.a[0]&&t.a[0].t=='rng'){const R=t.a[0],SR=t.a[2]&&t.a[2].t=='rng'?t.a[2]:R,ok=crit(sc(ev(t.a[1],S,get)));
+   for(let y=R.r1;y<=R.r2;y++)for(let x=R.c1;x<=R.c2;x++)if(ok(get(ad(x,y))))o.push([SR.c1+x-R.c1,SR.r1+y-R.r1])}
+  if(f=='VLOOKUP'&&t.a[1]&&t.a[1].t=='rng'){const T=t.a[1],lv=sc(ev(t.a[0],S,get)),ci=Math.trunc(num(sc(ev(t.a[2],S,get))));
+   for(let y=T.r1;y<=T.r2;y++){const k=get(ad(T.c1,y));if(k!==''&&typeof k==typeof lv&&cmpv(k,lv,'=')){o.push([T.c1,y]);if(ci>=1&&T.c1+ci-1<=T.c2)o.push([T.c1+ci-1,y]);break}}}}catch(e){}
+ return o};
+function play(id,S,P){const box=$('#'+id);
+ box.innerHTML=`<div></div><div class="fx" style="margin-top:6px"><span class="nb">fx</span><input spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="Formula"></div><div class="xlw"><table class="xl"></table></div><div class="card" style="margin:8px 0 0"></div>`;
+ const [pc,fx,xw,out]=box.children,inp=fx.querySelector('input'),tb=xw.firstChild,V0=calc(S);
+ tb.innerHTML='<tr><th></th>'+[...Array(S.nc)].map((_,c)=>`<th>${colName(c)}</th>`).join('')+'</tr>'+[...Array(S.nr)].map((_,r)=>`<tr><th>${r+1}</th>${[...Array(S.nc)].map((_,c)=>{const v=V0[ad(c,r)];return`<td class="${kind(v)}${r==0&&v?' hd':''}">${E(disp(v))}</td>`}).join('')}</tr>`).join('');
+ const C=(c,r)=>tb.rows[r+1]&&tb.rows[r+1].cells[c+1];
+ H(pc,P.map(p=>`<button class="c" style="font-family:ui-monospace,monospace;font-size:13px;text-transform:none">${E(p[0])}</button>`).join(''));
+ const bs=[...pc.children];let note='';
+ const run=()=>{const f=inp.value.trim();
+  for(const tr of tb.rows)for(const td of tr.cells){td.style.boxShadow='';td.style.backgroundColor='';td.classList.remove('hit')}
+  if(!f){H(out,'<small>Tap a formula above, or type your own (start with =).</small>');return}
+  if(f[0]!='='){H(out,'<b style="color:var(--bad)">A formula must start with =</b>');return}
+  let t;try{t=parse(f.slice(1))}catch(e){H(out,'<b style="color:var(--bad)">There’s a problem with this formula.</b> Check the brackets, the commas and the "quotes".');return}
+  refsOf(t).forEach((r,i)=>{const col=HC[i%4];for(let y=r.r1;y<=r.r2;y++)for(let x=r.c1;x<=r.c2;x++){const td=C(x,y);if(td){td.style.boxShadow=`inset 0 0 0 2px ${col}`;td.style.backgroundColor=col+'22'}}});
+  mark(t,S).forEach(([x,y])=>{const td=C(x,y);if(td)td.classList.add('hit')});
+  const v=evalF(S,f);
+  H(out,`<p style="margin:0;font:600 16px ui-monospace,monospace;overflow-x:auto;white-space:nowrap">${colorF(upF(f))}</p><p class="big" style="margin:6px 0">= <span style="color:${v instanceof XE||v==null?'var(--bad)':'var(--n)'}">${v==null?'error':E(disp(v))}</span></p>${note?`<p style="margin:0">${note}</p>`:''}${v instanceof XE&&ERRS[v.e]?`<p style="margin:6px 0 0"><small>${ERRS[v.e]}</small></p>`:''}`)};
+ bs.forEach((b,i)=>b.onclick=()=>{bs.forEach(x=>x.classList.toggle('on',x==b));inp.value=P[i][0];note=P[i][1];run()});
+ inp.oninput=()=>{bs.forEach(x=>x.classList.remove('on'));note='';run()};
+ bs[0].click()}
+
+/* ---------- formula tasks (auto-checked) ---------- */
+const same=(v,e)=>typeof e=='number'?typeof v=='number'&&Math.abs(v-e)<1e-9:typeof e=='string'?typeof v=='string'&&v.toLowerCase()==e.toLowerCase():v===e;
+function tasks(id,S,T){const box=$('#'+id);T.forEach((t,n)=>{const r=document.createElement('div');r.style.cssText='padding:10px 0;'+(n?'border-top:1px solid var(--l)':'');
+ r.innerHTML=`<p style="margin:0 0 6px"><b>${n+1}.</b> ${t.q}</p><input placeholder="=" spellcheck="false" autocomplete="off" autocapitalize="off" style="font-family:ui-monospace,monospace;width:min(100%,360px)"> <button class="b" style="padding:6px 14px">Check</button> <button class="c" style="margin:0">Hint</button> <span class="fb"></span><div class="det" hidden>${t.h}<br>One answer: <code>${E(t.a)}</code></div>`;
+ const i=r.querySelector('input'),fb=r.querySelector('.fb');let got=0;
+ const chk=()=>{const f=i.value.trim();if(!f)return;const bad=m=>H(fb,`<b style="color:var(--bad)">${m}</b>`);
+  if(f[0]!='=')return bad('Start with =');
+  try{parse(f.slice(1))}catch(e){return bad('Check the brackets, the commas and the "quotes".')}
+  if(t.need&&!t.need.test(f.toUpperCase()))return bad(t.nm);
+  for(const rw of t.rows||[0]){const d=t.rows?rw-t.rows[0]:0,v=evalF(S,d?shiftF(f,d,0):f),e=evalF(S,d?shiftF(t.a,d,0):t.a);
+   if(!same(v,e))return bad(t.rows&&d?`Row ${rw} gives ${v==null?'an error':E(disp(v))} instead of ${E(disp(e))}.${t.tip?' '+t.tip:''}`:`Your formula gives ${v==null?'an error':E(disp(v))}. Try again.`)}
+  H(fb,'<b style="color:var(--ok)">Correct!</b>'+(t.rows?' It works on every row.':''));if(!got){got=1;add(10)}};
+ r.querySelector('.b').onclick=chk;i.onkeydown=e=>{if(e.key=='Enter')chk()};r.querySelector('.c').onclick=()=>{const d=r.querySelector('.det');d.hidden=!d.hidden};box.append(r)})}
+
+/* ---------- w4: Excel basics ---------- */
 let at,as=0;H($('#vag'),'<tr><th></th>'+'ABCDEF'.split('').map(c=>`<th>${c}</th>`).join('')+'</tr>'+[...Array(8)].map((_,r)=>`<tr><th>${r+1}</th>${'ABCDEF'.split('').map(c=>`<td data-a="${c}${r+1}"></td>`).join('')}</tr>`).join(''));
 const anext=()=>{at='ABCDEF'[rnd(6)]+(1+rnd(8));H($('#vat'),`Click the cell <b>${at}</b>`);$('#vag').querySelectorAll('td').forEach(t=>t.className='')};
 $('#vag').querySelectorAll('td').forEach(t=>t.onclick=()=>{if(t.dataset.a==at){t.className='ok';as++;add(2);$('#vam').textContent=`Yes! ${at}: column ${at[0]}, row ${at.slice(1)}. Found: ${as}`;setTimeout(anext,700)}
  else{t.className='no';$('#vam').textContent=`That is ${t.dataset.a}. Column letter first (across), then row number (down).`}});anext();
 quiz('vg4',[['=2+3*4',['20','14','24','9'],1,'* comes before +: 3*4 = 12, then 2 + 12 = 14.'],['=(2+3)*4',['20','14','24','9'],0,'Brackets first: 2+3 = 5, then 5*4 = 20.'],['=10/2*5',['1','25','50','2'],1,'/ and * have the same level: left to right. 10/2 = 5, then 5*5 = 25.'],
 ['=2^3+1',['9','16','7','10'],0,'^ first: 2³ = 8, then 8 + 1 = 9.'],['=10-4-3',['9','3','1','5'],1,'Left to right: 10-4 = 6, then 6-3 = 3.'],['=200*10%',['2000','20','210','0.2'],1,'10% = 0.1, so 200 × 0.1 = 20.']],p=>p>=.8?'You think like Excel!':'Remember: brackets, then ^, then * /, then + −.');
-
-/* ---------- w6: Excel lab ---------- */
-const X0={A1:'Product',B1:'Price (MRU)',C1:'Quantity',D1:'Total',E1:'Level',A2:'Notebook',B2:'25',C2:'40',A3:'Pen',B3:'10',C3:'120',A4:'USB key',B4:'150',C4:'12',A5:'Calculator',B5:'300',C5:'5',A6:'Sum',A7:'Average',A8:'Highest'};
-const S1={c:{...X0},nc:6,nr:10};let xV={};
+const X0={A1:'Product',B1:'Price (MRU)',C1:'Quantity',D1:'Total',A2:'Notebook',B2:'25',C2:'40',A3:'Pen',B3:'10',C3:'120',A4:'USB key',B4:'150',C4:'12',A5:'Calculator',B5:'300',C5:'5',A6:'Sum',A7:'Average',A8:'Highest'};
+const S1={c:{...X0},nc:5,nr:9};let xV={};
 const isF=id=>(S1.c[id]||'')[0]=='=',vv=id=>xV[id],has=(id,re)=>re.test(S1.c[id]||'');
 const MX=[
 ['In D2, calculate the total of the notebooks: price × quantity','=B2*C2',()=>isF('D2')&&vv('D2')===1000],
@@ -940,11 +1113,9 @@ const MX=[
 ['In D6, add up D2:D5 with SUM (or AutoSum Σ)','=SUM(D2:D5)',()=>has('D6',/SUM|SOMME/)&&vv('D6')===5500],
 ['In D7, calculate the average total with AVERAGE','=AVERAGE(D2:D5)',()=>has('D7',/AVERAGE|MOYENNE/)&&vv('D7')===1375],
 ['In D8, find the highest total with MAX','=MAX(D2:D5)',()=>has('D8',/MAX/)&&vv('D8')===1800],
-['In E2, write "High" if D2 is 1500 or more, otherwise "Low"','=IF(D2>=1500,"High","Low")',()=>has('E2',/IF|SI/)&&String(vv('E2')).toLowerCase()=='low'],
-['Copy E2 down to E5','select E2 to E5, then Fill down',()=>['E3','E4','E5'].every(isF)&&String(vv('E4')).toLowerCase()=='high'&&String(vv('E5')).toLowerCase()=='high'],
 ['The USB key now costs 200. Change B4 and watch every total update','click B4, type 200, press Enter',()=>vv('B4')===200&&vv('D4')===2400&&vv('D6')===6100]];
 let xm=0;const xg=new Set();
-const xpaint=()=>{H($('#vxm'),MX.map((m,i)=>`<li class="${i<xm?'ok':i==xm?'now':''}">${i<xm?'✓ ':''}${m[0]}${i==xm?`<br><button class="c">Show a hint</button><code hidden>${E(m[1])}</code>`:''}</li>`).join('')+(xm>=MX.length?'<li class="ok"><b>All missions complete! That is the power of formulas: change one number and everything updates.</b></li>':''));
+const xpaint=()=>{H($('#vxm'),MX.map((m,i)=>`<li class="${i<xm?'ok':i==xm?'now':''}">${i<xm?'✓ ':''}${m[0]}${i==xm?`<br><button class="c">Show a hint</button><code hidden>${E(m[1])}</code>`:''}</li>`).join('')+(xm>=MX.length?'<li class="ok"><b>All missions complete! Change one number and everything updates: that is the power of formulas.</b></li>':''));
  const b=$('#vxm').querySelector('.c');if(b)b.onclick=()=>{b.hidden=1;b.nextSibling.hidden=0}};
 const xchart=()=>{const L=[2,3,4,5].map(r=>[S1.c['A'+r]||'',vv('D'+r)]),mx=Math.max(1,...L.map(x=>typeof x[1]=='number'?x[1]:0));
  H($('#vxc'),L.map(([n,v])=>`<div style="height:${typeof v=='number'&&v>0?v/mx*100:0}%"><span>${typeof v=='number'?fmt(v):''}</span></div>`).join(''));H($('#vxl'),L.map(([n])=>`<span>${E(n)}</span>`).join(''))};
@@ -953,60 +1124,225 @@ $('#vxr').onclick=()=>{S1.c={...X0};xm=0;X1.sel('D2')};X1.sel('D2');
 pick('vfn',[
 ['SUM','=SUM(A1:A5)','Adds all the numbers of the range.','SOMME'],['AVERAGE','=AVERAGE(A1:A5)','The average: the sum divided by how many numbers.','MOYENNE'],
 ['MIN','=MIN(A1:A5)','The smallest number.','MIN'],['MAX','=MAX(A1:A5)','The biggest number.','MAX'],['COUNT','=COUNT(A1:A5)','How many cells contain a number.','NB'],
+['ROUND','=ROUND(B2,2)','Rounds a number to 2 decimals.','ARRONDI'],
+['SUMIF','=SUMIF(A2:A9,"Apple",B2:B9)','Adds only the cells that match a condition. See the SUM and SUMIF stop.','SOMME.SI'],
 ['IF','=IF(B2>=10,"Pass","Fail")','Tests a condition. If it is true, shows the first value; if not, the second.','SI'],
-['COUNTIF','=COUNTIF(C2:C30,"Pass")','Counts the cells that match a condition.','NB.SI'],['ROUND','=ROUND(B2,2)','Rounds a number to 2 decimals.','ARRONDI']],
+['VLOOKUP','=VLOOKUP("Banana",A2:C6,2,FALSE)','Finds a value in the first column of a table and returns another column.','RECHERCHEV']],
 x=>`<p><code style="font-size:18px">${E(x[1])}</code></p><p>${x[2]}</p><p><small>In French Excel: <b>${x[3]}</b>, with ; between the arguments.</small></p>`);
 const S2={c:{A1:'Price',B1:'Tax',D1:'Rate',E1:'0.1',A2:'100',A3:'250',A4:'80',A5:'40'},nc:6,nr:6};
 pk('vrk',[['=A2*E1'],['=A2*$E$1'],['=A2*E$1'],['=$A$2*$E$1']],x=>{const f=x[0];[2,3,4,5].forEach(r=>S2.c['B'+r]=shiftF(f,r-2,0));const V=calc(S2);
  const ok=[2,3,4,5].every(r=>Math.abs(V['B'+r]-(+S2.c['A'+r])*.1)<1e-9);
  H($('#vro'),`<p>E1 holds the tax rate (0.1 = 10%). The formula in B2 is copied down to B5:</p><table><tr><th>Row</th><th>Price (A)</th><th>Formula after copy</th><th>Result</th></tr>${[2,3,4,5].map(r=>`<tr><td>${r}</td><td>${S2.c['A'+r]}</td><td><code>${E(S2.c['B'+r])}</code></td><td class="${Math.abs(V['B'+r]-(+S2.c['A'+r])*.1)<1e-9?'r':''}">${disp(V['B'+r])}</td></tr>`).join('')}</table>
  <p>${ok?'<b style="color:var(--ok)">Correct on every row.</b> ':'<b style="color:var(--bad)">Wrong results!</b> '}${{'=A2*E1':'Both references are relative: E1 became E2, E3… which are empty cells, so the result is 0.','=A2*$E$1':'A2 is relative (it follows the row), $E$1 is absolute (it stays on the rate). This is the right formula.','=A2*E$1':'E$1 locks only the row. Copying down keeps row 1, so it also works here. This is a mixed reference.','=$A$2*$E$1':'$A$2 is locked too, so every row uses the price of row 2.'}[f]}</p>`);return''});
-pick('ver',[['#DIV/0!','Division by zero, or by an empty cell. Example: =A1/B1 when B1 is empty.'],['#NAME?','Excel does not know a name: a typo in a function, like =SUMM(A1:A5), or text without quotes.'],['#VALUE!','Wrong type of data: you calculate with text, like ="Hello"+5.'],['#REF!','The formula points to a cell that does not exist any more, often after deleting a row or column.'],['########','Not an error! The column is too narrow to show the number. Make the column wider.']],x=>`<p><span class="big" style="color:var(--bad)">${x[0]}</span></p><p>${x[1]}</p>`);
+pick('ver',[['#DIV/0!','Division by zero, or by an empty cell. Example: =A1/B1 when B1 is empty.'],['#NAME?','Excel does not know a name: a typo in a function, like =SUMM(A1:A5), or text without quotes.'],['#VALUE!','Wrong type of data: you calculate with text, like ="Hello"+5.'],['#REF!','The formula points to a cell that does not exist: a deleted row, or column 4 of a 3-column table in VLOOKUP.'],['#N/A','Not available: VLOOKUP could not find the value in the first column of the table.'],['########','Not an error! The column is too narrow to show the number. Make the column wider.']],x=>`<p><span class="big" style="color:var(--bad)">${x[0]}</span></p><p>${x[1]}</p>`);
 
-/* ---------- w7: games ---------- */
+/* ---------- w5: SUM and SUMIF ---------- */
+const S_SUM={c:{A1:'Values A',B1:'Values B',A2:'10',A3:'20',A4:'30',A5:'40',A6:'50',B2:'100',B3:'200',B4:'300',B5:'400',B6:'500'},nc:3,nr:6};
+play('vp1',S_SUM,[['=SUM(10,20,30)','No cells here: SUM adds the numbers you type. 10 + 20 + 30 = 60.'],['=SUM(A2:A6)','The colon means “from A2 to A6”: 10 + 20 + 30 + 40 + 50 = 150.'],['=SUM(A2:A6,B2:B6)','Two ranges, separated by a comma: 150 + 1500 = 1650.']]);
+const S_SIF={c:{A1:'Product',B1:'Sales',C1:'Category'},nc:4,nr:9};
+[['Apple',100,'Fruit'],['Banana',80,'Fruit'],['Carrot',50,'Vegetable'],['Apple',120,'Fruit'],['Lettuce',60,'Vegetable'],['Orange',90,'Fruit'],['Tomato',70,'Vegetable'],['Banana',110,'Fruit']].forEach((r,i)=>{S_SIF.c['A'+(i+2)]=r[0];S_SIF.c['B'+(i+2)]=''+r[1];S_SIF.c['C'+(i+2)]=r[2]});
+play('vp2',S_SIF,[['=SUMIF(A2:A9,"Apple",B2:B9)','Excel looks for “Apple” in A2:A9 (2 rows), then adds their sales from B: 100 + 120 = 220.'],['=SUMIF(B2:B9,">80")','No sum_range: Excel adds the cells of B2:B9 greater than 80: 100 + 120 + 90 + 110 = 420. (80 is not greater than 80.)'],['=SUMIF(C2:C9,"Vegetable",B2:B9)','The condition is on the category, the sum is on the sales: 50 + 60 + 70 = 180.']]);
+const NSI=/SUMIF|SOMME\.SI/,NSIm='Use the SUMIF function.';
+tasks('vt2',S_SIF,[
+{q:'Total sales of <b>Banana</b>.',a:'=SUMIF(A2:A9,"Banana",B2:B9)',need:NSI,nm:NSIm,h:'Same as the Apple example, with "Banana".'},
+{q:'Total sales of all the <b>Fruit</b>.',a:'=SUMIF(C2:C9,"Fruit",B2:B9)',need:NSI,nm:NSIm,h:'The condition is on column C, the sum on column B.'},
+{q:'Total of the sales <b>less than 100</b>.',a:'=SUMIF(B2:B9,"<100")',need:NSI,nm:NSIm,h:'Put the sign and the number together in quotes. No sum_range needed.'},
+{q:'Total sales of every product <b>except Apple</b>.',a:'=SUMIF(A2:A9,"<>Apple",B2:B9)',need:NSI,nm:NSIm,h:'&lt;&gt; means “not equal to”.'}]);
+
+/* ---------- w6: IF, AND, OR ---------- */
+let s1=1,s2=0;
+const aoR=()=>{const b=(v,l)=>`<button class="sw${v?' on':''}">${l}: ${v?'TRUE':'FALSE'}</button>`,A=s1&&s2,O=s1||s2;
+ H($('#vao'),`<p>${b(s1,'Score ≥ 70')} ${b(s2,'Status = "Yes"')}</p><div class="g"><div class="card" style="text-align:center;${A?'border-color:var(--ok);background:#e4fbf3':''}"><b>AND(test1, test2)</b><div class="big" style="color:${A?'var(--ok)':'var(--bad)'}">${A?'TRUE':'FALSE'}</div><small>${A?'Both are TRUE.':'AND needs both to be TRUE.'}</small></div><div class="card" style="text-align:center;${O?'border-color:var(--ok);background:#e4fbf3':''}"><b>OR(test1, test2)</b><div class="big" style="color:${O?'var(--ok)':'var(--bad)'}">${O?'TRUE':'FALSE'}</div><small>${O?'At least one is TRUE.':'Both are FALSE.'}</small></div></div>`);
+ const [x,y]=$('#vao').querySelectorAll('.sw');x.onclick=()=>{s1^=1;aoR()};y.onclick=()=>{s2^=1;aoR()}};aoR();
+const DL0=[[95,'Yes'],[45,'No'],[78,'Yes'],[60,'No'],[85,'Yes']],DL=DL0.map(r=>[...r]);let dsel=0;
+H($('#vdl'),`<tr><th></th><th>A · Score</th><th>B · Status</th><th>C · Pass/Fail</th><th>D · AND</th><th>E · OR</th></tr>`+DL.map((r,i)=>`<tr data-i="${i}"><th>${i+2}</th><td><input type="number" min="0" max="100" value="${r[0]}" aria-label="Score row ${i+2}"></td><td><button class="c" style="margin:0;min-width:56px">${r[1]}</button></td><td></td><td></td><td></td></tr>`).join(''));
+const dlU=()=>{const pm=+$('#vpm').value,am=+$('#vapm').value;$('#vpmv').textContent=pm;$('#vapv').textContent=am;
+ const set=(td,v,y,n)=>{td.textContent=v?y:n;td.className=v?'y':'n'};
+ $('#vdl').querySelectorAll('tr[data-i]').forEach(tr=>{const i=+tr.dataset.i,[s,st]=DL[i],t=tr.children;set(t[3],s>=pm,'Pass','Fail');set(t[4],s>=am&&st=='Yes','Approved','Denied');set(t[5],s>=am||st=='Yes','Approved','Denied');tr.classList.toggle('sel',i==dsel)});
+ const [s,st]=DL[dsel],r=dsel+2,T=v=>v?'<b style="color:var(--ok)">TRUE</b>':'<b style="color:var(--bad)">FALSE</b>',a1=s>=am,a2=st=='Yes';
+ H($('#vdx'),`<p><b>Row ${r}</b>: score ${s}, status "${st}"</p>
+ <p><code>C${r} =IF(A${r}&gt;=${pm},"Pass","Fail")</code><br>${s} &gt;= ${pm} is ${T(s>=pm)} → <b>${s>=pm?'Pass':'Fail'}</b></p>
+ <p><code>D${r} =IF(AND(A${r}&gt;=${am},B${r}="Yes"),"Approved","Denied")</code><br>AND( ${s} &gt;= ${am} → ${T(a1)} , "${st}" = "Yes" → ${T(a2)} ) = ${T(a1&&a2)} → <b>${a1&&a2?'Approved':'Denied'}</b></p>
+ <p><code>E${r} =IF(OR(A${r}&gt;=${am},B${r}="Yes"),"Approved","Denied")</code><br>OR( ${T(a1)} , ${T(a2)} ) = ${T(a1||a2)} → <b>${a1||a2?'Approved':'Denied'}</b></p>`)};
+$('#vdl').querySelectorAll('tr[data-i]').forEach(tr=>{const i=+tr.dataset.i,inp=tr.querySelector('input'),bt=tr.querySelector('button');
+ tr.onclick=()=>{dsel=i;dlU()};inp.oninput=()=>{DL[i][0]=Math.max(0,Math.min(100,Math.round(+inp.value||0)));dsel=i;dlU()};
+ bt.onclick=e=>{DL[i][1]=DL[i][1]=='Yes'?'No':'Yes';bt.textContent=DL[i][1];dsel=i;dlU();e.stopPropagation()}});
+$('#vpm').oninput=dlU;$('#vapm').oninput=dlU;dlU();
+const S_IF={c:{A1:'Score',B1:'Status'},nc:4,nr:6};DL0.forEach((r,i)=>{S_IF.c['A'+(i+2)]=''+r[0];S_IF.c['B'+(i+2)]=r[1]});
+play('vp3',S_IF,[['=IF(A2>=50,"Pass","Fail")','Row 2: 95 >= 50 is TRUE, so “Pass”. Change A2 to A3 to test row 3 (45).'],['=IF(AND(A2>=70,B2="Yes"),"Approved","Denied")','95 >= 70 is TRUE and B2 is "Yes": both are TRUE, so “Approved”.'],['=IF(OR(A3>=70,B3="Yes"),"Approved","Denied")','Row 3: 45 >= 70 is FALSE and B3 is "No": both are FALSE, so OR is FALSE: “Denied”.']]);
+const R5=[2,3,4,5,6];
+tasks('vt3',S_IF,[
+{q:'Show <b>"Excellent"</b> if the score is 90 or more, otherwise <b>"Keep going"</b>.',a:'=IF(A2>=90,"Excellent","Keep going")',need:/IF\(|SI\(/,nm:'Use the IF function.',rows:R5,h:'One test: A2>=90.'},
+{q:'<b>"Bonus"</b> if the score is 80 or more <b>and</b> the status is Yes, otherwise <b>"No bonus"</b>.',a:'=IF(AND(A2>=80,B2="Yes"),"Bonus","No bonus")',need:/AND\(|ET\(/,nm:'Put AND( , ) inside the IF.',rows:R5,h:'Two tests inside AND: A2>=80 and B2="Yes".'},
+{q:'<b>"Call"</b> if the score is below 50 <b>or</b> the status is No, otherwise <b>"OK"</b>.',a:'=IF(OR(A2<50,B2="No"),"Call","OK")',need:/OR\(|OU\(/,nm:'Put OR( , ) inside the IF.',rows:R5,h:'Two tests inside OR: A2<50 and B2="No".'}]);
+
+/* ---------- w7: VLOOKUP ---------- */
+const VP=[['Apple',100,50],['Banana',80,30],['Carrot',50,20],['Orange',120,60],['Tomato',90,25]];
+let vk='Banana',vc=2,vt=0;
+H($('#vqt'),'<tr><th></th><th>A · Product</th><th>B · Price</th><th>C · Stock</th></tr>'+VP.map((r,i)=>`<tr><th>${i+2}</th>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join(''));
+const vcells=[...$('#vqt').querySelectorAll('tr')].slice(1).map(tr=>[...tr.querySelectorAll('td')]);
+const vclr=()=>{vt++;vcells.flat().forEach(td=>td.className='');H($('#vqo'),'Press <b>Run VLOOKUP</b>.')};
+const vf=()=>{H($('#vqf'),`=VLOOKUP(<span style="color:#2b7de9">"${vk}"</span>, <span style="color:#f29d38">A2:C6</span>, <span style="color:#2fa36b">${vc}</span>, <span style="color:#9b5de5">FALSE</span>)`);vclr()};
+chipRow($('#vqk'),[...VP.map(r=>r[0]),'Mango'],1,(i,l)=>{vk=l;vf()});
+chipRow($('#vqc'),['1','2','3','4'],1,(i,l)=>{vc=+l;vf()});
+$('#vqr').onclick=()=>{vclr();const tok=vt;let i=0;const say=h=>H($('#vqo'),h);
+ const step=()=>{if(tok!=vt)return;if(i>0)vcells[i-1][0].className='no';
+  if(i>=VP.length){say(`<span class="big" style="color:var(--bad)">#N/A</span><br>“${vk}” is not in the first column. Excel answers #N/A: not available.`);return}
+  vcells[i][0].className='scan';const hit=VP[i][0]==vk;say(`Step ${i+1}: is A${i+2} (“${VP[i][0]}”) equal to “${vk}”? ${hit?'<b>Yes!</b>':'No, next row.'}`);
+  if(hit){setTimeout(()=>{if(tok!=vt)return;vcells[i].forEach(c=>c.className='row');
+   if(vc>3){say(`Found “${vk}” in row ${i+2}… but the table A2:C6 has only 3 columns. Column ${vc} does not exist: <span class="big" style="color:var(--bad)">#REF!</span>`);return}
+   vcells[i][vc-1].className='res';say(`Found “${vk}” in row ${i+2}. Column ${vc} of the table is <b>${['Product','Price','Stock'][vc-1]}</b>.<br>Result: <span class="big">${VP[i][vc-1]}</span>`);add(2)},650);return}
+  i++;setTimeout(step,550)};
+ step()};
+const S_VL={c:{A1:'Product',B1:'Price',C1:'Stock',F1:'List',F2:'Orange',F3:'Apple',F4:'Banana'},nc:7,nr:8};VP.forEach((r,i)=>{S_VL.c['A'+(i+2)]=r[0];S_VL.c['B'+(i+2)]=''+r[1];S_VL.c['C'+(i+2)]=''+r[2]});
+play('vp4',S_VL,[['=VLOOKUP("Banana",A2:C6,2,FALSE)','Banana is in row 3. Column 2 of the table is the price: 80.'],['=VLOOKUP("Carrot",A2:C6,3,FALSE)','Column 3 of the table is the stock: 20.'],['=VLOOKUP(F2,A2:C6,2,FALSE)','The value to search is in a cell: F2 (Orange). If F2 changes, the result follows. Price: 120.'],['=VLOOKUP("Mango",A2:C6,2,FALSE)','Mango is not in the table.'],['=VLOOKUP("Apple",A2:C6,4,FALSE)','The table A2:C6 has only 3 columns.']]);
+const NVL=/VLOOKUP|RECHERCHEV/,NVLm='Use the VLOOKUP function.';
+tasks('vt4',S_VL,[
+{q:'Find the <b>stock</b> of Orange.',a:'=VLOOKUP("Orange",A2:C6,3,FALSE)',need:NVL,nm:NVLm,h:'Stock is column 3 of the table.'},
+{q:'Find the <b>price</b> of Tomato.',a:'=VLOOKUP("Tomato",A2:C6,2,FALSE)',need:NVL,nm:NVLm,h:'Price is column 2 of the table.'},
+{q:'Find the price of the product written in <b>F3</b>. Use the cell, not the name.',a:'=VLOOKUP(F3,A2:C6,2,FALSE)',need:/(VLOOKUP|RECHERCHEV).*F3/,nm:'Use VLOOKUP with the cell F3 as lookup_value.',h:'Replace the text in quotes by F3 (no quotes).'},
+{q:'In G2, find the <b>stock</b> of the product in F2. It must still work when you copy it down to G3 and G4.',a:'=VLOOKUP(F2,$A$2:$C$6,3,FALSE)',need:NVL,nm:NVLm,rows:[2,3,4],tip:'Did you lock the table with $ signs?',h:'Copying down moves A2:C6 to A3:C7, then A4:C8. Lock it: $A$2:$C$6.'}]);
+
+/* ---------- w8: pivot tables ---------- */
+const PD=[[1001,'01/02/2024','North','Alice','Laptop',5,700,3500],[1002,'03/02/2024','South','Bob','Tablet',3,300,900],[1003,'05/02/2024','North','Alice','Smartphone',8,500,4000],[1004,'07/02/2024','East','Charlie','Laptop',2,700,1400],[1005,'10/02/2024','West','David','Tablet',6,300,1800],[1006,'12/02/2024','East','Eve','Smartphone',4,500,2000],[1007,'14/02/2024','North','Alice','Laptop',3,700,2100],[1008,'16/02/2024','West','Bob','Smartphone',5,500,2500],[1009,'18/02/2024','South','Charlie','Tablet',7,300,2100],[1010,'20/02/2024','East','Eve','Laptop',4,700,2800]];
+const PH=['Order ID','Date','Region','Salesperson','Product','Units Sold','Unit Price','Total Sales'];
+H($('#vsd'),`<table class="src"><tr><th></th>${PH.map((h,i)=>`<th>${colName(i)} · ${h}</th>`).join('')}</tr>${PD.map((r,k)=>`<tr><th>${k+2}</th>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</table>`);
+const srcRows=[...$('#vsd').querySelectorAll('tr')].slice(1);
+const PFd={Region:2,Salesperson:3,Product:4},PVd={'Total Sales':7,'Units Sold':5};
+const AG={SUM:a=>a.reduce((s,x)=>s+x,0),COUNT:a=>a.length,AVERAGE:a=>a.length?Math.round(a.reduce((s,x)=>s+x,0)/a.length*100)/100:0,MAX:a=>a.length?Math.max(...a):0};
+const P={r:'Product',c:'None',v:'Units Sold',a:'SUM',s:'A→Z'};
+const fN=n=>n===''?'':n.toLocaleString('en');
+const PM=[['Summarize sales by region: Rows = Region, Values = Total Sales, Summarize by SUM.',()=>P.r=='Region'&&P.c=='None'&&P.v=='Total Sales'&&P.a=='SUM','North sells the most: 9,600.'],
+['How many sales per region? Change Summarize by from SUM to COUNT.',()=>P.r=='Region'&&P.c=='None'&&P.a=='COUNT','East and North: 3 sales each. South and West: 2.'],
+['Find the top salesperson: Rows = Salesperson, SUM of Total Sales, Sort = Highest first.',()=>P.r=='Salesperson'&&P.c=='None'&&P.v=='Total Sales'&&P.a=='SUM'&&P.s=='Highest first','Alice is the top salesperson with 9,600.'],
+['Analyze product performance: Rows = Product, Columns = Region, SUM of Total Sales.',()=>P.r=='Product'&&P.c=='Region'&&P.v=='Total Sales'&&P.a=='SUM','Laptops sell best: 9,800 in total.']];
+let pm=0;const pgx=new Set();
+const pedit=()=>{const G=[['Rows','r',Object.keys(PFd)],['Columns','c',['None',...Object.keys(PFd).filter(k=>k!=P.r)]],['Values','v',Object.keys(PVd)],['Summarize by','a',Object.keys(AG)],['Sort','s',['A→Z','Highest first']]];
+ H($('#vpe'),G.map(([l,k,o])=>`<div style="margin:2px 0"><b style="display:inline-block;width:118px;font-size:15px">${l}</b>${o.map(x=>`<button class="c${P[k]==x?' on':''}" data-k="${k}" data-v="${x}" style="margin:0 4px 6px 0;font-size:14px">${x}</button>`).join('')}</div>`).join(''));
+ $('#vpe').querySelectorAll('button').forEach(b=>b.onclick=()=>{P[b.dataset.k]=b.dataset.v;if(P.c==P.r)P.c='None';pedit();prun()})};
+const prun=()=>{const ri=PFd[P.r],ci=P.c=='None'?-1:PFd[P.c],vi=PVd[P.v],f=AG[P.a],uq=i=>[...new Set(PD.map(r=>r[i]))].sort();
+ const val=(rk,ck)=>{const L=PD.filter(r=>(rk==null||r[ri]==rk)&&(ck==null||r[ci]==ck)).map(r=>r[vi]);return L.length?f(L):''};
+ const R=uq(ri),C=ci<0?[]:uq(ci);if(P.s!='A→Z')R.sort((x,y)=>val(y,null)-val(x,null));
+ const mx=Math.max(...R.map(k=>val(k,null))),hd=`${P.a} of ${P.v}`;
+ const td=(rk,ck,b)=>`<td data-r="${rk??''}" data-c="${ck??''}">${b?'<b>':''}${fN(val(rk,ck))}${b?'</b>':''}</td>`;
+ H($('#vpo'),`<table class="pv"><tr><th style="text-align:left">${P.r}</th>${C.length?C.map(c=>`<th>${c}</th>`).join('')+'<th>Grand Total</th>':`<th>${hd}</th>`}</tr>
+ ${R.map(rk=>`<tr><th style="text-align:left">${rk}</th>${C.map(ck=>td(rk,ck)).join('')}<td data-r="${rk}" data-c=""><b>${fN(val(rk,null))}</b><span class="pb" style="width:${mx?val(rk,null)/mx*100:0}%"></span></td></tr>`).join('')}
+ <tr class="gt"><th style="text-align:left">Grand Total</th>${C.map(ck=>td(null,ck,1)).join('')}${td(null,null,1)}</tr></table><p style="margin:6px 0 0"><small>${hd}${C.length?` · Columns: ${P.c}`:''}</small></p>`);
+ srcRows.forEach(tr=>tr.classList.remove('hl'));
+ $('#vpo').querySelectorAll('td').forEach(c=>c.onclick=()=>{const rk=c.dataset.r,ck=c.dataset.c;srcRows.forEach((tr,i)=>tr.classList.toggle('hl',(!rk||PD[i][ri]==rk)&&(!ck||PD[i][ci]==ck)))});
+ while(pm<PM.length&&PM[pm][1]()){if(!pgx.has(pm)){pgx.add(pm);add(15)}pm++}
+ H($('#vpmi'),PM.map((m,i)=>`<li class="${i<pm?'ok':i==pm?'now':''}">${i<pm?'✓ ':''}${m[0]}${i<pm?`<br><small style="color:var(--ok)">${m[2]}</small>`:''}</li>`).join('')+(pm>=PM.length?'<li class="ok"><b>All activities complete! You are a pivot table pro.</b></li>':''))};
+pedit();prun();
+
+/* ---------- w9: conditional formatting ---------- */
+const CS=[['Ahmed Ould Mohamed',12,15,14],['Mariem Mint Saleh',9,11,10],['Mohamed Ould Ahmed',8,7,9],['Fatimatou Mint Ali',14,16,13],['Sidi Ould Mokhtar',10,12,11],['Aichetou Mint Baba',7,6,8],['Ely Ould Brahim',13,14,12],['Khadijetou Mint Said',15,13,14],['Abdallahi Ould Yacoub',6,9,7],['Zeinebou Mint Dah',12,14,13]];
+const CR=[['low','Cell value < pass mark','light red fill, dark red text','B2:E11',1],['high','Cell value ≥ 14','green fill','B2:E11',0],['top','Top 3 averages','gold border, bold','E2:E11',0],['bars','Data bars','blue bar in the cell','E2:E11',0],['scale','Color scale','red → yellow → green','E2:E11',0],['pf','Text is “Fail”','red text (Pass in green)','F2:F11',1]];
+H($('#vcr'),CR.map((r,i)=>`<label style="display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--l);cursor:pointer"><input type="checkbox" data-i="${i}" ${r[4]?'checked':''} style="margin-top:5px;accent-color:var(--n)"><span><b>${r[1]}</b> → ${r[2]}<br><small>Applies to =${r[3].replace(/([A-Z]+)(\d+)/g,'$$$1$$$2')}</small></span></label>`).join(''));
+$('#vcr').querySelectorAll('input').forEach(c=>c.onchange=()=>{CR[+c.dataset.i][4]=c.checked?1:0;cfR()});
+const on=k=>CR.find(r=>r[0]==k)[4];
+const mixC=t=>{const A=[248,105,107],B=[255,235,132],G=[99,190,123],m=(x,y,u)=>x.map((v,i)=>Math.round(v+(y[i]-v)*u));return`rgb(${t<.5?m(A,B,t*2):m(B,G,(t-.5)*2)})`};
+const cfR=()=>{const pmv=+$('#vcp').value;$('#vcpv').textContent=pmv;
+ const av=CS.map(r=>Math.round((r[1]+r[2]+r[3])/3*100)/100),mn=Math.min(...av),mx=Math.max(...av),t3=[...av].sort((a,b)=>b-a)[2];
+ const sty=(v,isA)=>{let fill='',s='';if(isA&&on('scale'))fill=mixC((v-mn)/(mx-mn||1));if(on('high')&&v>=14)fill='#c6efce';if(on('low')&&v<pmv)fill='#ffc7ce';
+  s+=`background-color:${fill||'#fff'};`;if(isA&&on('bars'))s+=`background-image:linear-gradient(90deg,rgba(99,142,198,.6) ${v/mx*100}%,transparent ${v/mx*100}%);`;
+  if(on('low')&&v<pmv)s+='color:#9c0006;';else if(on('high')&&v>=14)s+='color:#006100;';
+  if(isA&&on('top')&&v>=t3)s+='font-weight:800;box-shadow:inset 0 0 0 3px #e0a800;';return s};
+ H($('#vcf'),`<tr><th></th><th>A · Student</th><th>B · Science</th><th>C · Physics</th><th>D · Math</th><th>E · Average</th><th>F · Pass/Fail</th></tr>`+CS.map((r,i)=>{const a=av[i],ps=a>=pmv;
+  return`<tr><th>${i+2}</th><td style="text-align:left;white-space:nowrap">${r[0]}</td>${[1,2,3].map(k=>`<td style="${sty(r[k],0)}">${r[k]}</td>`).join('')}<td style="${sty(a,1)}">${a}</td><td style="${on('pf')?`color:${ps?'#006100':'#9c0006'};font-weight:700`:''}">${ps?'Pass':'Fail'}</td></tr>`}).join(''));
+ const nf=av.filter(a=>a<pmv).length;$('#vcn').innerHTML=`<b>${nf}</b> student${nf==1?'':'s'} below the pass mark. Move the slider: the colors follow.`};
+$('#vcp').oninput=cfR;cfR();
+srt('vg6',['Highlight cells','Top / Bottom','Data bars','Color scale'],[
+['Color every grade below 10 in red',0,'A simple rule: Highlight Cells › Less Than.'],['Show the word “Fail” in red',0,'Highlight Cells › Text that Contains.'],['Color the cells equal to 20',0,'Highlight Cells › Equal To.'],
+['Highlight the 3 best students',1,'Top/Bottom Rules › Top 10 Items, changed to 3.'],['Find the 10% lowest sales',1,'Top/Bottom Rules › Bottom 10%.'],
+['A bar in each cell to compare the stock levels',2,'Data bars draw a bar inside the cell.'],['See the biggest sale at a glance with bars',2,'The longest bar is the biggest number.'],
+['Shade the averages from red (low) to green (high)',3,'Color scales color from low to high.'],['A heat map of sales by month',3,'A heat map is a color scale.']]);
+
+/* ---------- w10: PowerPoint and Access ---------- */
+const sf=[0,0,0];let sfx=0;
+const SFX=[['Cut the text (6 × 6 rule)','At most 6 bullets of about 6 words. The audience listens to you, it does not read a book.'],['Use strong contrast','Dark text on a light background, or light text on a dark one. Never grey on grey.'],['Use one or two fonts','Too many fonts look messy. One for the titles, one for the text.']];
+const slR=()=>{const [t,c,f]=sf,box=$('#vsl .in');box.style.background=c?'#06174a':'#e4e4e4';box.style.color=c?'#fff':'#bdbdbd';
+ const tf=f?'font-family:system-ui;':'font-family:Georgia,serif;font-style:italic;text-decoration:underline;',bf=f?'font-family:system-ui;':'font-family:"Courier New",monospace;';
+ H(box,`<div style="${tf}font-weight:800;font-size:clamp(16px,3.4vw,26px)">Our sales in 2024</div>`+(t?`<ul style="${bf}font-size:clamp(13px,2.4vw,18px);margin:10px 0 0;padding-left:1.2em;line-height:1.5"><li>Sales up 25%</li><li>North is our best region</li><li>Laptops sell the most</li><li>2025 goal: open 2 shops</li></ul>`:`<p style="${bf}font-size:clamp(8px,1.35vw,11px);line-height:1.3;margin:8px 0 0">This year our sales went up by twenty-five percent compared to last year, which is a very good result thanks to the hard work of all the teams in every region, and the North region was the best of all because Alice sold many laptops and smartphones, and laptops were the product that sold the most in total, and next year in 2025 we would like to open two new shops if the budget allows it and if the sales continue to grow like they did this year, so we need everyone to keep working hard and to keep selling more and more in every region, and we also want to thank our clients and our partners for their trust and their support during this year, which was full of challenges but also full of success for the whole company…</p>`));
+ H($('#vsf'),SFX.map((x,i)=>`<button class="c${sf[i]?' on':''}" style="display:block;margin:0 0 8px;text-align:left">${sf[i]?'✓ ':''}${x[0]}</button>`).join(''));
+ [...$('#vsf').children].forEach((b,i)=>b.onclick=()=>{sf[i]^=1;slR();if(!sf.every(Boolean))H($('#vsm'),sf[i]?SFX[i][1]:'')});
+ if(sf.every(Boolean)){H($('#vsm'),'<b style="color:var(--ok)">Professional slide: short, readable and clean!</b>');if(!sfx){sfx=1;add(10)}}};
+slR();
+const sl2=$('#vsd2 .in');let dsi=0;
+$('#vst').onclick=()=>{dsi^=1;sl2.style.animation='none';void sl2.offsetWidth;H(sl2,`<div style="font-weight:800;font-size:22px">${dsi?'2 · Our results':'1 · Agenda'}</div><p>${dsi?'Sales up 25% · North is first':'Results · Plans · Questions'}</p>`);sl2.style.animation='sIn .7s ease';
+ H($('#vsx'),'<b>Transition</b>: an effect <b>between two slides</b>, when the next slide arrives. PowerPoint: Transitions tab.')};
+$('#vsa').onclick=()=>{sl2.style.animation='none';H(sl2,'<div style="font-weight:800;font-size:22px">Our results</div><ul style="margin:10px 0 0">'+['Sales up 25%','North is first','Laptops sell the most'].map((x,i)=>`<li style="opacity:0;animation:fIn .5s ease ${.3+i*.7}s forwards">${x}</li>`).join('')+'</ul>');
+ H($('#vsx'),'<b>Animation</b>: an effect on <b>one object inside a slide</b>, like bullets that appear one by one. PowerPoint: Animations tab.')};
+pick('vax',[['Table','Stores the data in rows and columns. Example: a Students table.'],['Field','One column of a table: Name, Group, Average. Each field has a type: text, number, date.'],['Record','One row of a table: all the data about one student.'],['Primary key','A field that is unique for each record, like StudentID. No two students share an ID.'],['Relationship','Links two tables with a common field. One group has many students.'],['Query','A question to the database: “Show the students of G1 with an average of 10 or more.”'],['Form','A screen to type in new data easily, one record at a time.'],['Report','A clean page to print or share: the list of students per group.']]);
+const AS=[[1,'Aminetou','G1','Nouakchott',15.5],[2,'Sidi','G2','Nouadhibou',12],[3,'Mariem','G3','Nouakchott',16.25],[4,'Moussa','G1','Kiffa',9.75],[5,'Fatimetou','G2','Nouakchott',13],[6,'Brahim','G3','Rosso',8.5],[7,'Khadija','G1','Nouakchott',11],[8,'Ahmed','G2','Atar',14.25]];
+const QC=[['All students',()=>1,''],['Group = G1',r=>r[2]=='G1',' WHERE GroupID = "G1"'],['Average ≥ 10',r=>r[4]>=10,' WHERE Average >= 10'],['City = Nouakchott',r=>r[3]=='Nouakchott',' WHERE City = "Nouakchott"'],['G1 and average ≥ 10',r=>r[2]=='G1'&&r[4]>=10,' WHERE GroupID = "G1" AND Average >= 10']];
+const QS=[['No sort',null,''],['Average: high to low',(a,b)=>b[4]-a[4],' ORDER BY Average DESC'],['Name: A to Z',(a,b)=>a[1].localeCompare(b[1]),' ORDER BY Name']];
+let qc=0,qs=0;
+const qrun=()=>{let R=AS.filter(QC[qc][1]);if(QS[qs][1])R=[...R].sort(QS[qs][1]);$('#vaw').textContent='SELECT * FROM Students'+QC[qc][2]+QS[qs][2]+';';
+ H($('#vaz'),`<table><tr><th>StudentID</th><th>Name</th><th>GroupID</th><th>City</th><th>Average</th></tr>${R.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</table><p><small>${R.length} record${R.length==1?'':'s'} found out of ${AS.length}.</small></p>`)};
+chipRow($('#vaq'),QC.map(x=>x[0]),0,i=>{qc=i;qrun()});chipRow($('#vas'),QS.map(x=>x[0]),0,i=>{qs=i;qrun()});
+
+/* ---------- w11: games ---------- */
 const DS={c:{},nc:2,nr:5};let dq;
-const DQ=[['the total of A1 to A5',V=>V.A1+V.A2+V.A3+V.A4+V.A5,'=SUM(A1:A5)'],['the average of A1 to A5',V=>(V.A1+V.A2+V.A3+V.A4+V.A5)/5,'=AVERAGE(A1:A5)'],['the biggest number in column B',V=>Math.max(V.B1,V.B2,V.B3,V.B4,V.B5),'=MAX(B1:B5)'],
-['the smallest number in column A',V=>Math.min(V.A1,V.A2,V.A3,V.A4,V.A5),'=MIN(A1:A5)'],['A1 multiplied by B1',V=>V.A1*V.B1,'=A1*B1'],['A3 minus B3',V=>V.A3-V.B3,'=A3-B3'],['how many numbers are in A1:B5',()=>10,'=COUNT(A1:B5)'],
-['the total of the whole table A1:B5',V=>Object.values(V).reduce((s,x)=>s+x,0),'=SUM(A1:B5)'],['the average of A2 and B2',V=>(V.A2+V.B2)/2,'=(A2+B2)/2'],['"Yes" if A1 is bigger than B1, otherwise "No"',V=>V.A1>V.B1?'Yes':'No','=IF(A1>B1,"Yes","No")'],['10% of A4',V=>V.A4*.1,'=A4*10%']];
+const sumA=V=>V.A1+V.A2+V.A3+V.A4+V.A5;
+const DQ=[['the total of A1 to A5',sumA,'=SUM(A1:A5)'],['the average of A1 to A5',V=>sumA(V)/5,'=AVERAGE(A1:A5)'],['the biggest number in column B',V=>Math.max(V.B1,V.B2,V.B3,V.B4,V.B5),'=MAX(B1:B5)'],
+['the smallest number in column A',V=>Math.min(V.A1,V.A2,V.A3,V.A4,V.A5),'=MIN(A1:A5)'],['A1 multiplied by B1',V=>V.A1*V.B1,'=A1*B1'],['the total of the whole table A1:B5',V=>Object.values(V).reduce((s,x)=>s+x,0),'=SUM(A1:B5)'],
+['the total of the numbers in A1:A5 that are greater than 50',V=>[1,2,3,4,5].map(r=>V['A'+r]).filter(x=>x>50).reduce((s,x)=>s+x,0),'=SUMIF(A1:A5,">50")'],
+['"Yes" if A1 is bigger than B1, otherwise "No"',V=>V.A1>V.B1?'Yes':'No','=IF(A1>B1,"Yes","No")'],
+['"Yes" if A1 and B1 are both greater than 50, otherwise "No"',V=>V.A1>50&&V.B1>50?'Yes':'No','=IF(AND(A1>50,B1>50),"Yes","No")'],
+['"Yes" if A1 or B1 is greater than 90, otherwise "No"',V=>V.A1>90||V.B1>90?'Yes':'No','=IF(OR(A1>90,B1>90),"Yes","No")'],['10% of A4',V=>V.A4*.1,'=A4*10%']];
 const dnext=()=>{DS.c={};['A','B'].forEach(c=>{for(let r=1;r<=5;r++)DS.c[c+r]=String(1+rnd(99))});const V={};Object.keys(DS.c).forEach(k=>V[k]=+DS.c[k]);dq=DQ[rnd(DQ.length)];dq.ans=dq[1](V);
  H($('#vdd'),'<tr><th></th><th>A</th><th>B</th></tr>'+[1,2,3,4,5].map(r=>`<tr><th>${r}</th><td>${DS.c['A'+r]}</td><td>${DS.c['B'+r]}</td></tr>`).join(''));$('#vdq').textContent='Write a formula for '+dq[0]+'.';$('#vda').value='';$('#vdm').textContent=''};
 let dst=0;$('#vdk').onclick=()=>{const f=$('#vda').value.trim();if(!f)return;const m=$('#vdm');
  if(f[0]!='='){m.textContent='A formula must start with = .';return}
  if(!/[A-Za-z]{1,2}\d/.test(f)){m.textContent='Use the cell addresses (like A1), not the numbers. Then the result updates by itself.';return}
- let p;try{parse(f.slice(1))}catch(e){m.textContent='There’s a problem with this formula. Check the brackets and commas.';return}
- const v=evalF(DS,f),ok=typeof dq.ans=='number'?typeof v=='number'&&Math.abs(v-dq.ans)<1e-9:typeof v=='string'&&v.toLowerCase()==dq.ans.toLowerCase();
+ try{parse(f.slice(1))}catch(e){m.textContent='There’s a problem with this formula. Check the brackets, commas and quotes.';return}
+ const v=evalF(DS,f),ok=same(v,dq.ans);
  if(ok){dst++;add(10);m.textContent=`Correct! Result: ${disp(v)}. Streak: ${dst}`;setTimeout(dnext,1100)}else{dst=0;m.textContent=`Not yet: your formula gives ${v==null?'an error':disp(v)}. One answer: ${dq[2]} → ${disp(dq.ans)}`;setTimeout(dnext,4500)}};
 $('#vda').onkeydown=e=>e.key=='Enter'&&$('#vdk').click();dnext();
-srt('vg5',['Word','Excel'],[['Heading 1 style',0,'Styles format titles in Word.'],['Table of contents',0,'Word builds it from the headings.'],['Margins and orientation',0,'Page layout of a document.'],['Spelling check with red lines',0,'Typical of Word (Excel checks spelling too, but less).'],['Header with the school name',0,'Headers are a Word feature for pages.'],
-['Cell C4',1,'Cells belong to Excel.'],['=SUM(B2:B9)',1,'A formula: Excel.'],['AutoSum',1,'Excel’s quick sum button.'],['Fill down a formula',1,'Excel copies formulas row by row.'],['#DIV/0!',1,'An Excel error.'],['Workbook with three sheets',1,'Workbooks and sheets: Excel.']]);
+srt('vg7',['SUM','SUMIF','IF','VLOOKUP','Pivot table'],[
+['Add all the sales of the year',0,'Everything: SUM.'],['Add A1:A5 and B1:B5 together',0,'Two ranges in one SUM.'],
+['Add only the sales of Apple',1,'Add with a condition: SUMIF.'],['Add the sales greater than 80',1,'Condition ">80": SUMIF.'],
+['Show Pass or Fail for each student',2,'A decision: IF.'],['Approve only if score ≥ 70 and status is Yes',2,'IF with AND.'],
+['Find the price of Banana in the product list',3,'Search in the first column: VLOOKUP.'],['Get a student’s name from their ID',3,'VLOOKUP with the ID as lookup_value.'],
+['See total sales per region and per product in a few clicks',4,'Summaries without formulas: pivot table.'],['Count how many orders each salesperson made',4,'Pivot table, summarized by Count.']]);
+srt('vg5',['Word','Excel','PowerPoint','Access'],[['Track changes and comments',0,'Review tab in Word.'],['Mail merge letters',0,'Mailings tab in Word.'],['APA bibliography',0,'References tab in Word.'],
+['=SUMIF(A2:A9,"Apple",B2:B9)',1,'A formula: Excel.'],['Pivot table',1,'Insert › PivotTable in Excel.'],['Conditional formatting',1,'Home › Conditional Formatting in Excel.'],
+['Slide transitions',2,'Transitions tab in PowerPoint.'],['Animations on bullets',2,'Animations tab in PowerPoint.'],
+['Tables with a primary key',3,'Access tables.'],['Queries, forms and reports',3,'The objects of Access.']]);
 
-/* ---------- w8: recap ---------- */
-pick('vkt',[['Office suite','A family of apps for office work: Word, Excel, PowerPoint, Outlook…'],['Ribbon','The band of tools at the top, organized in tabs and groups.'],['Document','A Word file (.docx).'],['Style','A ready-made format (Heading 1, Normal). Headings build the table of contents.'],
-['Workbook','An Excel file (.xlsx). It contains worksheets.'],['Cell','One box of a sheet, named by column + row: C4.'],['Range','A block of cells: A1:A5.'],['Formula','A calculation that starts with =, like =B2*C2.'],['Function','A ready-made formula: SUM, AVERAGE, MAX, IF…'],['Absolute reference','A reference with $ ($E$1) that does not change when you copy the formula.']]);
+/* ---------- w12: recap ---------- */
+pick('vkt',[['Productivity software','Apps to write, calculate, present and organize data: Word, Excel, PowerPoint, Access, Google Docs…'],['Style','A ready-made format (Heading 1, Normal). Headings build the table of contents.'],['Template','A ready-made document to fill in: CV, letter, report.'],['Track Changes','Marks every change so the author can accept or reject it.'],['Mail merge','One letter, many people: fields are filled from a list.'],
+['Formula','A calculation that starts with =, like =B2*C2.'],['Function','A ready-made formula: SUM, AVERAGE, IF, VLOOKUP…'],['SUMIF','Adds only the cells that match a condition: =SUMIF(range, criteria, [sum_range]).'],['IF, AND, OR','IF decides. AND: all tests true. OR: at least one test true.'],
+['VLOOKUP','Finds a value in the first column of a table and returns another column of the same row.'],['Pivot table (TCD)','Summarizes a big table with Rows, Columns and Values, without formulas.'],['Conditional formatting','Colors cells automatically with a rule: highlight, top/bottom, data bars, color scales.'],['Database (Access)','Organized data in tables linked by relationships, searched with queries.']]);
 quiz('vq1',[
-['Which app would you use to calculate the salaries of a company?',['Word','Excel','PowerPoint','Outlook'],1,'Calculations in tables: Excel.'],
-['Which tab contains Margins and Orientation in Word?',['Home','Insert','Layout','View'],2,'Layout › Margins, Layout › Orientation.'],
-['What does Ctrl + S do?',['Select all','Save','Search','Spelling'],1,'S = Save.'],
-['To build an automatic table of contents, your titles must use…',['bold text','the Heading styles','a bigger font','capital letters'],1,'The table of contents is built from Heading 1, Heading 2…'],
-['A red wavy line under a word in Word means…',['a link','a spelling mistake','a comment','a deleted word'],1,'Red = spelling. Blue = grammar.'],
-['The cell in column D, row 7 is called…',['7D','D7','D:7','R7D'],1,'Column letter first, then row number.'],
-['What is the result of =2+3*4?',['20','14','24','9'],1,'* before +: 2 + 12 = 14.'],
-['Which formula adds the cells B2 to B10?',['=SUM(B2:B10)','=SUM(B2;B10)','=ADD(B2:B10)','SUM(B2:B10)'],0,'Range with a colon, and the = sign first. (In French Excel, the function is SOMME.)'],
-['You copy =A2*$E$1 from B2 to B3. It becomes…',['=A3*$E$2','=A3*$E$1','=A2*$E$1','=B3*$E$1'],1,'A2 is relative and moves to A3. $E$1 is absolute and stays.'],
-['=IF(B2>=10,"Pass","Fail") shows "Fail" when B2 is…',['10','15','8','12'],2,'8 is less than 10, so the condition is false.'],
-['Which error appears when you divide by an empty cell?',['#NAME?','#REF!','#DIV/0!','#VALUE!'],2,'An empty cell counts as 0: division by zero.'],
-['A file named budget.xlsx was made with…',['Word','Excel','PowerPoint','Access'],1,'.xlsx is an Excel workbook.']],
-p=>p>=.8?'Gold: you are ready for the office!':p>=.5?'Silver: review the topics you missed, then play again.':'Bronze: try the Word and Excel labs again, then replay.');
+['Which app would you use to store 10,000 customers and search them?',['Word','Excel','PowerPoint','Access'],3,'Lots of organized records with queries: Access.'],
+['To see who changed what in a Word document, turn on…',['Track Changes','Mail Merge','Page Layout','Zoom'],0,'Review › Track Changes.'],
+['(Sall, 2023) is a citation in which style?',['APA','IEEE'],0,'APA uses author and year. IEEE uses a number: [1].'],
+['=SUM(10,20,30) gives…',['60','102030','30','3'],0,'10 + 20 + 30 = 60.'],
+['=SUMIF(A2:A9,"Apple",B2:B9) adds…',['the sales of Apple only','all the sales','the number of apples','A2 and B9'],0,'The condition is on A, the cells to add are in B.'],
+['=SUMIF(B2:B5,">80") with the sales 100, 80, 50 and 120 gives…',['220','300','80','350'],0,'Only 100 and 120 are greater than 80. 80 is not greater than 80.'],
+['=IF(AND(A2>=70,B2="Yes"),"Approved","Denied") with A2 = 78 and B2 = "No" gives…',['Approved','Denied','TRUE','#VALUE!'],1,'AND needs both tests. B2 is "No", so AND is FALSE.'],
+['The same values with OR instead of AND give…',['Approved','Denied'],0,'78 >= 70 is TRUE: one TRUE is enough for OR.'],
+['=VLOOKUP("Banana",A2:C6,2,FALSE) returns…',['the value in column 2 on Banana’s row','the second banana','the word Banana','the row number'],0,'It finds Banana in column A, then reads column 2 of the table.'],
+['Why write $A$2:$C$6 in a VLOOKUP that you copy down?',['So the table does not move','To make it faster','To show money','Excel always needs $'],0,'Without $, the table moves down one row each time.'],
+['In a pivot table, to compare products by region, Region goes in…',['Columns','Values','Sort'],0,'Product in Rows, Region in Columns, Total Sales in Values.'],
+['Which conditional formatting shades cells from red to green?',['Color scale','Data bars','Top 10','Bold'],0,'A color scale goes from low (red) to high (green).'],
+['An effect that makes bullets appear one by one is…',['an animation','a transition','a template','a query'],0,'Animations act inside a slide. Transitions act between slides.']],
+p=>p>=.8?'Gold: you are ready for the office!':p>=.5?'Silver: review the topics you missed, then play again.':'Bronze: try the labs again, then replay.');
 
 /* ---------- stop challenges + roadmap ---------- */
-const ST3=[['w2','1. The Office suite','Word, Excel, PowerPoint, Outlook'],['w3','2. The interface','Ribbon, tabs, shortcuts'],['w4','3. Word','Formatting, layout, features'],['w5','4. Excel basics','Cells, ranges, operators'],['w6','5. Formulas and functions','SUM, AVERAGE, IF, $']],done3=new Set();
+const ST3=[['w2','1. The suite','Word, Excel, PowerPoint, Access'],['w3','2. Word processing','Styles, track changes, mail merge'],['w4','3. Excel basics','Cells, operators, references'],['w5','4. SUM and SUMIF','Add, with or without a condition'],['w6','5. IF, AND, OR','Excel makes decisions'],['w7','6. VLOOKUP','Find a value in a table'],['w8','7. Pivot tables','Summarize in a few clicks'],['w9','8. Conditional formatting','Colors that follow rules'],['w10','9. PowerPoint and Access','Slides and databases']],done3=new Set();
 const paint3=()=>{H($('#vrm'),ST3.map(x=>`<a class="card" href="#${x[0]}" style="text-decoration:none;color:inherit;${done3.has(x[0])?'border-color:var(--ok);background:#e4fbf3':''}"><b>${done3.has(x[0])?'✓ ':''}${x[1]}</b><br><small>${x[2]}</small></a>`).join(''));PR[3]=done3.size;spU()};
 const MQ3={
-w2:[["PowerPoint is used to…","make presentations with slides","calculate a budget","send emails"],["A free, open-source alternative to Office is…","LibreOffice","Outlook","Teams"],["Which file is an Excel workbook?","grades.xlsx","grades.docx","grades.pptx"]],
-w3:[["Where are the tools Bold, Italic and Font?","Home tab","View tab","File tab"],["Ctrl + Z…","undoes the last action","zooms in","closes the file"],["Save As is used to…","save a copy with a new name, place or type","print the file","close the app"]],
-w4:[["To center a title, you use…","the paragraph alignment buttons","the font size list","the Insert tab"],["Portrait or landscape is called…","orientation","margins","style"],["Ctrl + H in Word…","replaces a word everywhere","adds a header","makes text bold"]],
-w5:[["A range from A1 to A5 is written…","A1:A5","A1-A5","A1;A5"],["Every Excel formula starts with…","=","+","$"],["What is =(2+3)*4?","20","14","24"]],
-w6:[["Which function gives the biggest number?","MAX","SUM","TOP"],["$E$1 is an…","absolute reference","error","empty cell"],["#NAME? usually means…","a typo in a function name","a division by zero","a column too narrow"]]};
+w2:[["Google Sheets is the free online version of…","Excel","Word","Access"],["Which app is a database?","Access","PowerPoint","Word"],["Where are Bold, Italic and Font?","Home tab","View tab","File tab"]],
+w3:[["Track Changes is in the…","Review tab","Insert tab","Home tab"],["Mail merge is used to…","send one letter to many people, each with their own details","merge two cells","join two documents into one"],["In IEEE style, a citation in the text looks like…","[1]","(Sall, 2023)","Sall: 2023"]],
+w4:[["A range from A1 to A5 is written…","A1:A5","A1-A5","A1;A5"],["What is =(2+3)*4?","20","14","24"],["$E$1 is an…","absolute reference","error","empty cell"]],
+w5:[["=SUM(A2:A6,B2:B6) adds…","both ranges","only A2 and B6","the two cells A2 and B6"],["In =SUMIF(A2:A9,\"Apple\",B2:B9), the part B2:B9 is…","the cells to add","the condition","where to look for Apple"],["The criteria \">80\" means…","greater than 80","equal to 80","less than 80"]],
+w6:[["AND(TRUE, FALSE) gives…","FALSE","TRUE","#N/A"],["OR(TRUE, FALSE) gives…","TRUE","FALSE","#VALUE!"],["=IF(A2>=50,\"Pass\",\"Fail\") with A2 = 50 gives…","Pass","Fail","50"]],
+w7:[["VLOOKUP searches in…","the first column of the table","the last column","the first row"],["col_index_num = 3 returns…","the 3rd column of the table","the 3rd row","3 results"],["VLOOKUP answers #N/A when…","the value is not found","the column is too narrow","you divide by 0"]],
+w8:[["TCD is the French name for…","a pivot table","a chart","a formula"],["To see how many sales each region made, summarize by…","Count","Sum","Max"],["Who is the top salesperson in the February data?","Alice","Bob","Eve"]],
+w9:[["Conditional formatting…","colors cells automatically with a rule","deletes empty cells","adds numbers"],["A bar inside each cell, longer for bigger numbers, is…","Data bars","a Color scale","Top 10"],["Where is Conditional Formatting in Excel?","Home tab","Insert tab","Review tab"]],
+w10:[["An effect between two slides is a…","transition","animation","template"],["In Access, a question to the database is a…","query","form","report"],["A field that is unique for each record is the…","primary key","report","range"]]};
 Object.keys(MQ3).forEach(id=>{$('#'+id).insertAdjacentHTML('beforeend',`<h3>Stop challenge: 3 questions</h3><div id="m${id}" class="card"></div>`);
  quiz('m'+id,MQ3[id].map(q=>{const o=sh(q.slice(1));return[q[0],o,o.indexOf(q[1]),'Re-read this stop if it was tricky.']}),p=>{if(p>=.66){done3.add(id);paint3()}return p>=.66?'Stop complete!':'Almost. Re-read this stop and try again.'})});
 paint3();
@@ -1390,7 +1726,7 @@ paint2();
 /* ---------- unit switcher ---------- */
 (function(){
 const U=n=>{cur=n;[1,2,3].forEach(k=>{$('#u'+k).hidden=k!=n;$('#n'+k).hidden=k!=n;$('#b'+k).classList.toggle('on',k==n)});
- document.title=['','IT1 · Unit 1 · Introduction to Information Technology','IT1 · Unit 2 · Operating Systems','IT1 · Unit 3 · Microsoft Office'][n]+' · NBS';spU();try{localStorage.setItem('it1unit',n)}catch(e){}};
+ document.title=['','IT1 · Unit 1 · Introduction to Information Technology','IT1 · Unit 2 · Operating Systems','IT1 · Unit 3 · Productivity Software'][n]+' · NBS';spU();try{localStorage.setItem('it1unit',n)}catch(e){}};
 const go=n=>{U(n);history.replaceState(null,'','#u'+n);scrollTo(0,0)};
 $('#b1').onclick=()=>go(1);$('#b2').onclick=()=>go(2);$('#b3').onclick=()=>go(3);
 const route=()=>{const h=decodeURIComponent(location.hash.slice(1)),t=h&&document.getElementById(h);if(!t)return false;const m=t.closest('main');if(!m)return false;

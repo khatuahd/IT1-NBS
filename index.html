@@ -106,12 +106,19 @@ kbd{display:inline-block;border:2px solid var(--n);border-bottom-width:4px;paddi
 .mmf{background:#e8edf7;color:#2b579a;font-family:ui-monospace,monospace;padding:0 4px}
 .card p>code{overflow-wrap:anywhere}
 .cit{font-family:Georgia,'Times New Roman',serif}
+.krow{padding:10px 0;border-top:1px solid var(--l)}.kq{margin-bottom:6px}.kf{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.kf label{display:inline-flex;align-items:center;gap:5px}.kf input{font-family:ui-monospace,Consolas,monospace}
+.o.sel{border-color:var(--n);background:#e8edf7;font-weight:700}
+.kst{background:#1b2f6b;padding:12px 16px;min-width:140px}.kst b{display:block;font:800 30px system-ui;color:var(--g)}.kst small{color:#b9c4e4}
+.kbar{position:sticky;top:66px;z-index:5;background:#fff;border:2px solid var(--n);padding:8px 12px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}.kbar b{font:800 22px ui-monospace,monospace;color:var(--n)}
+.rs h3{margin-top:4px}.rs p,.rs li{font-size:15px}.rs ul{padding-left:18px;margin:4px 0}.rs table{font-size:14px}
+textarea{font:inherit;padding:9px 12px;border:2px solid var(--l);width:100%;min-height:70px}
+@media print{header,#pb,footer,.ut,nav,button,.kbar,input[type=range]{display:none!important}.hero{padding:16px 20px}.sec{padding:14px 0}.card{break-inside:avoid}body{background:#fff}}
 @media(max-width:760px){.lab{grid-template-columns:1fr}}
 @media(max-width:640px){#sp{display:none}.ut button{padding:5px 7px}}
 @media(max-width:640px){.io{grid-template-columns:1fr 1fr}.t{width:40px;font-size:24px}.logo{width:100px}}
 </style></head><body><div id="pb"></div>
 <header><a class="logo" href="#"><img src="nbs.jpeg" alt="Nouakchott Business School"></a>
-<div class="ut"><button id="b1" class="on">Unit 1</button><button id="b2">Unit 2</button><button id="b3">Unit 3</button></div><nav id="n1"><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s13">Octal &amp; Hex</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><nav id="n2" hidden><a href="#t1">Warm-up</a><a href="#t2">What is an OS</a><a href="#t3">Types</a><a href="#t4">Files</a><a href="#t5">Command line</a><a href="#t6">Manage</a><a href="#t7">Games</a><a href="#t8">Final quiz</a></nav><nav id="n3" hidden><a href="#w1">Warm-up</a><a href="#w2">Suite</a><a href="#w3">Word</a><a href="#w4">Excel basics</a><a href="#w5">SUM · SUMIF</a><a href="#w6">IF · AND · OR</a><a href="#w7">VLOOKUP</a><a href="#w8">Pivot tables</a><a href="#w9">Cond. formatting</a><a href="#w10">PowerPoint · Access</a><a href="#w11">Games</a><a href="#w12">Final quiz</a></nav><b id="sp">0 / 8 stops</b><b id="xp">0 XP</b></header>
+<div class="ut"><button id="b1" class="on">Unit 1</button><button id="b2">Unit 2</button><button id="b3">Unit 3</button><button id="b4">Midterm</button></div><nav id="n1"><a href="#s1">Warm-up</a><a href="#s2">IT</a><a href="#s3">Computer</a><a href="#s4">CPU</a><a href="#s5">Memory</a><a href="#s6">Software</a><a href="#s7">Binary</a><a href="#s8">Lab</a><a href="#s13">Octal &amp; Hex</a><a href="#s9">Games</a><a href="#s10">Final quiz</a></nav><nav id="n2" hidden><a href="#t1">Warm-up</a><a href="#t2">What is an OS</a><a href="#t3">Types</a><a href="#t4">Files</a><a href="#t5">Command line</a><a href="#t6">Manage</a><a href="#t7">Games</a><a href="#t8">Final quiz</a></nav><nav id="n3" hidden><a href="#w1">Warm-up</a><a href="#w2">Suite</a><a href="#w3">Word</a><a href="#w4">Excel basics</a><a href="#w5">SUM · SUMIF</a><a href="#w6">IF · AND · OR</a><a href="#w7">VLOOKUP</a><a href="#w8">Pivot tables</a><a href="#w9">Cond. formatting</a><a href="#w10">PowerPoint · Access</a><a href="#w11">Games</a><a href="#w12">Final quiz</a></nav><nav id="n4" hidden><a href="#k0">Plan</a><a href="#k9">Revision sheet</a><a href="#k1">Unit 1</a><a href="#k2">Unit 2</a><a href="#k3">Unit 3</a><a href="#k6">Open questions</a><a href="#k5">Mock exam</a></nav><b id="sp">0 / 8 stops</b><b id="xp">0 XP</b></header>
 <main id="u1">
 <div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Unit 1</small><h1>Introduction to Information Technology</h1>
 <p>Tap the tiles. Every photo, song and message on a computer is built from 0s and 1s. Turn on 64 and 1 to make the letter A.</p>
@@ -508,13 +515,81 @@ kbd{display:inline-block;border:2px solid var(--n);border-bottom-width:4px;paddi
 <div class="g"><div class="card"><p>Word: styles, templates, track changes, references and mail merge.</p></div><div class="card"><p>Excel: SUM and SUMIF add, IF decides, VLOOKUP finds.</p></div><div class="card"><p>Pivot tables summarize, conditional formatting colors.</p></div><div class="card"><p>PowerPoint presents, Access stores and searches data.</p></div></div>
 <h3>13 key terms. Tap one.</h3><div id="vkt" class="card"></div>
 <h3>Final quiz</h3><div id="vq1" class="card"></div>
-<p><a class="b" style="display:inline-block;text-decoration:none" href="#u2">← Back to Unit 2</a> <a class="b" style="display:inline-block;text-decoration:none" href="#u1">Back to Unit 1</a></p></section>
+<p><a class="b" style="display:inline-block;text-decoration:none" href="#u2">← Back to Unit 2</a> <a class="b" style="display:inline-block;text-decoration:none" href="#u1">Back to Unit 1</a> <a class="b" style="display:inline-block;text-decoration:none;background:var(--g);color:var(--n)" href="#u4">Next: Midterm preparation →</a></p></section>
+</main>
+
+<main id="u4" hidden>
+<div class="hero"><div class="w"><small style="color:#b9c4e4">Nouakchott Business School · IT1 · Midterm</small><h1>Midterm preparation</h1>
+<p>Exercises on Units 1, 2 and 3, each with a full correction. Work on paper or type your answers here, then compare with the correction. Finish with a timed mock exam.</p>
+<div class="bits" style="gap:12px"><div class="kst"><b id="kso">0</b><small>exercises solved</small></div><div class="kst"><b id="kck">0%</b><small>checklist done</small></div><div class="kst"><b id="kbest">–</b><small>best mock exam</small></div></div></div></div>
+
+<section id="k0" class="sec"><h2>Your midterm plan</h2>
+<p class="lead">Revise with the sheet, practise each unit, explain the key ideas in your own words, then take the mock exam in real conditions. Answer 70% of a part’s multiple-choice questions right to turn it green.</p>
+<div id="krm" class="g"></div>
+<tip>Nuo’s advice: try every exercise <b>before</b> you open the correction. A mistake you find yourself is a mistake you will not make on exam day.</tip>
+<div class="card"><h3>Corrections and printing</h3><p>Open or close every correction on this page at once, or print the exercises to work on paper.</p>
+<button id="kca" class="b">Show all corrections</button><button id="kch" class="b" style="background:var(--m)">Hide all corrections</button><button id="kp1" class="b">Print without answers</button><button id="kp2" class="b">Print with corrections</button></div>
+<h3>Checklist: tick what you can already do</h3><p><small>Your ticks are kept in this browser.</small></p><div id="kcl" class="g"></div></section>
+
+<section id="k9" class="sec rs"><h2>Revision sheet</h2><p class="lead">The whole course on one page. Read it, then test yourself below.</p>
+<h3>Unit 1 · Information Technology</h3>
+<div class="g">
+<div class="card"><h3>The computer</h3><p>IT = organize, store, share and process information. <b>Data</b> = raw facts. <b>Information</b> = data with a meaning.</p><p>Computer = <b>Hardware</b> + <b>Software</b>. Input → Processing → Output, plus Storage.</p></div>
+<div class="card"><h3>The CPU</h3><ul><li><b>ALU</b>: arithmetic and logic</li><li><b>CU</b>: directs the order of operations</li><li><b>Registers</b>: data in use now</li><li><b>Cache</b>: frequent data</li><li>Clock speed in <b>Hz</b>; several <b>cores</b> = several tasks</li></ul><p>Cycle: <b>Fetch → Decode → Execute → Store</b></p></div>
+<div class="card"><h3>Memory</h3><p>Fastest and smallest → slowest and biggest:<br><b>Register → Cache → RAM → Disk</b></p><p><b>RAM</b>: temporary, programs in use. <b>ROM</b>: permanent, startup instructions.</p></div>
+<div class="card"><h3>Software</h3><p><b>System</b>: Windows, Linux, macOS, Android.<br><b>Application</b>: Word, Excel, WhatsApp, Chrome.</p></div>
+<div class="card"><h3>Units</h3><p>1 byte = 8 bits. 1 KB = 1024 B, 1 MB = 1024 KB, 1 GB = 1024 MB, 1 TB = 1024 GB.</p><p>With n bits: 2ⁿ values, from 0 to 2ⁿ − 1 (8 bits: 0 to 255).</p></div>
+<div class="card"><h3>ASCII</h3><p>"0"–"9" = 48–57 · "A"–"Z" = 65–90 · "a"–"z" = 97–122.<br>Small letter = capital + 32. ASCII has 128 codes (7 bits).</p></div></div>
+<div style="overflow-x:auto;margin-top:12px"><table><tr><th>From</th><th>To</th><th>Method</th></tr>
+<tr><td>Decimal</td><td>Binary, octal, hex</td><td>Divide by 2, 8 or 16; read the remainders bottom to top</td></tr>
+<tr><td>Binary, octal, hex</td><td>Decimal</td><td>Digit × base<sup>position</sup>, then add</td></tr>
+<tr><td>Binary</td><td>Octal / hex</td><td>Groups of 3 / 4 bits from the right</td></tr>
+<tr><td>Octal / hex</td><td>Binary</td><td>Each digit → 3 / 4 bits</td></tr>
+<tr><td>Octal</td><td>Hex (and back)</td><td>Go through binary</td></tr></table></div>
+<p><small>Hex digits: A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. Powers of 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</small></p>
+
+<h3>Unit 2 · Operating Systems</h3>
+<div class="g">
+<div class="card"><h3>The OS</h3><p>Manages hardware and software resources: CPU, memory, storage, user interface (GUI or CLI), security, multitasking, devices (drivers).</p></div>
+<div class="card"><h3>Types</h3><p>Desktop: <b>Windows</b> (about 73%), <b>macOS</b>, <b>Linux</b> (open source: Ubuntu, Debian, Fedora), <b>ChromeOS</b>.<br>Mobile: <b>Android</b>, <b>iOS</b>.</p></div>
+<div class="card"><h3>Paths</h3><p>Windows: <code>C:\Users\Ali\cv.docx</code> (backslash \)<br>Linux: <code>/home/ali/cv.docx</code> (slash /)</p><p>Linux is case-sensitive: NBS ≠ nbs.</p></div>
+<div class="card"><h3>Rights</h3><p>r = 4, w = 2, x = 1. Owner, group, others.<br>755 = rwx r-x r-x · 644 = rw- r-- r-- · 700 = rwx --- ---</p></div></div>
+<div style="overflow-x:auto;margin-top:12px"><table><tr><th>Task</th><th>Windows</th><th>Linux</th></tr>
+<tr><td>List</td><td><code>dir</code></td><td><code>ls</code></td></tr><tr><td>Enter / go up</td><td><code>cd NBS</code> · <code>cd..</code></td><td><code>cd NBS</code> · <code>cd ..</code></td></tr>
+<tr><td>Where am I?</td><td><code>cd</code></td><td><code>pwd</code></td></tr><tr><td>New folder</td><td><code>mkdir</code></td><td><code>mkdir</code></td></tr>
+<tr><td>New file</td><td><code>echo hi &gt; a.txt</code></td><td><code>touch a.txt</code></td></tr><tr><td>Copy / move</td><td><code>copy</code> · <code>move</code></td><td><code>cp</code> · <code>mv</code></td></tr>
+<tr><td>Delete file / empty folder</td><td><code>del</code> · <code>rmdir</code></td><td><code>rm</code> · <code>rmdir</code></td></tr><tr><td>Show file / clear</td><td><code>type</code> · <code>cls</code></td><td><code>cat</code> · <code>clear</code></td></tr></table></div>
+<p><small>Deleted in the GUI → Recycle Bin. Deleted with del or rm → gone for good.</small></p>
+
+<h3>Unit 3 · Productivity Software</h3>
+<div class="g">
+<div class="card"><h3>Word</h3><ul><li><b>Home</b>: font, bold, styles</li><li><b>Insert</b>: table, picture, page numbers</li><li><b>Layout</b>: margins, orientation</li><li><b>References</b>: table of contents, citations</li><li><b>Mailings</b>: mail merge</li><li><b>Review</b>: track changes, comments, spelling</li></ul><p>APA: (Sall, 2023), list A to Z. IEEE: [1], list in citation order.</p></div>
+<div class="card"><h3>Excel basics</h3><p>Order: <b>( ) → ^ → * / → + −</b>. Range: A1:A5.</p><p><b>A2</b> relative (moves when copied), <b>$E$1</b> absolute (fixed), <b>E$1</b> mixed. F4 adds the $.</p></div>
+<div class="card"><h3>Functions</h3><p><code>=SUM(A2:A6)</code><br><code>=SUMIF(range,criteria,[sum_range])</code><br><code>=IF(test,if_true,if_false)</code><br><code>AND</code>: all true · <code>OR</code>: one true<br><code>=VLOOKUP(value,table,col,FALSE)</code></p></div>
+<div class="card"><h3>Errors</h3><p><b>#DIV/0!</b> division by zero · <b>#NAME?</b> unknown name · <b>#VALUE!</b> wrong type · <b>#REF!</b> cell or column does not exist · <b>#N/A</b> not found · <b>####</b> column too narrow</p></div>
+<div class="card"><h3>Pivot tables and colors</h3><p>Pivot: <b>Rows</b>, <b>Columns</b>, <b>Values</b> (Sum, Count, Average, Max). Never changes the data: Refresh.</p><p>Conditional formatting: Highlight cells, Top/Bottom, Data bars, Color scales.</p></div>
+<div class="card"><h3>PowerPoint and Access</h3><p>Transition = between slides. Animation = inside a slide. 6 × 6 rule, contrast, 1–2 fonts.</p><p>Access: Table, Field (column), Record (row), Primary key (unique), Relationship, Query, Form, Report.</p></div></div></section>
+
+<section id="k1" class="sec"><h2>Part A · Unit 1 exercises</h2><p class="lead">Computers, CPU, memory, software, number systems and ASCII.</p>
+<h3>A1. Multiple choice</h3><div id="kq1" class="card"></div><div id="ka1"></div></section>
+
+<section id="k2" class="sec"><h2>Part B · Unit 2 exercises</h2><p class="lead">Operating systems, files, paths, rights and commands.</p>
+<h3>B1. Multiple choice</h3><div id="kq2" class="card"></div><div id="ka2"></div></section>
+
+<section id="k3" class="sec"><h2>Part C · Unit 3 exercises</h2><p class="lead">Word, Excel formulas, pivot tables, PowerPoint and Access.</p>
+<h3>C1. Multiple choice</h3><div id="kq3" class="card"></div><div id="ka3"></div></section>
+
+<section id="k6" class="sec"><h2>Open questions</h2><p class="lead">The exam may ask you to explain. Write your answer (here or on paper), then compare it with the model answer and be honest with yourself.</p>
+<p class="ro" style="font-size:18px">Known: <b id="kok">0</b> / <span id="kot"></span></p><div id="koq"></div></section>
+
+<section id="k5" class="sec"><h2>Mock exam</h2><p class="lead">Real conditions: 25 random questions on the three units, 30 minutes, and the correction only at the end.</p><div id="kx"></div>
+<p><a class="b" style="display:inline-block;text-decoration:none" href="#u1">Back to Unit 1</a> <a class="b" style="display:inline-block;text-decoration:none" href="#u3">Back to Unit 3</a></p></section>
 </main>
 
 <footer>IT1 · Information Technology 1 · Nouakchott Business School · Course support material</footer>
 <script>
 const $=s=>document.querySelector(s),H=(e,h)=>e.innerHTML=h,sh=a=>[...a].sort(()=>Math.random()-.5),E=c=>c.replace(/[<&]/g,m=>m=='<'?'&lt;':'&amp;');
-let xp=0,cur=1;const PR={1:0,2:0,3:0},PT={1:8,2:5,3:9},spU=()=>$('#sp').textContent=PR[cur]+' / '+PT[cur]+' stops';const add=n=>{xp+=n;$('#xp').textContent=xp+' XP'};
+let xp=0,cur=1;const PR={1:0,2:0,3:0,4:0},PT={1:8,2:5,3:9,4:5},spU=()=>$('#sp').textContent=PR[cur]+' / '+PT[cur]+' stops';const add=n=>{xp+=n;$('#xp').textContent=xp+' XP'};
 document.querySelectorAll('tip').forEach(e=>e.outerHTML=`<div class="tip"><b class="mas"><i></i><i></i></b><p>${e.innerHTML}</p></div>`);
 onscroll=()=>$('#pb').style.width=100*scrollY/(document.documentElement.scrollHeight-innerHeight)+'%';
 function quiz(id,Q,end){let i=0,s=0;const el=$('#'+id),go=()=>{
@@ -1346,6 +1421,7 @@ w10:[["An effect between two slides is a…","transition","animation","template"
 Object.keys(MQ3).forEach(id=>{$('#'+id).insertAdjacentHTML('beforeend',`<h3>Stop challenge: 3 questions</h3><div id="m${id}" class="card"></div>`);
  quiz('m'+id,MQ3[id].map(q=>{const o=sh(q.slice(1));return[q[0],o,o.indexOf(q[1]),'Re-read this stop if it was tricky.']}),p=>{if(p>=.66){done3.add(id);paint3()}return p>=.66?'Stop complete!':'Almost. Re-read this stop and try again.'})});
 paint3();
+window.XL={tasks,play};
 })();
 </script>
 
@@ -1725,14 +1801,440 @@ paint2();
 
 /* ---------- unit switcher ---------- */
 (function(){
-const U=n=>{cur=n;[1,2,3].forEach(k=>{$('#u'+k).hidden=k!=n;$('#n'+k).hidden=k!=n;$('#b'+k).classList.toggle('on',k==n)});
- document.title=['','IT1 · Unit 1 · Introduction to Information Technology','IT1 · Unit 2 · Operating Systems','IT1 · Unit 3 · Productivity Software'][n]+' · NBS';spU();try{localStorage.setItem('it1unit',n)}catch(e){}};
+const U=n=>{cur=n;[1,2,3,4].forEach(k=>{$('#u'+k).hidden=k!=n;$('#n'+k).hidden=k!=n;$('#b'+k).classList.toggle('on',k==n)});
+ document.title=['','IT1 · Unit 1 · Introduction to Information Technology','IT1 · Unit 2 · Operating Systems','IT1 · Unit 3 · Productivity Software','IT1 · Midterm preparation'][n]+' · NBS';spU();try{localStorage.setItem('it1unit',n)}catch(e){}};
 const go=n=>{U(n);history.replaceState(null,'','#u'+n);scrollTo(0,0)};
-$('#b1').onclick=()=>go(1);$('#b2').onclick=()=>go(2);$('#b3').onclick=()=>go(3);
+$('#b1').onclick=()=>go(1);$('#b2').onclick=()=>go(2);$('#b3').onclick=()=>go(3);$('#b4').onclick=()=>go(4);
 const route=()=>{const h=decodeURIComponent(location.hash.slice(1)),t=h&&document.getElementById(h);if(!t)return false;const m=t.closest('main');if(!m)return false;
  const n=+m.id.slice(1)||1;if(n!=cur||t==m){U(n);if(t==m)scrollTo(0,0);else t.scrollIntoView()}return true};
 addEventListener('hashchange',route);
-if(!route()){let s=1;try{s=+localStorage.getItem('it1unit')||1}catch(e){}U([1,2,3].includes(s)?s:1)}
+if(!route()){let s=1;try{s=+localStorage.getItem('it1unit')||1}catch(e){}U([1,2,3,4].includes(s)?s:1)}
 })();
 </script>
+
+<!-- ===== MIDTERM PREPARATION (4th tab) ===== -->
+<script>
+(function(){
+const rnd=n=>Math.floor(Math.random()*n),HX=n=>n.toString(16).toUpperCase(),SUP=n=>String(n).replace(/\d/g,d=>'⁰¹²³⁴⁵⁶⁷⁸⁹'[d]);
+const grp=(b,k)=>b.padStart(Math.ceil(b.length/k)*k,'0').match(new RegExp('.{'+k+'}','g'));
+const shq=Q=>Q.map(([q,o,c,w])=>{const p=sh(o.map((x,i)=>[x,i]));return[q,p.map(x=>x[0]),p.findIndex(x=>x[1]==c),w]});
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ---------- roadmap ---------- */
+const KS=[['k9','0. Revision sheet','The whole course on one page'],['k1','1. Unit 1 exercises','CPU, memory, number systems, ASCII'],['k2','2. Unit 2 exercises','OS, paths, rights, commands'],['k3','3. Unit 3 exercises','Word, Excel, pivot tables, Access'],['k6','4. Open questions','Explain in your own words'],['k5','5. Mock exam','25 questions in 30 minutes']],done4=new Set();
+const paint4=()=>{H($('#krm'),KS.map(x=>`<a class="card" href="#${x[0]}" style="text-decoration:none;color:inherit;${done4.has(x[0])?'border-color:var(--ok);background:#e4fbf3':''}"><b>${done4.has(x[0])?'✓ ':''}${x[1]}</b><br><small>${x[2]}</small></a>`).join(''));PR[4]=done4.size;spU()};
+const mark=id=>{done4.add(id);paint4()};
+paint4();
+
+/* ---------- checklist ---------- */
+const CL=[['Unit 1',['Name the five hardware parts with an example of each','Explain the four steps of the instruction cycle','Order the memories from fastest to slowest','Convert between decimal, binary, octal and hexadecimal','Convert KB, MB and GB into bytes','Find the ASCII code of a letter or a digit']],
+['Unit 2',['Give four roles of an operating system','Name the main desktop and mobile OS','Write a Windows path and a Linux path','Turn rights like rwxr-x--- into a number','Write the main commands on Windows and on Linux']],
+['Unit 3',['Use styles, track changes, references and mail merge in Word','Predict the result of a formula (order of operations)','Write SUM, SUMIF, IF, AND, OR and VLOOKUP formulas','Lock a reference with $','Read a pivot table and choose a conditional formatting rule','Explain transition vs animation and the objects of Access']]];
+const ck=LS.get('it1midCheck',{});
+H($('#kcl'),CL.map(([u,L],a)=>`<div class="card"><h3>${u}</h3>${L.map((t,b)=>`<label style="display:flex;gap:8px;padding:4px 0;cursor:pointer"><input type="checkbox" data-k="${a}-${b}" ${ck[a+'-'+b]?'checked':''} style="margin-top:5px;accent-color:var(--n)"><span>${t}</span></label>`).join('')}</div>`).join(''));
+const ckU=()=>{const all=[...$('#kcl').querySelectorAll('input')];$('#kck').textContent=Math.round(all.filter(x=>x.checked).length/all.length*100)+'%'};
+$('#kcl').querySelectorAll('input').forEach(c=>c.onchange=()=>{ck[c.dataset.k]=c.checked;LS.set('it1midCheck',ck);ckU()});ckU();
+const best0=LS.get('it1midBest',null);if(best0!=null)$('#kbest').textContent=best0+' / 20';
+
+/* ---------- corrections and printing ---------- */
+const dets=()=>$('#u4').querySelectorAll('.det');
+$('#kca').onclick=()=>dets().forEach(d=>d.hidden=false);
+$('#kch').onclick=()=>dets().forEach(d=>d.hidden=true);
+const prt=w=>{dets().forEach(d=>d.hidden=!w);setTimeout(()=>print(),60)};
+$('#kp1').onclick=()=>prt(0);$('#kp2').onclick=()=>prt(1);
+
+/* ---------- generic exercise rows ---------- */
+let solved=0;
+const NORM={
+ num:s=>s.replace(/\s/g,'').toUpperCase().replace(/^0+(?=.)/,''),
+ bits8:s=>s.replace(/\s/g,''),
+ txt:s=>s.trim().toLowerCase().replace(/\s+/g,' ').replace(/[.!]+$/,''),
+ nsp:s=>s.replace(/\s/g,'').toLowerCase(),
+ cs:s=>s.trim().replace(/\s+/g,' '),
+ cmd:s=>s.trim().toLowerCase().replace(/\s*>\s*/g,' > ').replace(/\s+/g,' ').replace(/[\\/]+$/,'').trim(),
+ lcmd:s=>s.trim().replace(/\s*>\s*/g,' > ').replace(/\s+/g,' ').replace(/\/+$/,'').trim(),
+ path:s=>s.replace(/\s/g,'').replace(/[\\/>$]+$/,'').toLowerCase(),
+ f:s=>s.replace(/\s/g,'').toUpperCase().replace(/;/g,',').replace(/^=/,'')};
+const card=(box,title,instr)=>{const c=document.createElement('div');c.className='card';c.innerHTML=`<h3>${title}</h3>${instr?`<p>${instr}</p>`:''}`;box.append(c);return c};
+function row(box,q,F,cor){
+ const r=document.createElement('div');r.className='krow';
+ r.innerHTML=`<div class="kq">${q}</div><div class="kf">${F.map(f=>`<label>${f[0]?`<small><b>${f[0]}</b></small>`:''}<input autocomplete="off" spellcheck="false" autocapitalize="off" size="${f[3]||14}" placeholder="Your answer"></label>`).join('')}<button class="b" style="padding:6px 14px;margin:0">Check</button><button class="c" style="margin:0">Correction</button><span class="fb"></span></div><div class="det" hidden>${cor}</div>`;
+ const I=[...r.querySelectorAll('input')],fb=r.querySelector('.fb');let got=0;
+ const chk=()=>{if(I.every(i=>!i.value.trim())){fb.textContent='';return}let ok=true,msg='';
+  F.forEach((f,k)=>{const m=f[2]||'num',v=I[k].value,N=NORM[m],A=[].concat(f[1]),good=!!v.trim()&&A.some(a=>a instanceof RegExp?a.test(N(v)):N(a)==N(v));
+   I[k].style.borderColor=v.trim()?(good?'var(--ok)':'var(--bad)'):'';
+   if(!good){ok=false;const S=A.filter(a=>typeof a=='string');
+    if(m=='bits8'&&S.some(a=>NORM.num(a)==NORM.num(v)))msg='Right value. Now write it on 8 bits.';
+    else if(m=='lcmd'&&S.some(a=>NORM.cmd(a)==NORM.cmd(v)))msg='Almost: Linux is case-sensitive.';
+    else if(m=='cs'&&S.some(a=>a.toLowerCase()==v.trim().toLowerCase()))msg='Check the capital and small letters.'}});
+  if(ok){fb.innerHTML='<b style="color:var(--ok)">Correct!</b>';if(!got){got=1;solved++;$('#kso').textContent=solved;add(5)}}
+  else fb.innerHTML=`<b style="color:var(--bad)">${msg||'Not yet.'}</b>${msg?'':' Try again or open the correction.'}`};
+ r.querySelector('.b').onclick=chk;I.forEach(i=>i.onkeydown=e=>{if(e.key=='Enter')chk()});
+ r.querySelector('.c').onclick=()=>{const d=r.querySelector('.det');d.hidden=!d.hidden};box.append(r);return r}
+const rows=(c,L,mode,size)=>L.forEach(([q,a,cor])=>row(c,q,[['',a,mode,size]],cor));
+
+/* ---------- correction builders ---------- */
+const divS=(n,b)=>{let x=n,r=[];do{const q=Math.floor(x/b),m=x%b;r.push(`${x} ÷ ${b} = ${q} remainder <b>${m>9?m+' = '+HX(m):m}</b>`);x=q}while(x>0);return r.join('<br>')+`<br>Read the remainders from bottom to top: <b>${n.toString(b).toUpperCase()}</b>`};
+const powS=(s,b)=>{const L=[...s.toUpperCase()],n=L.length;return L.map((c,i)=>`${c}${/[A-F]/.test(c)?'('+parseInt(c,16)+')':''} × ${b}${SUP(n-1-i)}`).join(' + ')+'<br>= '+L.map((c,i)=>parseInt(c,16)*b**(n-1-i)).join(' + ')+` = <b>${parseInt(s,b)}</b>`};
+const sumS=b=>{const n=b.length;return b.split('').map((c,i)=>c=='1'?'2'+SUP(n-1-i):null).filter(Boolean).join(' + ')+'<br>= '+b.split('').map((c,i)=>c=='1'?2**(n-1-i):null).filter(x=>x!==null).join(' + ')+` = <b>${parseInt(b,2)}</b>`};
+const grpS=(b,k)=>{const G=grp(b,k),D=G.map(g=>HX(parseInt(g,2)));return`Groups of ${k} from the right: ${G.join(' | ')} → ${D.join(' ')} = <b>${D.join('')}</b>`};
+const expS=(s,base)=>{const k=base==8?3:4,L=[...s.toUpperCase()],P=L.map(d=>parseInt(d,16).toString(2).padStart(k,'0'));return L.map((d,i)=>`${d} = ${P[i]}`).join(' | ')+` → <b>${P.join('').replace(/^0+(?=.)/,'')}</b>`};
+
+/* ================= PART A · UNIT 1 ================= */
+quiz('kq1',shq([
+['Which one is <b>information</b>, not just data?',['“Monday will be sunny, 36°C”','36','Monday','Sunny'],0,'Information is data organized so it means something.'],
+['In the instruction cycle, what comes right after <b>Decode</b>?',['Execute','Fetch','Store','Input'],0,'Fetch → Decode → Execute → Store.'],
+['Which part of the CPU directs the order of operations?',['The Control Unit (CU)','The ALU','The cache','The clock'],0,'The CU coordinates; the ALU calculates.'],
+['Clock speed is measured in…',['Hertz (Hz)','Bytes','Bits','Volts'],0,'Hertz = cycles per second.'],
+['Which order goes from the fastest memory to the slowest?',['Register, cache, RAM, disk','RAM, cache, register, disk','Disk, RAM, cache, register','Cache, register, disk, RAM'],0,'The closer to the CPU, the faster and the smaller.'],
+['Which memory keeps the startup instructions when the power is off?',['ROM','RAM','Cache','Register'],0,'ROM is permanent and read-only.'],
+['Android is…',['system software','application software','hardware','a file type'],0,'Android is a (mobile) operating system.'],
+['1 GB is equal to…',['1024 MB','1000 KB','1024 KB','8 MB'],0,'Each unit is 1024 times the previous one.'],
+['The biggest number you can write with 8 bits is…',['255','256','128','8'],0,'11111111 = 128+64+32+16+8+4+2+1 = 255. 8 bits give 256 values: 0 to 255.'],
+['(1F)₁₆ in decimal is…',['31','16','15','115'],0,'1 × 16 + 15 = 31.'],
+['(17)₈ in decimal is…',['15','17','7','71'],0,'1 × 8 + 7 = 15.'],
+['One hexadecimal digit replaces…',['4 bits','3 bits','8 bits','2 bits'],0,'16 = 2⁴. One octal digit replaces 3 bits.'],
+['The ASCII code of "a" minus the ASCII code of "A" is…',['32','26','1','65'],0,'a = 97, A = 65, and 97 − 65 = 32.'],
+['A touch screen is…',['an input and an output device','only an output device','a storage device','part of the CPU'],0,'You touch it (input) and it shows the result (output).']]),
+p=>{if(p>=.7)mark('k1');return p>=.7?'Part A multiple choice passed! Now do the written exercises below.':'Read the revision sheet again, then play again.'});
+
+const A=$('#ka1');
+let c=card(A,'A2. Vocabulary: give the word','Type one word (or the short name).');
+rows(c,[
+['The part of the CPU that does + − × ÷ and AND, OR, NOT',['alu','arithmetic and logic unit','arithmetic logic unit'],'<b>ALU</b>: Arithmetic and Logic Unit.'],
+['Raw facts that mean nothing on their own','data','<b>Data</b>. Once organized and processed, they become information.'],
+['The main memory: fast, temporary, holds the programs in use','ram','<b>RAM</b> (Random Access Memory). It is erased when the power is off.'],
+['Permanent memory that holds the startup instructions','rom','<b>ROM</b> (Read-Only Memory).'],
+['Small, very fast memory between the CPU and the RAM','cache','<b>Cache</b> memory keeps frequently used data close to the CPU.'],
+['The smallest unit of data: 0 or 1','bit','<b>Bit</b> = binary digit.'],
+['A group of 8 bits','byte','<b>Byte</b> (B).'],
+['The physical parts of a computer, the ones you can touch','hardware','<b>Hardware</b>. Software is the instructions.'],
+['The base-2 number system used by computers','binary','<b>Binary</b>: only 0 and 1, because circuits have two states, ON and OFF.']],'txt',16);
+
+c=card(A,'A3. Number conversions','Use the methods of the course. Every correction shows all the steps.');
+const d8=n=>[`(${n})₁₀ → binary on 8 bits`,n.toString(2).padStart(8,'0'),divS(n,2)+`<br>On 8 bits: <b>${n.toString(2).padStart(8,'0')}</b>`];
+[...[45,99,170].map(d8)].forEach(([q,a,s])=>row(c,q,[['',a,'bits8',12]],s));
+rows(c,[
+...['110011','10101010','1111111'].map(b=>[`(${b})₂ → decimal`,''+parseInt(b,2),sumS(b)]),
+...[100,345].map(n=>[`(${n})₁₀ → octal`,n.toString(8),divS(n,8)]),
+...[250,3000].map(n=>[`(${n})₁₀ → hexadecimal`,HX(n),divS(n,16)]),
+['(257)₈ → decimal',''+parseInt('257',8),powS('257',8)],
+...['A7','3E8'].map(h=>[`(${h})₁₆ → decimal`,''+parseInt(h,16),powS(h,16)]),
+['(11010111)₂ → octal',parseInt('11010111',2).toString(8),grpS('11010111',3)],
+['(1101101110)₂ → hexadecimal',HX(parseInt('1101101110',2)),grpS('1101101110',4)],
+['(725)₈ → binary',parseInt('725',8).toString(2),expS('725',8)],
+['(B4F)₁₆ → binary',parseInt('B4F',16).toString(2),expS('B4F',16)],
+['(157)₈ → hexadecimal',HX(parseInt('157',8)),'Go through binary. '+expS('157',8)+'<br>'+grpS(parseInt('157',8).toString(2),4)],
+['(9C)₁₆ → octal',parseInt('9C',16).toString(8),'Go through binary. '+expS('9C',16)+'<br>'+grpS(parseInt('9C',16).toString(2),3)]],'num',12);
+const rb=document.createElement('div');rb.innerHTML='<h3 style="margin-top:18px">Endless practice</h3><p>A new random conversion each time you press the button.</p><div></div><button class="b">New conversion</button>';c.append(rb);
+const rbox=rb.children[2];
+const RG=[()=>{const n=10+rnd(245);return[`(${n})₁₀ → binary`,n.toString(2),divS(n,2)]},()=>{const b=(64+rnd(192)).toString(2);return[`(${b})₂ → decimal`,''+parseInt(b,2),sumS(b)]},
+()=>{const n=100+rnd(900);return[`(${n})₁₀ → hexadecimal`,HX(n),divS(n,16)]},()=>{const n=60+rnd(400);return[`(${n})₁₀ → octal`,n.toString(8),divS(n,8)]},
+()=>{const h=HX(16+rnd(4000));return[`(${h})₁₆ → decimal`,''+parseInt(h,16),powS(h,16)]},()=>{const b=(32+rnd(990)).toString(2);return[`(${b})₂ → hexadecimal`,HX(parseInt(b,2)),grpS(b,4)]},
+()=>{const b=(32+rnd(480)).toString(2);return[`(${b})₂ → octal`,parseInt(b,2).toString(8),grpS(b,3)]}];
+const newR=()=>{rbox.innerHTML='';const [q,a,s]=RG[rnd(RG.length)]();row(rbox,q,[['',a,'num',12]],s)};rb.querySelector('button.b:last-child').onclick=newR;newR();
+
+c=card(A,'A4. Units of storage','Remember: each unit is 1024 times the previous one, and 1 byte = 8 bits.');
+rows(c,[
+['3 KB = ? bytes','3072','3 × 1024 = <b>3072 bytes</b>'],
+['2 MB = ? KB','2048','2 × 1024 = <b>2048 KB</b>'],
+['16 GB = ? MB','16384','16 × 1024 = <b>16 384 MB</b>'],
+['4096 bytes = ? KB','4','4096 ÷ 1024 = <b>4 KB</b>'],
+['2 KB = ? bits','16384','2 × 1024 = 2048 bytes, and 2048 × 8 = <b>16 384 bits</b>'],
+['1 TB = ? GB','1024','<b>1024 GB</b>'],
+['How many different values can you write with 4 bits?','16','2⁴ = <b>16</b> values (0 to 15).'],
+['How many bits do you need to write 200 in binary?','8','2⁷ = 128 ≤ 200 &lt; 2⁸ = 256, so <b>8 bits</b> (200 = 11001000).']],'num',10);
+
+c=card(A,'A5. ASCII','Use the codes: "0" = 48, "A" = 65, "a" = 97.');
+row(c,'ASCII code of the capital letter "D"',[['','68']],'A = 65, B = 66, C = 67, D = <b>68</b>.');
+row(c,'ASCII code of the small letter "k"',[['','107']],'k is the 11th letter: 97 + 10 = <b>107</b>.');
+row(c,'Which character has the code 77?',[['','M','cs',6]],'77 − 65 = 12, the 13th letter: <b>M</b> (capital).');
+row(c,'ASCII code of the character "7"',[['','55']],'"0" = 48, so "7" = 48 + 7 = <b>55</b>. The character "7" is not the number 7.');
+row(c,'Decode the message: 72 · 69 · 76 · 76 · 79',[['','HELLO','cs',10]],'72 = H, 69 = E, 76 = L, 76 = L, 79 = O → <b>HELLO</b>.');
+row(c,'Write "C" in binary on 8 bits',[['','01000011','bits8',12]],'C = 67 = 64 + 2 + 1 = <b>01000011</b>.');
+row(c,'01000111 is the code of "G". What is the code of "g" in decimal?',[['','103']],'01000111 = 71. Small letter = capital + 32: 71 + 32 = <b>103</b>.');
+
+c=card(A,'A6. Sort it out');c.insertAdjacentHTML('beforeend','<div id="kg1"></div>');
+srt('kg1',['Input','Output','Storage','Processing'],[['Keyboard',0,'You type data in.'],['Microphone',0,'It captures sound.'],['Barcode reader',0,'It reads codes as input.'],['Printer',1,'It puts information on paper.'],['Speakers',1,'They output sound.'],['Monitor',1,'It shows information.'],['SSD',2,'Permanent storage.'],['USB flash drive',2,'Portable storage.'],['CPU',3,'The CPU processes the data.'],['ALU',3,'It does the calculations inside the CPU.']]);
+
+/* ================= PART B · UNIT 2 ================= */
+quiz('kq2',shq([
+['The main role of an operating system is to…',['manage hardware and software resources','write documents','browse the internet','repair the computer'],0,'The OS manages the CPU, memory, storage and devices, and serves the programs.'],
+['Which one is NOT an operating system?',['Excel','Ubuntu','Android','iOS'],0,'Excel is application software.'],
+['“Open source” means that…',['anyone can read, change and share the source code','the software has no bugs','the software runs only online','the software is made by Microsoft'],0,'Linux is open source. Windows and macOS are not.'],
+['Which desktop OS was the most used in the world in December 2024?',['Windows','macOS','Linux','ChromeOS'],0,'About 73% of desktop computers.'],
+['A driver is…',['a small program that lets the OS talk to a device','a type of hard disk','a user account','a file extension'],0,'The OS talks to printers, keyboards and screens through drivers.'],
+['You are in /home/student/NBS and you type <code>cd ..</code>. Where are you?',['/home/student','/home/student/NBS/..','/','/home'],0,'.. means the parent folder.'],
+['Which command deletes an empty folder on Windows and on Linux?',['rmdir','del','rm','cls'],0,'rmdir = remove directory, on both systems.'],
+['You delete a file with <code>del</code> or <code>rm</code>. Where does it go?',['Nowhere: it is deleted for good','To the Recycle Bin','To the Downloads folder','To RAM'],0,'The CLI has no Recycle Bin.'],
+['On Linux, NBS and nbs are…',['two different names','the same folder','an error','a path'],0,'Linux is case-sensitive. Windows is not.'],
+['With the rights 754, the owner can…',['read, write and execute','only read','read and execute','nothing'],0,'7 = 4 + 2 + 1 = rwx.'],
+['Which command shows what is written in a file on Windows?',['type','cat','dir','show'],0,'type on Windows, cat on Linux.'],
+['GUI means…',['Graphical User Interface','General Use Internet','Group User Index','Graphic Unit Inside'],0,'Windows, icons, menus and the mouse.'],
+['Which file is a program you can run on Windows?',['setup.exe','photo.png','song.mp3','notes.txt'],0,'.exe = executable.'],
+['Which OS runs on Chromebooks?',['ChromeOS','iOS','Windows Server','Debian'],0,'ChromeOS is made by Google.']]),
+p=>{if(p>=.7)mark('k2');return p>=.7?'Part B multiple choice passed! Now do the written exercises below.':'Read the revision sheet again, then play again.'});
+
+const B=$('#ka2');
+c=card(B,'B2. Commands: Windows and Linux','Write the command for each task, first for Windows (Command Prompt), then for Linux (Terminal). The folders are named exactly as written.');
+[['List the contents of the current folder',['dir'],['ls']],
+['Go into the folder Exam',['cd exam'],['cd Exam']],
+['Go up to the parent folder',['cd..','cd ..'],['cd ..']],
+['Show the folder you are in',['cd','chdir'],['pwd']],
+['Create the folders A, B and C with one command',['mkdir a b c','md a b c'],['mkdir A B C']],
+['Create a file named note.txt',[/^echo .+ > note\.txt$/,'type nul > note.txt'],['touch note.txt',/^echo .+ > note\.txt$/]],
+['Copy note.txt into the folder A',['copy note.txt a'],['cp note.txt A']],
+['Rename note.txt to old.txt',['ren note.txt old.txt','rename note.txt old.txt','move note.txt old.txt'],['mv note.txt old.txt']],
+['Delete the file old.txt',['del old.txt','erase old.txt'],['rm old.txt']],
+['Delete the empty folder C',['rmdir c','rd c'],['rmdir C']],
+['Delete the folder B and everything inside it',['rmdir /s b','rd /s b','rmdir /s /q b','rd /s /q b'],['rm -r B','rm -rf B','rm -R B','rm -fr B']],
+['Show what is written in note.txt',['type note.txt'],['cat note.txt']],
+['Clear the screen',['cls'],['clear']]].forEach(([t,w,l])=>{const sw=w.find(x=>typeof x=='string'),sl=l.find(x=>typeof x=='string');
+ row(c,t,[['Windows',w,'cmd',18],['Linux',l,'lcmd',18]],`Windows: <code>${E(t.startsWith('Create a file')?'echo hello > note.txt':sw)}</code> · Linux: <code>${E(sl)}</code>`+(t.startsWith('Create a file')?'<br><small>On Windows, echo writes the text into the new file. On Linux, touch creates an empty file.</small>':'')+(t.startsWith('Delete the folder B')?'<br><small>/s (Windows) and -r (Linux) delete the folder with everything inside. Be careful: there is no Recycle Bin.</small>':''))});
+
+c=card(B,'B3. Read the prompt','Windows: you start in <code>C:\\NBS&gt;</code>. NBS contains G1 and G2, and G2 contains Docs. Each command starts where the previous one ended. Type the folder shown by the prompt (the &gt; is optional).');
+rows(c,[
+['1. <code>cd G1</code>','C:\\NBS\\G1','G1 is inside NBS: <b>C:\\NBS\\G1&gt;</b>'],
+['2. <code>cd ..</code>','C:\\NBS','Back to the parent: <b>C:\\NBS&gt;</b>'],
+['3. <code>cd G2\\Docs</code>','C:\\NBS\\G2\\Docs','Two levels at once: <b>C:\\NBS\\G2\\Docs&gt;</b>'],
+['4. <code>cd ..\\..\\G1</code>','C:\\NBS\\G1','Up to G2, up to NBS, then into G1: <b>C:\\NBS\\G1&gt;</b>'],
+['5. <code>cd \\</code>','C:\\','A single backslash means the root of the drive: <b>C:\\&gt;</b>']],'path',22);
+c.insertAdjacentHTML('beforeend','<p style="margin-top:14px">Linux: you start in <code>student@nbs:~$</code>. Your home folder is /home/student and it contains NBS, which contains G1. Type what <code>pwd</code> prints after each command.</p>');
+rows(c,[
+['6. <code>cd NBS</code> then <code>pwd</code>','/home/student/NBS','~ is /home/student, so <b>/home/student/NBS</b>'],
+['7. <code>cd G1</code> then <code>pwd</code>','/home/student/NBS/G1','<b>/home/student/NBS/G1</b> (the prompt shows ~/NBS/G1)'],
+['8. <code>cd ~</code> then <code>pwd</code>','/home/student','cd ~ (or just cd) goes back home: <b>/home/student</b>']],'path',22);
+
+c=card(B,'B4. Paths','Look at this tree, then answer.');
+c.insertAdjacentHTML('beforeend',`<div class="tree" style="max-height:none;margin-bottom:8px"><div class="fo"><b>C:\\ (on Linux: /home/student)</b></div><div class="fo" style="padding-left:18px">School</div><div class="fo" style="padding-left:36px">IT1</div><div class="fo" style="padding-left:54px">Unit1</div><div class="fl" style="padding-left:72px">binary.pdf</div><div class="fo" style="padding-left:54px">Unit2</div><div class="fl" style="padding-left:72px">cmd.txt</div><div class="fl" style="padding-left:36px">photo.jpg</div></div>`);
+rows(c,[
+['Windows path of binary.pdf','C:\\School\\IT1\\Unit1\\binary.pdf','<b>C:\\School\\IT1\\Unit1\\binary.pdf</b>: drive letter, then backslashes.'],
+['Linux path of cmd.txt','/home/student/School/IT1/Unit2/cmd.txt','<b>/home/student/School/IT1/Unit2/cmd.txt</b>: starts at the root /, with forward slashes. (Short form: ~/School/IT1/Unit2/cmd.txt)'],
+['Windows path of photo.jpg','C:\\School\\photo.jpg','<b>C:\\School\\photo.jpg</b>']],'path',34);
+row(c,'You are in C:\\School\\IT1\\Unit1. Write <b>one</b> cd command to go into Unit2.',[['',['cd ..\\unit2','cd \\school\\it1\\unit2','cd c:\\school\\it1\\unit2'],'cmd',24]],'<code>cd ..\\Unit2</code>: up to IT1, then into Unit2. The full path also works: <code>cd \\School\\IT1\\Unit2</code>.');
+row(c,'What is the type of the file cmd.txt?',[['',['plain text','text','a text file','text file'],'txt',16]],'.txt = <b>plain text</b>, opened with Notepad.');
+
+c=card(B,'B5. Rights: r = 4, w = 2, x = 1','Three groups: owner, group, others.');
+rows(c,[
+['rwxr-x--- → number','750','rwx = 4+2+1 = 7 · r-x = 4+0+1 = 5 · --- = 0 → <b>750</b>'],
+['rw-r--r-- → number','644','rw- = 6 · r-- = 4 · r-- = 4 → <b>644</b>'],
+['rwxrwxrwx → number','777','Everybody can do everything: <b>777</b>'],
+['Owner: read and write · group: read · others: nothing → number','640','rw- = 6, r-- = 4, --- = 0 → <b>640</b>'],
+['r-x in binary (3 bits)','101','r = 1, w = 0, x = 1 → <b>101</b> = 5']],'num',8);
+rows(c,[
+['755 → letters','rwxr-xr-x','7 = rwx, 5 = r-x, 5 = r-x → <b>rwxr-xr-x</b>'],
+['640 → letters','rw-r-----','6 = rw-, 4 = r--, 0 = --- → <b>rw-r-----</b>']],'nsp',12);
+
+c=card(B,'B6. Write the whole sequence','Work on paper first, then open the correction.');
+c.insertAdjacentHTML('beforeend',`<p>You are in <code>C:\\Users\\Ali</code>. Write the commands to: 1) create a folder IT1, 2) go into it, 3) create the folders Exam and Notes with one command, 4) create a file plan.txt that contains the word revise, 5) move plan.txt into Notes, 6) show the content of plan.txt from IT1, 7) go back to C:\\Users\\Ali.<br>Then write the same thing for Linux, starting in <code>~</code>.</p><button class="c">Correction</button><div class="det" hidden><div class="g"><div><b>Windows</b><pre class="tree" style="max-height:none">mkdir IT1
+cd IT1
+mkdir Exam Notes
+echo revise &gt; plan.txt
+move plan.txt Notes
+type Notes\\plan.txt
+cd..</pre></div><div><b>Linux</b><pre class="tree" style="max-height:none">mkdir IT1
+cd IT1
+mkdir Exam Notes
+echo revise &gt; plan.txt
+mv plan.txt Notes
+cat Notes/plan.txt
+cd ..</pre></div></div><small>Same logic, different words: move/mv, type/cat, and \\ on Windows but / on Linux. Practise it in the terminal lab of Unit 2.</small></div>`);
+c.querySelector('.c').onclick=e=>{const d=e.target.nextElementSibling;d.hidden=!d.hidden};
+
+c=card(B,'B7. Sort it out');c.insertAdjacentHTML('beforeend','<div id="kg2"></div>');
+srt('kg2',['Windows only','Linux only','Both'],[['dir',0,'dir lists a folder on Windows.'],['cls',0,'Clears the screen on Windows.'],['type',0,'Shows a file on Windows.'],['ls',1,'Lists a folder on Linux.'],['pwd',1,'Prints the working directory on Linux.'],['touch',1,'Creates an empty file on Linux.'],['cat',1,'Shows a file on Linux.'],['mkdir',2,'Creates a folder on both.'],['cd',2,'Changes folder on both.'],['rmdir',2,'Removes an empty folder on both.']]);
+
+/* ================= PART C · UNIT 3 ================= */
+quiz('kq3',shq([
+['You change the Heading 1 style once. What happens?',['Every Heading 1 in the document changes','Only the selected title changes','The document is saved','Nothing'],0,'That is the power of styles.'],
+['A table of contents in Word only works if your titles use…',['the Heading styles','bold text','a bigger font','capital letters'],0,'References › Table of Contents reads the Heading styles.'],
+['Mail merge needs…',['a letter with fields and a list of recipients','two documents to join','a table of contents','a PowerPoint file'],0,'Word makes one letter per person in the list.'],
+['In the text, the citation [2] is in which style?',['IEEE','APA'],0,'IEEE uses numbers in square brackets. APA uses (Author, year).'],
+['In APA, the reference list is in…',['alphabetical order of the authors','order of citation','order of year','random order'],0,'In IEEE it follows the order of citation.'],
+['To switch the page to landscape, open the…',['Layout tab','Review tab','Mailings tab','References tab'],0,'Layout › Orientation.'],
+['Which formula gives #NAME?',['=SUMM(A1:A3)','=SUM(A1:A3)','=A1+A2','=MAX(A1:A3)'],0,'Excel does not know the name SUMM.'],
+['=A1/B1 when B1 is empty gives…',['#DIV/0!','0','#N/A','#REF!'],0,'An empty cell counts as 0: division by zero.'],
+['=VLOOKUP("Pen",A2:C6,4,FALSE) on a 3-column table gives…',['#REF!','#N/A','#VALUE!','4'],0,'Column 4 does not exist in A2:C6.'],
+['VLOOKUP cannot find the value in the first column. The result is…',['#N/A','#REF!','0','FALSE'],0,'#N/A = not available.'],
+['A pivot table…',['never changes the source data','deletes empty rows','sorts the source data','needs formulas'],0,'If the data changes: right-click › Refresh.'],
+['To count the orders of each salesperson in a pivot table, use…',['Rows = Salesperson, Values summarized by Count','Rows = Salesperson, Values summarized by Max','Columns = Count','A VLOOKUP'],0,'Count counts the records of each group.'],
+['Which rule shades cells from red (low) to green (high)?',['Color scale','Data bars','Top 10','Highlight cells'],0,'A color scale works like a heat map.'],
+['An effect between two slides is…',['a transition','an animation','a theme','a template'],0,'An animation acts on an object inside a slide.'],
+['In Access, a field that is unique for each record is the…',['primary key','form','report','query'],0,'Example: StudentID.'],
+['In Access, a screen to type in new data easily is a…',['form','report','query','table'],0,'A report is for printing, a query is a question.']]),
+p=>{if(p>=.7)mark('k3');return p>=.7?'Part C multiple choice passed! Now do the written exercises below.':'Read the revision sheet again, then play again.'});
+
+const C3=$('#ka3');
+c=card(C3,'C2. Order of operations: what does Excel show?','( ) first, then ^, then * and /, then + and −. Same level: left to right.');
+rows(c,[
+['<code>=2+3*4^2</code>','50','^ first: 4² = 16. Then 3 × 16 = 48. Then 2 + 48 = <b>50</b>.'],
+['<code>=(10-4)/2+1</code>','4','Brackets: 6. Then 6 / 2 = 3. Then 3 + 1 = <b>4</b>.'],
+['<code>=20-10/5*2</code>','16','/ and * from left to right: 10 / 5 = 2, 2 × 2 = 4. Then 20 − 4 = <b>16</b>.'],
+['<code>=2^3*2</code>','16','2³ = 8, then 8 × 2 = <b>16</b>.'],
+['<code>=50*20%+5</code>','15','20% = 0.2, 50 × 0.2 = 10, 10 + 5 = <b>15</b>.'],
+['<code>=(2+3)^2/5</code>','5','Brackets: 5. 5² = 25. 25 / 5 = <b>5</b>.'],
+['<code>=10-2-3*2</code>','2','3 × 2 = 6. Then left to right: 10 − 2 = 8, 8 − 6 = <b>2</b>.'],
+['Bonus trap: <code>=-2^2</code>','4','In Excel the minus sign of a number is applied first: (−2)² = <b>4</b>. To get −4, write =-(2^2).']],'num',8);
+
+c=card(C3,'C3. Relative and absolute references','Write the formula after the copy. Remember: $ locks the column or the row that follows it.');
+rows(c,[
+['B2 contains <code>=A2*$E$1</code>. You copy it down to B6.','=A6*$E$1','A2 is relative: 4 rows down → A6. $E$1 is absolute: it does not move. <b>=A6*$E$1</b>'],
+['C2 contains <code>=A2+B$1</code>. You copy it down to C5.','=A5+B$1','A2 → A5. B$1: the row is locked, so it stays B$1. <b>=A5+B$1</b>'],
+['C3 contains <code>=$A3*B1</code>. You copy it to the right, to D3.','=$A3*C1','$A: the column is locked. B1 moves one column right → C1. <b>=$A3*C1</b>'],
+['D2 contains <code>=SUM(A2:C2)</code>. You copy it down to D4.','=SUM(A4:C4)','The whole range moves 2 rows down: <b>=SUM(A4:C4)</b>'],
+['E2 contains <code>=C2/$C$8</code>. You copy it down to E7.','=C7/$C$8','<b>=C7/$C$8</b>: each value divided by the total in C8.']],'f',20);
+
+c=card(C3,'C4. Write the formulas','This is the staff list of a small company. Try your formulas in the sheet first, then type them in the questions. The checker calculates your formula: any correct formula is accepted.');
+c.insertAdjacentHTML('beforeend','<div id="ksb"></div><div id="kxf" style="margin-top:12px"></div>');
+if(window.XL){
+ const S={c:{A1:'Name',B1:'Department',C1:'Salary',D1:'Years',E1:'Result',F1:'New salary',G1:'Search',H1:'Raise',G2:'Sidi',H2:'0.1'},nc:8,nr:8};
+ [['Aminetou','Sales',32000,6],['Sidi','IT',45000,2],['Mariem','Sales',28000,3],['Moussa','HR',25000,8],['Khadija','IT',38000,5],['Ahmed','Sales',30000,1]].forEach((r,i)=>{S.c['A'+(i+2)]=r[0];S.c['B'+(i+2)]=r[1];S.c['C'+(i+2)]=''+r[2];S.c['D'+(i+2)]=''+r[3]});
+ XL.play('ksb',S,[['=COUNT(C2:C7)','COUNT counts the cells that contain a number: 6. Now type your own formulas here.'],['=C2*D2','A simple formula with two cells.']]);
+ const R=[2,3,4,5,6,7];
+ XL.tasks('kxf',S,[
+ {q:'The total of all the salaries.',a:'=SUM(C2:C7)',need:/SUM|SOMME/,nm:'Use the SUM function.',h:'All the salaries are in C2:C7.'},
+ {q:'The average salary.',a:'=AVERAGE(C2:C7)',need:/AVERAGE|MOYENNE/,nm:'Use the AVERAGE function.',h:'AVERAGE(range).'},
+ {q:'The highest salary.',a:'=MAX(C2:C7)',need:/MAX/,nm:'Use the MAX function.',h:'MAX(range).'},
+ {q:'The total salaries of the <b>Sales</b> department.',a:'=SUMIF(B2:B7,"Sales",C2:C7)',need:/SUMIF|SOMME\.SI/,nm:'Use the SUMIF function.',h:'The condition is on column B, the sum on column C.'},
+ {q:'The total of the salaries <b>greater than 30000</b>.',a:'=SUMIF(C2:C7,">30000")',need:/SUMIF|SOMME\.SI/,nm:'Use the SUMIF function.',h:'Criteria in quotes: ">30000". No sum_range needed.'},
+ {q:'How many employees have <b>5 years or more</b>?',a:'=COUNTIF(D2:D7,">=5")',need:/COUNTIF|NB\.SI/,nm:'Use the COUNTIF function: =COUNTIF(range, criteria).',h:'COUNTIF counts the cells that match a condition.'},
+ {q:'In E2: <b>"Senior"</b> if the employee has 5 years or more, otherwise <b>"Junior"</b>. It must work on every row.',a:'=IF(D2>=5,"Senior","Junior")',need:/IF\(|SI\(/,nm:'Use the IF function.',rows:R,h:'One test: D2>=5.'},
+ {q:'In E2: <b>"Bonus"</b> if the department is Sales <b>and</b> the employee has 3 years or more, otherwise <b>"No bonus"</b>.',a:'=IF(AND(B2="Sales",D2>=3),"Bonus","No bonus")',need:/AND\(|ET\(/,nm:'Put AND( , ) inside the IF.',rows:R,h:'Two tests inside AND: B2="Sales" and D2>=3.'},
+ {q:'In E2: <b>"Review"</b> if the department is IT <b>or</b> the salary is more than 35000, otherwise <b>"OK"</b>.',a:'=IF(OR(B2="IT",C2>35000),"Review","OK")',need:/OR\(|OU\(/,nm:'Put OR( , ) inside the IF.',rows:R,h:'Two tests inside OR: B2="IT" and C2>35000.'},
+ {q:'Find the salary of the employee whose name is written in <b>G2</b>. Use the cell G2.',a:'=VLOOKUP(G2,A2:C7,3,FALSE)',need:/(VLOOKUP|RECHERCHEV).*G2/,nm:'Use VLOOKUP with G2 as lookup_value.',h:'Salary is column 3 of the table A2:C7.'},
+ {q:'Find the department of <b>Khadija</b>.',a:'=VLOOKUP("Khadija",A2:B7,2,FALSE)',need:/VLOOKUP|RECHERCHEV/,nm:'Use the VLOOKUP function.',h:'Department is column 2 of the table.'},
+ {q:'In F2: the new salary after the raise written in <b>H2</b> (10%). It must work when you copy it down.',a:'=C2*(1+$H$2)',need:/\$?H\$?2/,nm:'Use the rate in cell H2.',rows:R,tip:'Did you lock H2 with $ signs?',h:'New salary = salary × (1 + rate). Lock the rate: $H$2.'}]);
+}else c.insertAdjacentHTML('beforeend','<p><small>The sheet could not load.</small></p>');
+
+c=card(C3,'C5. Read the pivot table','Here are 8 sales. Imagine the pivot table described in each question and give the number.');
+const PVD=[['North','Laptop','Ali',1200],['South','Phone','Mona',800],['North','Phone','Ali',600],['East','Laptop','Sara',1500],['South','Laptop','Mona',1000],['East','Phone','Sara',700],['North','Tablet','Omar',400],['East','Tablet','Omar',500]];
+c.insertAdjacentHTML('beforeend',`<div style="overflow-x:auto"><table class="src"><tr><th></th><th>A · Region</th><th>B · Product</th><th>C · Seller</th><th>D · Amount</th></tr>${PVD.map((r,i)=>`<tr><th>${i+2}</th>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table></div>`);
+const pvs=(k,f=a=>a.reduce((s,x)=>s+x,0))=>{const G={};PVD.forEach(r=>{(G[r[k]]=G[r[k]]||[]).push(r[3])});return Object.keys(G).sort().map(g=>[g,f(G[g])])};
+const pvT=(L,h)=>`<table style="width:auto;margin-top:4px"><tr><th>${h[0]}</th><th>${h[1]}</th></tr>${L.map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}</table>`;
+const sR=pvT(pvs(0),['Region','Sum of Amount'])+'<small>Grand Total = 6700</small>';
+rows(c,[
+['Rows = Region, Values = Sum of Amount. The value for <b>North</b>?','2200','North: 1200 + 600 + 400 = <b>2200</b>'+sR],
+['Same table. The value for <b>East</b>?','2700','East: 1500 + 700 + 500 = <b>2700</b>'+sR],
+['Same table. The <b>Grand Total</b>?','6700','All the sales: <b>6700</b>'],
+['Rows = Region, Values summarized by <b>Count</b>. The value for <b>South</b>?','2','South has <b>2</b> sales (rows 3 and 6).'+pvT(pvs(0,a=>a.length),['Region','Count of Amount'])],
+['Rows = Product, Values = Sum of Amount. The value for <b>Laptop</b>?','3700','1200 + 1500 + 1000 = <b>3700</b>'+pvT(pvs(1),['Product','Sum of Amount'])],
+['Rows = Product, Columns = Region, Sum of Amount. The cell <b>Phone / East</b>?','700','Only one phone was sold in East: <b>700</b>'],
+['Rows = Seller, Values summarized by <b>Max</b>. The value for <b>Sara</b>?','1500','Sara sold 1500 and 700, the biggest is <b>1500</b>'+pvT(pvs(2,a=>Math.max(...a)),['Seller','Max of Amount'])]],'num',8);
+row(c,'Which region sells the most?',[['','East','txt',10]],'<b>East</b> with 2700 (North 2200, South 1800).');
+
+c=card(C3,'C6. Which error is it?');c.insertAdjacentHTML('beforeend','<div id="kg3"></div>');
+srt('kg3',['#DIV/0!','#NAME?','#N/A','#REF!'],[['=A1/0',0,'Division by zero.'],['=A1/B1 when B1 is empty',0,'An empty cell is 0.'],['=SUMM(A1:A5)',1,'SUMM does not exist.'],['=IF(A1>5,Yes,No)',1,'Text without quotes: Excel thinks Yes is a name.'],['=VLOOKUP("Mango",A2:C6,2,FALSE) and there is no Mango',2,'Not found: #N/A.'],['=VLOOKUP("Apple",A2:C6,5,FALSE)',3,'Column 5 does not exist in a 3-column table.'],['A formula that used a row you deleted',3,'The cell does not exist any more.']]);
+
+c=card(C3,'C7. Word, PowerPoint and Access','Short answers: one word or the name of the tab.');
+rows(c,[
+['In which Word tab do you turn on Track Changes?','review','<b>Review</b> › Track Changes. Comments and spelling are there too.'],
+['In which Word tab do you start a mail merge?','mailings','<b>Mailings</b> › Start Mail Merge.'],
+['In which Word tab do you insert a table of contents?','references','<b>References</b> › Table of Contents.'],
+['In which Word tab do you change the margins?',['layout','page layout'],'<b>Layout</b> › Margins.'],
+['In PowerPoint, bullets that appear one by one are an…','animation','An <b>animation</b> (Animations tab). A transition is between slides.'],
+['In Access, one row of a table is a…','record','A <b>record</b>. One column is a field.'],
+['In Access, a question asked to the database is a…','query','A <b>query</b>, written in SQL behind the scenes.'],
+['In Access, a clean page to print the data is a…','report','A <b>report</b>.']],'txt',14);
+c.insertAdjacentHTML('beforeend',`<div class="krow"><div class="kq">Write the SQL query that shows the students of group G2, from the best average to the lowest (table Students, fields GroupID and Average).</div><button class="c" style="margin:0">Correction</button><div class="det" hidden><code>SELECT * FROM Students WHERE GroupID = "G2" ORDER BY Average DESC;</code><br><small>WHERE = the criteria, ORDER BY … DESC = sort from high to low.</small></div></div>`);
+c.lastElementChild.querySelector('.c').onclick=e=>{const d=e.target.nextElementSibling;d.hidden=!d.hidden};
+
+/* ================= OPEN QUESTIONS ================= */
+const OQ=[
+['Data and information','What is the difference between data and information? Give an example.','<b>Data</b> are raw facts with no meaning on their own: 36, Monday, Sunny. <b>Information</b> is data that has been organized and processed so it means something: “On Monday it will be sunny, 36°C.” IT turns data into information.'],
+['The instruction cycle','Explain the four steps of the instruction cycle of the CPU.','1. <b>Fetch</b>: the CPU gets the next instruction from RAM. 2. <b>Decode</b>: the Control Unit works out what it means. 3. <b>Execute</b>: the ALU carries it out (for example 2 + 3 = 5). 4. <b>Store</b>: the result is written back to RAM. Then the cycle starts again, millions of times per second.'],
+['RAM and ROM','Give three differences between RAM and ROM.','<b>RAM</b>: temporary (erased when the power is off), can be read and written, holds the programs and data in use. <b>ROM</b>: permanent (keeps its content without power), read-only, holds the startup instructions of the computer.'],
+['Binary and hexadecimal','Why do computers use binary? Why do people use hexadecimal?','Electronic circuits have two states, ON (1, a voltage) and OFF (0, no voltage), so binary suits machines. Binary is long and easy to misread for people. Hexadecimal is a short way to write binary: one hex digit = 4 bits, so one byte = 2 hex digits (11111111 = FF). It is used for web colors (#FF0000), MAC addresses and memory addresses.'],
+['Kinds of software','Explain hardware, system software and application software, with two examples of each.','<b>Hardware</b>: the physical parts you can touch (CPU, RAM, monitor). <b>System software</b>: runs the computer itself (Windows, Linux, Android). <b>Application software</b>: helps the user do a task (Word, WhatsApp, Chrome).'],
+['The operating system','What is an operating system? Give four of its roles.','The OS is the software that manages hardware and software resources and provides services for programs. Roles: shares the CPU between programs, gives RAM to each program, manages storage (files and folders), provides a user interface (GUI or CLI), security (accounts, passwords, rights), multitasking, and talks to devices through drivers.'],
+['GUI and CLI','What is the difference between a GUI and a CLI? Give two advantages of the CLI.','A <b>GUI</b> uses windows, icons, menus and the mouse. A <b>CLI</b> uses typed text commands. Advantages of the CLI: faster (mkdir G1 G2 G3 G4 creates four folders at once), powerful for troubleshooting even when the GUI is broken, and commands can be saved in scripts for automation.'],
+['Rights','A Linux file has the rights 754. Explain what each user can do.','7 = 111 = rwx: the <b>owner</b> can read, write and execute. 5 = 101 = r-x: the <b>group</b> can read and execute but not change it. 4 = 100 = r--: <b>others</b> can only read it.'],
+['References in Excel','What is the difference between a relative and an absolute reference? Give an example.','A <b>relative</b> reference (A2) changes when you copy the formula: one row down, it becomes A3. An <b>absolute</b> reference ($E$1) never changes. Example: =A2*$E$1 multiplies each price by the single tax rate in E1. Press F4 to add the $ signs.'],
+['SUMIF, IF, AND, OR','Explain what SUMIF does, and the difference between IF(AND(…)) and IF(OR(…)).','<b>SUMIF(range, criteria, [sum_range])</b> adds only the cells that match a condition, for example =SUMIF(A2:A9,"Apple",B2:B9). <b>AND</b> is TRUE only if all the tests are TRUE. <b>OR</b> is TRUE if at least one test is TRUE. IF then shows the first value when the test is TRUE and the second when it is FALSE.'],
+['VLOOKUP and pivot tables','When would you use VLOOKUP? When would you use a pivot table?','<b>VLOOKUP</b> finds one value: it searches the first column of a table and returns another column of the same row (the price of a product). A <b>pivot table</b> summarizes a whole table without formulas: total sales per region, number of orders per salesperson, with Rows, Columns and Values.'],
+['An Access database','Explain table, record, field, primary key and relationship with the example of a school.','The <b>Students table</b> stores the students. Each <b>record</b> (row) is one student. Each <b>field</b> (column) is one piece of data: Name, City, Average. <b>StudentID</b> is the <b>primary key</b>: unique for each student. A <b>relationship</b> links Students and Groups through GroupID: one group has many students.'],
+['PowerPoint','What is the difference between a transition and an animation? Give three rules for a professional slide.','A <b>transition</b> is an effect between two slides. An <b>animation</b> is an effect on one object inside a slide (bullets appearing one by one). Rules: few words (6 × 6 rule), strong contrast, one or two fonts, one idea per slide, few effects.']];
+$('#kot').textContent=OQ.length;
+const known=new Set(),kok=()=>{$('#kok').textContent=known.size;if(known.size>=10)mark('k6')};
+OQ.forEach(([t,q,a],i)=>{const d=card($('#koq'),`${i+1}. ${t}`,`<b>${q}</b>`);
+ d.insertAdjacentHTML('beforeend',`<textarea placeholder="Write your answer here (not saved)"></textarea><p><button class="b">Show the model answer</button></p><div class="det" hidden>${a}<p style="margin:10px 0 0"><button class="c" data-y="1">✓ I knew it</button><button class="c" data-y="0">I need to review</button></p></div>`);
+ const det=d.querySelector('.det');d.querySelector('.b').onclick=()=>{det.hidden=!det.hidden};
+ det.querySelectorAll('.c').forEach(b=>b.onclick=()=>{det.querySelectorAll('.c').forEach(x=>x.classList.toggle('on',x==b));if(b.dataset.y=='1'){known.add(i);if(!b.dataset.got){b.dataset.got=1;add(3)}}else known.delete(i);kok()})});
+kok();
+
+/* ================= MOCK EXAM ================= */
+const UN={1:'Unit 1 · Information Technology',2:'Unit 2 · Operating Systems',3:'Unit 3 · Productivity Software'};
+const PL={1:[
+['Which one is software?',['Windows','RAM','The monitor','The keyboard'],0,'Windows is system software. The others are hardware.'],
+['The Control Unit (CU)…',['directs the order of operations and the flow of data','does the calculations','stores files for ever','shows the images'],0,'The ALU calculates, the CU directs.'],
+['Which step of the instruction cycle writes the result to RAM?',['Store','Fetch','Decode','Execute'],0,'Fetch, decode, execute, then store.'],
+['Which memory is the smallest and the fastest?',['Register','Cache','RAM','SSD'],0,'Registers are inside the CPU.'],
+['A scanner is…',['an input device','an output device','a storage device','a processor'],0,'It brings a paper page into the computer.'],
+['Which one is permanent storage?',['SSD','RAM','Cache','Register'],0,'The SSD keeps files when the power is off.'],
+['A CPU with more cores…',['can run several tasks at the same time','has a bigger screen','stores more files','needs no RAM'],0,'More cores, more cooks in the kitchen.'],
+['How many bits are in 2 bytes?',['16','8','4','32'],0,'2 × 8 = 16.'],
+['1 MB is equal to…',['1024 KB','1000 KB','1024 GB','8 KB'],0,'1 MB = 1024 KB = 2²⁰ bytes.'],
+['The ASCII code of "B" is…',['66','65','98','42'],0,'A = 65, so B = 66.'],
+['In hexadecimal, F is equal to…',['15','16','14','F is not a digit'],0,'A = 10 … F = 15.'],
+['Octal uses the digits…',['0 to 7','0 to 8','0 to 9 and A to F','0 and 1'],0,'Base 8: eight digits.'],
+['The web color #FF0000 is…',['red','green','blue','black'],0,'FF red, 00 green, 00 blue.']],
+2:[
+['Which OS runs on the iPhone?',['iOS','Android','macOS','Linux'],0,'iOS is the mobile OS of Apple.'],
+['Ubuntu is a distribution of…',['Linux','Windows','macOS','ChromeOS'],0,'Ubuntu, Debian and Fedora are Linux distributions.'],
+['Which one is a Windows path?',['C:\\Users\\Ali\\cv.docx','/home/ali/cv.docx','~/cv.docx','home › ali › cv'],0,'Drive letter and backslashes.'],
+['Which command shows where you are on Linux?',['pwd','cd','dir','where'],0,'pwd = print working directory.'],
+['<code>mkdir G1 G2</code> creates…',['two folders','one folder named “G1 G2”','two files','an error'],0,'One mkdir can create several folders.'],
+['Which command copies a file on Windows?',['copy','cp','move','cd'],0,'cp is the Linux command.'],
+['rw- in binary and in decimal is…',['110 = 6','101 = 5','011 = 3','111 = 7'],0,'r = 4, w = 2: 4 + 2 = 6.'],
+['The right x on a file lets you…',['run it as a program','read it','change it','print it'],0,'x = execute.'],
+['When you open a program, the OS…',['gives it a part of the RAM','deletes a file','turns off the CPU','opens the Recycle Bin'],0,'It takes the RAM back when you close the program.'],
+['In a GUI, a deleted file usually goes to…',['the Recycle Bin','nowhere','the printer','the RAM'],0,'In the CLI, del and rm delete for good.'],
+['Which extension is a compressed folder?',['.zip','.exe','.mp3','.txt'],0,'.zip packs many files into one.'],
+['Which command clears the screen on Windows?',['cls','clear','del','rmdir'],0,'clear on Linux.'],
+['Listening to music while writing in Word is…',['multitasking','formatting','a driver','open source'],0,'The OS shares the CPU and the RAM between programs.']],
+3:[
+['=SUM(A1:A3) with 5, 10 and 15 gives…',['30','15','3','51015'],0,'5 + 10 + 15 = 30.'],
+['=IF(A1>10,"Yes","No") with A1 = 10 gives…',['No','Yes','10','#VALUE!'],0,'10 is not greater than 10.'],
+['=SUMIF(A2:A6,"Tea",B2:B6) adds…',['the B values of the rows where A is Tea','all of column B','the number of Tea','only A2 and B6'],0,'Condition on A, sum on B.'],
+['=AND(5>3, 2>4) gives…',['FALSE','TRUE','5','#N/A'],0,'2 > 4 is FALSE, so AND is FALSE.'],
+['=OR(5>3, 2>4) gives…',['TRUE','FALSE','2','#N/A'],0,'5 > 3 is TRUE: one TRUE is enough.'],
+['In VLOOKUP, the last argument FALSE means…',['exact match','approximate match','no result','sort first'],0,'Use FALSE most of the time.'],
+['Which key adds the $ signs to a reference?',['F4','F2','F7','Ctrl + D'],0,'F2 edits a cell, F7 checks the spelling.'],
+['=3+2*5 gives…',['13','25','10','30'],0,'* before +: 2 × 5 = 10, then 3 + 10 = 13.'],
+['Which Word tab has Track Changes?',['Review','Insert','Mailings','View'],0,'Review › Track Changes.'],
+['Ctrl + Z…',['undoes the last action','redoes','saves','makes text bold'],0,'Ctrl + Y redoes.'],
+['A worksheet is…',['one page (tab) of a workbook','the Excel file','one cell','a chart'],0,'The file is the workbook (.xlsx).'],
+['In Excel, ######## in a cell means…',['the column is too narrow','a division by zero','a value not found','a wrong function name'],0,'Not an error: make the column wider.'],
+['One row of an Access table is a…',['record','field','query','form'],0,'A field is a column.'],
+['In Access, a report is…',['a clean page to print or share','a question to the database','a screen to type data','a link between tables'],0,'A query is a question, a form is for typing.']]};
+const GEN=[()=>{const n=20+rnd(200),b=n.toString(2),W=new Set();while(W.size<3){const x=n^(1<<rnd(b.length-1));if(x!==n)W.add(x.toString(2))}return[`What is ${n} in binary?`,[b,...W],0,`Divide by 2 and read the remainders from bottom to top: ${n} = ${b}₂.`]},
+()=>{const n=17+rnd(238),b=n.toString(2).padStart(8,'0'),h=HX(n).padStart(2,'0'),W=new Set([h.split('').reverse().join('')]);W.delete(h);while(W.size<3){const x=HX(16+rnd(240));if(x!=h)W.add(x)}return[`Convert ${b}₂ to hexadecimal.`,[h,...W],0,`Groups of 4 bits: ${b.slice(0,4)} | ${b.slice(4)} → ${h[0]} ${h[1]} = ${h}.`]}];
+const kx=$('#kx');let XQ=[],XA=[],xtm=0,xleft=0,xon=0,xwarn=0;
+const mix=([q,o,c,w],u)=>{const p=sh(o.map((x,i)=>[x,i]));return{q,o:p.map(x=>x[0]),c:p.findIndex(x=>x[1]==c),w,u}};
+const xIntro=()=>{clearInterval(xtm);xon=0;H(kx,`<div class="card"><h3>The rules</h3><ul><li>25 questions: 9 on Unit 1, 8 on Unit 2, 8 on Unit 3.</li><li>30 minutes. When the time is up, the exam is submitted automatically.</li><li>You can change an answer until you submit. The correction comes at the end.</li><li>Every exam is different: the questions are drawn at random.</li></ul><button class="b" id="kxgo">Start the mock exam</button></div>`);$('#kxgo').onclick=xStart};
+const xclk=()=>{const t=$('#kxt');if(!t)return;t.textContent=String(Math.floor(xleft/60)).padStart(2,'0')+':'+String(xleft%60).padStart(2,'0');t.style.color=xleft<=300?'var(--bad)':''};
+const xcnt=()=>{const n=XA.filter(a=>a>=0).length;$('#kxn').textContent=`${n} / ${XQ.length} answered`};
+function xStart(){
+ XQ=[...sh(PL[1]).slice(0,7).concat(GEN.map(g=>g())).map(x=>mix(x,1)),...sh(PL[2]).slice(0,8).map(x=>mix(x,2)),...sh(PL[3]).slice(0,8).map(x=>mix(x,3))];
+ XA=XQ.map(()=>-1);xleft=30*60;xon=1;xwarn=0;
+ H(kx,`<div class="kbar"><b id="kxt">30:00</b><span id="kxn"></span><button class="b" id="kxs" style="margin:0">Submit</button></div><div id="kxr"></div>`+XQ.map((x,i)=>`${i==0||XQ[i-1].u!=x.u?`<h3>${UN[x.u]}</h3>`:''}<div class="card" data-q="${i}"><small>Question ${i+1}</small><p style="margin:4px 0"><b>${x.q}</b></p><div class="opts">${x.o.map((o,k)=>`<button class="o" data-k="${k}">${o}</button>`).join('')}</div><div class="det" hidden></div></div>`).join('')+`<button class="b" id="kxs2">Submit my exam</button>`);
+ kx.querySelectorAll('[data-q]').forEach(cd=>{const i=+cd.dataset.q;cd.querySelectorAll('.o').forEach(b=>b.onclick=()=>{if(!xon)return;XA[i]=+b.dataset.k;cd.querySelectorAll('.o').forEach(x=>x.classList.toggle('sel',x==b));xcnt()})});
+ $('#kxs').onclick=$('#kxs2').onclick=()=>xSubmit(0);
+ clearInterval(xtm);xtm=setInterval(()=>{xleft--;xclk();if(xleft<=0)xSubmit(1)},1000);xclk();xcnt();$('#k5').scrollIntoView()}
+function xSubmit(force){if(!xon)return;const un=XA.filter(a=>a<0).length;
+ if(!force&&un&&!xwarn){xwarn=1;H($('#kxr'),`<div class="tip"><b class="mas"><i></i><i></i></b><p>You still have <b>${un}</b> unanswered question${un>1?'s':''}. Press Submit again to hand in your exam anyway.</p></div>`);$('#kxr').scrollIntoView({block:'center'});return}
+ clearInterval(xtm);xon=0;let s=0;const pu={1:[0,0],2:[0,0],3:[0,0]};
+ XQ.forEach((x,i)=>{const ok=XA[i]==x.c;if(ok){s++;pu[x.u][0]++}pu[x.u][1]++;
+  const cd=kx.querySelector(`[data-q="${i}"]`),bs=[...cd.querySelectorAll('.o')];bs.forEach(b=>{b.disabled=true;b.classList.remove('sel')});bs[x.c].classList.add('ok');if(XA[i]>=0&&!ok)bs[XA[i]].classList.add('no');
+  const d=cd.querySelector('.det');d.hidden=false;H(d,`<b style="color:${ok?'var(--ok)':'var(--bad)'}">${ok?'Correct.':XA[i]<0?'No answer.':'Wrong.'}</b> ${x.w}`)});
+ const p=s/XQ.length,g=Math.round(p*200)/10,b0=LS.get('it1midBest',null);if(b0==null||g>b0){LS.set('it1midBest',g);$('#kbest').textContent=g+' / 20'}
+ add(s*5);if(p>=.6)mark('k5');
+ const weak=[1,2,3].filter(u=>pu[u][0]/pu[u][1]<.6);
+ H($('#kxr'),`<div class="card" style="border-color:var(--n)"><h3>Result: ${s} / ${XQ.length} · ${g} / 20</h3>${force?'<p><b>Time is up!</b> Your exam was submitted automatically.</p>':''}${[1,2,3].map(u=>`<div class="bar"><b>Unit ${u}</b><div style="width:${pu[u][0]/pu[u][1]*60}%"></div><span>${pu[u][0]} / ${pu[u][1]}</span></div>`).join('')}
+ <p>${p>=.8?'Gold: you are ready for the midterm!':p>=.6?'Silver: good work. Review your mistakes below, then try a new exam.':'Bronze: read the revision sheet and redo the exercises, then try again.'}${weak.length?` Work again on ${weak.map(u=>`<a href="#k${u}">Unit ${u}</a>`).join(' and ')}.`:''}</p><p><small>Scroll down: every question shows its correction.</small></p><button class="b" id="kxa">Take a new exam</button></div>`);
+ $('#kxt').textContent='Finished';$('#kxt').style.color='';$('#kxs').remove();$('#kxs2').remove();
+ $('#kxa').onclick=()=>{xIntro();$('#k5').scrollIntoView()};$('#kxr').scrollIntoView()}
+xIntro();
+})();
+</script>
+
 </body></html>
